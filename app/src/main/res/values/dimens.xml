@@ -39,7 +39,7 @@
 
 
     <!--checkout_page-->
-    <dimen name="details">28dp</dimen>
+    <dimen name="details">28sp</dimen>
     <dimen name="imageView10">326dp</dimen>
     <dimen name="select_btn">24sp</dimen>
     <dimen name="imageView16">78dp</dimen>

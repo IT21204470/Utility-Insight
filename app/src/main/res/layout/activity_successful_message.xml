@@ -11,8 +11,10 @@
         android:layout_height="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.58"
         app:srcCompat="@drawable/rectangle_view" />
 
     <ImageView
@@ -20,12 +22,13 @@
         android:layout_width="@dimen/imageView2"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
+        android:layout_marginTop="-265dp"
         android:layout_marginEnd="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/rectangle_green"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/rectangle_green" />
 
     <TextView
         android:id="@+id/success_msg"
@@ -43,27 +46,31 @@
 
     <Button
         android:id="@+id/previous"
-        android:layout_width="128dp"
-        android:layout_height="46dp"
+        android:layout_width="148dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="-170dp"
         android:background="@drawable/extra_button"
         android:fontFamily="@font/secular_one"
         android:text="@string/back"
         android:textColor="@color/white"
         android:textSize="@dimen/previous"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/close"
-        android:layout_width="128dp"
-        android:layout_height="46dp"
+        android:layout_width="148dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="-340dp"
         android:background="@drawable/extra_button"
         android:fontFamily="@font/secular_one"
         android:text="@string/done"
         android:textColor="@color/white"
         android:textSize="@dimen/done"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView7"

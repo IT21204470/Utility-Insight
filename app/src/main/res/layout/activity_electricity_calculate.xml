@@ -2,13 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/heading2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/electricity">
 
     <TextView
-        android:id="@+id/heading2"
+        android:id="@+id/heading1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
@@ -26,8 +25,7 @@
         android:layout_width="246dp"
         android:layout_height="60dp"
         android:layout_marginStart="149dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="176dp"
         android:background="@drawable/gradient_button"
         android:drawableRight="@drawable/baseline_navigate_next_24"
         android:fontFamily="@font/solway_bold"
@@ -35,8 +33,6 @@
         android:text="@string/move_next"
         android:textColor="@color/white"
         android:textSize="@dimen/calculate_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/units" />
 
@@ -99,36 +95,38 @@
 
     <RadioButton
         android:id="@+id/no_of_units"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="47dp"
         android:checked="false"
         android:fontFamily="sans-serif-light"
         android:text="@string/no_of_days"
         android:textSize="@dimen/no_of_units"
-        app:layout_constraintStart_toEndOf="@+id/readings"
-        app:layout_constraintTop_toBottomOf="@+id/heading2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading1" />
 
     <RadioButton
         android:id="@+id/readings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
         android:checked="true"
         android:fontFamily="sans-serif-light"
         android:text="@string/pick_days"
         android:textSize="@dimen/readings"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heading2" />
+        app:layout_constraintTop_toBottomOf="@+id/heading1" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="50dp"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/menu"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="12dp" />
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/heading1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

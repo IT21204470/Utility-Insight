@@ -6,172 +6,124 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView40"
-        android:layout_width="@dimen/imageView40"
-        android:layout_height="92dp"
-        app:srcCompat="@drawable/rectangle_view"
-        tools:layout_editor_absoluteX="-26dp"
-        tools:layout_editor_absoluteY="551dp" />
-
-    <ImageView
         android:id="@+id/imageView30"
         android:layout_width="@dimen/imageView30"
         android:layout_height="40dp"
-        app:srcCompat="@drawable/menu"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="12dp" />
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/notify_topic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
 
     <TextView
         android:id="@+id/notify_topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
         android:layout_marginTop="12dp"
+        android:layout_marginEnd="14dp"
         android:fontFamily="@font/capriola"
         android:text="@string/notify_topic"
         android:textColor="@color/notify_topic"
         android:textSize="@dimen/topic"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView34"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/mark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="29dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/mark"
         android:textColor="@color/mark"
         android:textSize="@dimen/mark"
-        tools:layout_editor_absoluteX="221dp"
-        tools:layout_editor_absoluteY="73dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notify_topic" />
 
     <TextView
         android:id="@+id/all_notifi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="25dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/all_notify"
         android:textColor="@color/black"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="73dp" />
+        app:layout_constraintEnd_toStartOf="@+id/unread"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30" />
 
     <TextView
         android:id="@+id/unread"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="59dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/unread"
-        android:textColor="@color/unread"
+        android:textColor="#5C5F61"
         android:textSize="@dimen/unread"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="73dp" />
+        app:layout_constraintEnd_toStartOf="@+id/mark"
+        app:layout_constraintTop_toBottomOf="@+id/notify_topic" />
 
     <ImageView
         android:id="@+id/imageView34"
         android:layout_width="@dimen/imageView34"
         android:layout_height="41dp"
-        app:srcCompat="@drawable/chat"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="11dp" />
-
-    <ImageView
-        android:id="@+id/imageView35"
-        android:layout_width="@dimen/imageView35"
-        android:layout_height="42dp"
-        app:srcCompat="@drawable/substract"
-        tools:layout_editor_absoluteX="14dp"
-        tools:layout_editor_absoluteY="78dp" />
-
-    <ImageView
-        android:id="@+id/imageView36"
-        android:layout_width="@dimen/imageView36"
-        android:layout_height="92dp"
-        app:srcCompat="@drawable/rectangle_view"
-        tools:layout_editor_absoluteX="-26dp"
-        tools:layout_editor_absoluteY="154dp" />
-
-    <ImageView
-        android:id="@+id/imageView37"
-        android:layout_width="@dimen/imageView37"
-        android:layout_height="92dp"
-        app:srcCompat="@drawable/rectangle_view"
-        tools:layout_editor_absoluteX="-26dp"
-        tools:layout_editor_absoluteY="254dp" />
-
-    <ImageView
-        android:id="@+id/imageView38"
-        android:layout_width="@dimen/imageView38"
-        android:layout_height="92dp"
-        app:srcCompat="@drawable/rectangle_view"
-        tools:layout_editor_absoluteX="-26dp"
-        tools:layout_editor_absoluteY="352dp" />
-
-    <ImageView
-        android:id="@+id/imageView39"
-        android:layout_width="@dimen/imageView39"
-        android:layout_height="92dp"
-        app:srcCompat="@drawable/rectangle_view"
-        tools:layout_editor_absoluteX="-26dp"
-        tools:layout_editor_absoluteY="451dp" />
-
-    <ImageView
-        android:id="@+id/imageView41"
-        android:layout_width="@dimen/imageView41"
-        android:layout_height="48dp"
-        app:srcCompat="@drawable/dots"
-        tools:layout_editor_absoluteX="352dp"
-        tools:layout_editor_absoluteY="106dp" />
-
-    <TextView
-        android:id="@+id/des_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/capriola"
-        android:text="@string/des_1"
-        android:textSize="@dimen/des_1"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chat" />
 
     <TextView
         android:id="@+id/des_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="35dp"
         android:fontFamily="@font/capriola"
         android:text="@string/des_2"
         android:textSize="@dimen/des_2"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="281dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mark" />
 
     <TextView
         android:id="@+id/des_3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="41dp"
         android:fontFamily="@font/capriola"
         android:text="@string/des_3"
         android:textSize="@dimen/des_3"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="386dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_5" />
 
     <TextView
         android:id="@+id/des_4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="38dp"
         android:fontFamily="@font/capriola"
         android:text="@string/des_4"
         android:textSize="@dimen/des_4"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="475dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_3" />
 
     <TextView
         android:id="@+id/des_5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="43dp"
         android:fontFamily="@font/capriola"
         android:text="@string/des_5"
         android:textSize="@dimen/des_5"
-        tools:layout_editor_absoluteX="11dp"
-        tools:layout_editor_absoluteY="585dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/des_2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

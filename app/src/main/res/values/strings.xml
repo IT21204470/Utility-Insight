@@ -191,7 +191,7 @@
 
     <!--Notifications page-->
     <string name="notify_topic">Notifications</string>
-    <string name="all_notify">All*</string>
+    <string name="all_notify">All</string>
     <string name="unread">Unread</string>
     <string name="mark">Mark all as read</string>
     <string name="des_1">New tips available on the tip menu!</string>

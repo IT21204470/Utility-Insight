@@ -14,19 +14,18 @@
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498"
+        app:layout_constraintVertical_bias="0.58"
         app:srcCompat="@drawable/rectangle_view" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        android:layout_marginStart="26dp"
+        android:layout_marginTop="-70dp"
         android:layout_marginEnd="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/rectangle_red"
-        tools:layout_editor_absoluteY="199dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/rectangle_red" />
 
     <TextView
         android:id="@+id/success_msg"
@@ -40,30 +39,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="269dp" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/previous"
-        android:layout_width="128dp"
-        android:layout_height="46dp"
+        android:layout_width="148dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="-170dp"
         android:background="@drawable/extra_failed"
         android:fontFamily="@font/secular_one"
         android:text="@string/previous"
         android:textColor="@color/white"
         android:textSize="@dimen/back"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="394dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/close"
-        android:layout_width="128dp"
-        android:layout_height="46dp"
+        android:layout_width="148dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="-340dp"
         android:background="@drawable/extra_failed"
         android:fontFamily="@font/secular_one"
         android:text="@string/close"
         android:textColor="@color/white"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="395dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/unsuccessful_msg"
@@ -81,9 +84,10 @@
         android:id="@+id/imageView3"
         android:layout_width="@dimen/imageView3"
         android:layout_height="100dp"
+        android:layout_marginTop="169dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/delete"
-        tools:layout_editor_absoluteY="169dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/delete" />
 </androidx.constraintlayout.widget.ConstraintLayout>
