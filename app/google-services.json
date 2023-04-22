@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "45462092089",
+    "project_id": "utility-insight-ca3e1",
+    "storage_bucket": "utility-insight-ca3e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45462092089:android:716e933a754b998c0050e8",
+        "android_client_info": {
+          "package_name": "com.example.utilityinsight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45462092089-2778fu2jrolv6qihhmeguc0asp0ufhpj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOZFmeSIvp4mgSgJIs93yInrdfNC442Bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "45462092089-2778fu2jrolv6qihhmeguc0asp0ufhpj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
