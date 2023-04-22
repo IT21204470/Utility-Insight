@@ -82,4 +82,75 @@
     <color name="rate">#FFFFFF</color>
     <color name="logout">#FFFFFF</color>
 
+
+    <!--Amadee-->
+    <!--water home-->
+    <color name="waterheading">#3044B1</color>
+    <color name="description">#474545</color>
+    <color name="w_txt_tips">F8F3F3</color>
+    <color name="notifi">#F8F2F2</color>
+    <color name="txt_payment">@color/white</color>
+    <color name="txt_calc">@color/white</color>
+
+
+    <!--Water calculator-->
+    <color name="txt_Cal">#3044B1</color>
+    <color name="pick_day">#E2DFDF</color>
+    <color name="last_read">#757171</color>
+    <color name="current_read">#757171</color>
+    <color name="days">#757171</color>
+    <color name="txt_read">#FFFFFF</color>
+
+
+    <!--Water entries-->
+    <color name="w_entry_topic">@color/purple_700</color>
+    <color name="col1">#3F51B5</color>
+    <color name="col2">#3F51B5</color>
+    <color name="col3">#3F51B5</color>
+    <color name="col4">#3F51B5</color>
+    <color name="row1EntryDate">#000000</color>
+    <color name="row1AccountNumber">#0C0909</color>
+    <color name="row1Units">#0C0909</color>
+    <color name="row1TotalAmount">#0C0909</color>
+    <color name="row2EntryDate">#0C0909</color>
+    <color name="row2AccountNumber">#0C0909</color>
+    <color name="row2Units">#0C0909</color>
+    <color name="row2TotalAmount">#0C0909</color>
+    <color name="row3EntryDate">#0C0909</color>
+    <color name="row3AccountNumber">#0C0909</color>
+    <color name="row3Units">#0C0909</color>
+    <color name="row3TotalAmount">#0C0909</color>
+    <color name="row4EntryDate">#0C0909</color>
+    <color name="row4AccountNumber">#0C0909</color>
+    <color name="row4Units">#0C0909</color>
+    <color name="row4TotalAmount">#0C0909</color>
+    <color name="row5EntryDate">#0C0909</color>
+    <color name="row5AccountNumber">#0C0909</color>
+    <color name="row5Units">#0C0909</color>
+    <color name="row5TotalAmount">#0C0909</color>
+    <color name="row6EntryDate">#0C0909</color>
+    <color name="row6AccountNumber">#0C0909</color>
+    <color name="row6Units">#0C0909</color>
+    <color name="row6TotalAmount">#0C0909</color>
+
+    <!--Water meter reading-->
+    <color name="txt_Meter">#3044B1</color>
+    <color name="previous_meter_read">#757171</color>
+    <color name="current_read_date">#757171</color>
+    <color name="number_of_units">#757171</color>
+    <color name="txt_calculate1">#FFFFFF</color>
+
+    <!--Water tips-->
+    <color name="txt_title">#FF3700B3</color>
+    <color name="txt_tip1">#000000</color>
+    <color name="txt_tip1des">#757373</color>
+    <color name="txt_tip3">#000000</color>
+    <color name="txt_tip3dec3">#757373</color>
+    <color name="txt_tip4">#000000</color>
+    <color name="txt_tip4dec4">#757373</color>
+    <color name="txt_tip">#FFFFFF</color>
+    <color name="limit">FF3044B1</color>
+    <color name="heading2">#3044B1</color>
+
+
 </resources>

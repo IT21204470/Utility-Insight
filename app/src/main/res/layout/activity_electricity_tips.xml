@@ -28,7 +28,7 @@
         app:srcCompat="@drawable/rectangle_view" />
 
     <TextView
-        android:id="@+id/txt_tip4"
+        android:id="@+id/w_txt_tip4"
         android:layout_width="356dp"
         android:layout_height="78dp"
         android:layout_marginTop="-55dp"
@@ -61,6 +61,48 @@
         android:textSize="@dimen/tip4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/palette4" />
+
+    <ImageView
+        android:id="@+id/palette3"
+        android:layout_width="385dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="#16FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rectangle_view"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/w_txt_tip3"
+        android:layout_width="356dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/txt_tip3"
+        android:textColor="#757373"
+        android:textSize="@dimen/txt_tip3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="405dp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="@dimen/imageView13"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/dimmer"
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+    <TextView
+        android:id="@+id/tip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/tip3"
+        android:textColor="#000000"
+        android:textSize="@dimen/tip3"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="355dp" />
+
 
     <ImageView
         android:id="@+id/palette2"
@@ -148,7 +190,7 @@
         app:layout_constraintTop_toBottomOf="@+id/palette" />
 
     <TextView
-        android:id="@+id/txt_tip1"
+        android:id="@+id/w_txt_tip1"
         android:layout_width="356dp"
         android:layout_height="78dp"
         android:layout_marginTop="-66dp"

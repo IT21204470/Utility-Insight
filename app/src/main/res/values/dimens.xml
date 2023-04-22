@@ -166,4 +166,95 @@
     <dimen name="des_5">16sp</dimen>
     <dimen name="imageView40">462dp</dimen>
 
+
+    <!--Amadee-->
+    <!--water calculator/water meter reading-->
+    <dimen name="w_txt_Meter">28sp</dimen>
+    <dimen name="txt_Meter">28sp</dimen>
+    <dimen name="read">20sp</dimen>
+    <dimen name="w_pick_day">20dp</dimen>
+    <dimen name="w_no_of_units">20dp</dimen>
+    <dimen name="last_read">18sp</dimen>
+    <dimen name="current_read">18dp</dimen>
+    <dimen name="number_of_days">18dp</dimen>
+    <dimen name="entries_btn">253dp</dimen>
+    <dimen name="txt_calculate">20sp</dimen>
+    <dimen name="txt_calculate1">24sp</dimen>
+    <dimen name="cal_arrow">41dp</dimen>
+
+
+    <!--water entries-->
+    <dimen name="w_entry_topic">28dp</dimen>
+    <dimen name="entry_menu">46dp</dimen>
+    <dimen name="col1">14sp</dimen>
+    <dimen name="col2">14sp</dimen>
+    <dimen name="col3">14sp</dimen>
+    <dimen name="col4">14sp</dimen>
+    <dimen name="row1EntryDate">12sp</dimen>
+    <dimen name="row1AccountNumber">12sp</dimen>
+    <dimen name="row1Units">12sp</dimen>
+    <dimen name="row1TotalAmount">12sp</dimen>
+    <dimen name="row2EntryDate">12sp</dimen>
+    <dimen name="row2AccountNumber">12sp</dimen>
+    <dimen name="row2Units">12sp</dimen>
+    <dimen name="row2TotalAmount">12sp</dimen>
+    <dimen name="row3EntryDate">12sp</dimen>
+    <dimen name="row3AccountNumber">12sp</dimen>
+    <dimen name="row3Units">12sp</dimen>
+    <dimen name="row3TotalAmount">12sp</dimen>
+    <dimen name="row4EntryDate">12sp</dimen>
+    <dimen name="row4AccountNumber">12sp</dimen>
+    <dimen name="row4Units">12sp</dimen>
+    <dimen name="row4TotalAmount">12sp</dimen>
+    <dimen name="row5EntryDate">12sp</dimen>
+    <dimen name="row5AccountNumber">12sp</dimen>
+    <dimen name="row5Units">12sp</dimen>
+    <dimen name="row5TotalAmount">12sp</dimen>
+    <dimen name="row6EntryDate">12sp</dimen>
+    <dimen name="row6AccountNumber">12sp</dimen>
+    <dimen name="row6Units">12sp</dimen>
+    <dimen name="row6TotalAmount">12sp</dimen>
+    <dimen name="check_btn">18sp</dimen>
+    <dimen name="return_btn">18sp</dimen>
+
+
+    <!--water home-->
+    <dimen name="home_menu">46dp</dimen>
+    <dimen name="waterheading">34sp</dimen>
+    <dimen name="description">16sp</dimen>
+    <dimen name="tps">20sp</dimen>
+    <dimen name="notifi">20sp</dimen>
+    <dimen name="txt_payment">18sp</dimen>
+    <dimen name="calc">18sp</dimen>
+    <dimen name="txt_payment_btn">185dp</dimen>
+    <dimen name="droplet">87dp</dimen>
+    <dimen name="tip_img">74dp</dimen>
+    <dimen name="new_notify">68dp</dimen>
+
+
+    <!--water tips-->
+    <dimen name="tip_menu">48dp</dimen>
+    <dimen name="txt_title">28sp</dimen>
+
+    <dimen name="w_txt_tip1">20dp</dimen>
+    <dimen name="txt_tip1des">15sp</dimen>
+    <dimen name="tip_img1">49dp</dimen>
+    <dimen name="palette">388dp</dimen>
+
+    <dimen name="tip_img2">43dp</dimen>
+    <dimen name="w_txt_tip3">20dp</dimen>
+    <dimen name="txt_tip3dec3">15sp</dimen>
+    <dimen name="palette3">385dp</dimen>
+
+    <dimen name="tpi_img3">46dp</dimen>
+    <dimen name="w_txt_tip4">20dp</dimen>
+    <dimen name="txt_tip4dec4">15sp</dimen>
+    <dimen name="txt_tip">20sp</dimen>
+
+    <dimen name="tip_btn">150dp</dimen>
+
+
+
+
+
 </resources>

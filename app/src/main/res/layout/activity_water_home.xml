@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_cno"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/water_background">
+
+    <ImageView
+        android:id="@+id/droplet"
+        android:layout_width="@dimen/droplet"
+        android:layout_height="73dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/description"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/water_tap" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="242dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/capriola"
+        android:text="Last month's usage: 50units"
+        android:textColor="@color/description"
+        android:textSize="@dimen/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/capriola"
+        android:text="Show tips"
+        android:textColor="#F8F3F3"
+        android:textSize="@dimen/tps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip_img" />
+
+    <TextView
+        android:id="@+id/notifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="260dp"
+        android:fontFamily="@font/capriola"
+        android:text="Notifications"
+        android:textColor="@color/notifi"
+        android:textSize="@dimen/notifi"
+        app:layout_constraintBottom_toTopOf="@+id/payment_btn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_tips"
+        app:layout_constraintTop_toBottomOf="@+id/new_notify" />
+
+    <ImageView
+        android:id="@+id/new_notify"
+        android:layout_width="@dimen/new_notify"
+        android:layout_height="102dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/tip_img"
+        app:layout_constraintTop_toBottomOf="@+id/droplet"
+        app:srcCompat="@drawable/water_new_notify" />
+
+    <ImageView
+        android:id="@+id/payment_btn"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="107dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/limit"
+        app:srcCompat="@drawable/water_gradient_button" />
+
+    <TextView
+        android:id="@+id/txt_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-158dp"
+        android:layout_marginTop="-40dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="PAY YOUR BILLS"
+        android:textColor="@color/white"
+        android:textSize="@dimen/txt_payment"
+        app:layout_constraintStart_toEndOf="@+id/payment_btn"
+        app:layout_constraintTop_toBottomOf="@+id/payment_btn" />
+
+    <ImageView
+        android:id="@+id/payment_btn3"
+        android:layout_width="188dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/payment_btn"
+        app:srcCompat="@drawable/water_gradient_button" />
+
+    <TextView
+        android:id="@+id/txt_calc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-180dp"
+        android:layout_marginTop="-42dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="CALCULATE USAGE"
+        android:textColor="@color/txt_calc"
+        android:textSize="@dimen/calc"
+        app:layout_constraintStart_toEndOf="@+id/payment_btn3"
+        app:layout_constraintTop_toBottomOf="@+id/payment_btn3" />
+
+    <ImageView
+        android:id="@+id/tip_img"
+        android:layout_width="@dimen/tip_img"
+        android:layout_height="72dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:srcCompat="@drawable/water_advice" />
+
+    <TextView
+        android:id="@+id/heading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/waterheading"
+        android:textColor="@color/heading2"
+        android:textSize="@dimen/heading1"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/home_menu"
+        android:layout_width="46dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="129dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/limit"
+        android:textColor="#FF3044B1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tips" />
+
+    <Button
+        android:id="@+id/set"
+        android:layout_width="87dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginEnd="16dp"
+        android:background="#5620D3"
+        android:paddingBottom="2dp"
+        android:text="@string/set"
+        android:textColor="@color/bill_sidebar"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/limit"
+        app:layout_constraintTop_toBottomOf="@+id/notifi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

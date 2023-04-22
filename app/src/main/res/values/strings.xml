@@ -200,4 +200,91 @@
     <string name="des_4">Last water bill payment of LKR 1580.00 has been authorized.</string>
     <string name="des_5">Your profile details have been updated.</string>
 
+
+    <!--Amadee-->
+
+    <!--water home-->
+    <string name="waterheading">Water Tracker</string>
+    <string name="description">Last month\'s usage: 50 units</string>
+    <string name="txt_tps">Show Tips</string>
+    <string name="txt_notifi">Notifications</string>
+    <string name="limit">Set your monthly limit :</string>
+    <string name="set">Set</string>
+    <string name="txt_payment">PAY YOUR BILLS</string>
+    <string name="txt_calc">CALCULATE USAGE</string>
+
+
+    <!-- water calculator-->
+    <string name="txt_Cal">Calculate Usage</string>
+    <string name="pick_day">Pick Days</string>
+    <string name="w_no_of_days">No Of Days</string>
+    <string name="last_read">Last Reading Date</string>
+    <string name="current_read">Current reading date</string>
+    <string name="w_days">Enter Number of days</string>
+    <string name="txt_read">ENTER METER READINGS</string>
+
+
+    <!--water meter reading-->
+    <string name="txt_Meter">Enter Meter Reading</string>
+    <string name="read">Readings</string>
+    <string name="w_no_of_units">No of units</string>
+    <string name="previous_meter_read">Previous meter reading</string>
+    <string name="current_read_date">Current meter reading</string>
+    <string name="number_of_units">Enter number of units</string>
+    <string name="txt_calculate1">CALCULATE</string>
+
+    <!--water entries-->
+    <string name="w_entry_topic">Water entries history</string>
+    <string name="w_col1">Entry Date</string>
+    <string name="w_col2">Account Number</string>
+    <string name="w_col3">Units</string>
+    <string name="w_col4">Total Amount</string>
+
+    <string name="w_row1EntryDate">2023/02/10</string>
+    <string name="w_row1Units" >85</string>
+    <string name="w_row1TotalAmount">LKR 4800.00</string>
+    <string name="w_row1AccountNumber">2/07/01/172</string>
+
+    <string name="w_row2EntryDate">2023/02/14</string>
+    <string name="w_row2AccountNumber">3/05/17/263</string>
+    <string name="w_row2Units">70</string>
+    <string name="w_row2TotalAmount">LKR 2500.00</string>
+
+    <string name="w_row3EntryDate">2022/11/04</string>
+    <string name="w_row3AccountNumber">2/07/12/326</string>
+    <string name="w_row3Units">45</string>
+    <string name="w_row3TotalAmount">LKR 530.50</string>
+
+    <string name="w_row4EntryDate">2023/01/08</string>
+    <string name="w_row4AccountNumber">5/07/16/569</string>
+    <string name="w_row4Units">50</string>
+    <string name="w_row4TotalAmount">LKR 600.00</string>
+
+    <string name="w_row5EntryDate">2022/05/08</string>
+    <string name="w_row5AccountNumber">8/07/18/639</string>
+    <string name="w_row5Units">105</string>
+    <string name="w_row5TotalAmount">LKR 5263.50</string>
+
+    <string name="w_row6EntryDate">2023/03/08</string>
+    <string name="w_row6AccountNumber">8/07/19/654</string>
+    <string name="w_row6Units">68</string>
+    <string name="w_row6TotalAmount">LKR 2360.00</string>
+
+    <string name="check_btn">CHECK AGAIN</string>
+    <string name="return_btn">RETURN TO HOME</string>
+
+
+    <!--water tips-->
+    <string name="txt_title">Tips for you</string>
+    <string name="w_txt_tip1">Get Water Audit</string>
+    <string name="txt_tip1des">Many utility companies offer a free home energy audit to customers,and it is well worth taking advantage of.If there is no such program in your area, conduct your own energy audit instead.</string>
+    <string name="w_txt_tip3">Wash clothes with less water</string>
+    <string name="txt_tip3dec3">Some washing machines are designed specifically to use less water. They use special techniques to clean clothes with less water.</string>
+    <string name="w_txt_tip4">Fix leaky ductwork</string>
+    <string name="txt_tip4dec4">Improve the efficiency of heating and cooling systems by repairing leaky heating, ventilation and air conditioning ducts.</string>
+    <string name="txt_tip">MORE TIPS</string>
+
+
+
+
 </resources>

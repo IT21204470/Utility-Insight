@@ -12,6 +12,24 @@
         android:theme="@style/Theme.UtilityInsight"
         tools:targetApi="31">
         <activity
+            android:name=".mainPaymentMethod"
+            android:exported="false" />
+        <activity
+            android:name=".waterShowtips"
+            android:exported="false" />
+        <activity
+            android:name=".waterMeterReading"
+            android:exported="false" />
+        <activity
+            android:name=".waterHome"
+            android:exported="false" />
+        <activity
+            android:name=".waterEntries"
+            android:exported="false" />
+        <activity
+            android:name=".waterCalculatorPage"
+            android:exported="false" />
+        <activity
             android:name=".paymentMethod"
             android:exported="false" />
         <activity
