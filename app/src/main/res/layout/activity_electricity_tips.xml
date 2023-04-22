@@ -16,217 +16,126 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
 
-    <ImageView
-        android:id="@+id/palette4"
-        android:layout_width="385dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="-10dp"
-        android:layout_marginEnd="12dp"
-        android:backgroundTint="#16FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tip2"
-        app:srcCompat="@drawable/rectangle_view" />
 
     <TextView
         android:id="@+id/w_txt_tip4"
         android:layout_width="356dp"
         android:layout_height="78dp"
-        android:layout_marginTop="-55dp"
+        android:layout_marginTop="18dp"
         android:layout_marginEnd="16dp"
         android:text="@string/txt_tip4"
         android:textColor="#757373"
         android:textSize="@dimen/txt_tip4"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/palette4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
 
     <ImageView
         android:id="@+id/imageView8"
         android:layout_width="54dp"
         android:layout_height="51dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="7dp"
         app:layout_constraintEnd_toStartOf="@+id/tip4"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tip2"
+        app:layout_constraintTop_toBottomOf="@+id/w_txt_tip1"
         app:srcCompat="@drawable/solar" />
 
     <TextView
         android:id="@+id/tip4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-100dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="7dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/tip4"
         android:textColor="#000000"
         android:textSize="@dimen/tip4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/palette4" />
-
-    <ImageView
-        android:id="@+id/palette3"
-        android:layout_width="385dp"
-        android:layout_height="125dp"
-        android:layout_marginEnd="12dp"
-        android:backgroundTint="#16FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/rectangle_view"
-        tools:layout_editor_absoluteY="333dp" />
-
-    <TextView
-        android:id="@+id/w_txt_tip3"
-        android:layout_width="356dp"
-        android:layout_height="78dp"
-        android:layout_marginEnd="20dp"
-        android:text="@string/txt_tip3"
-        android:textColor="#757373"
-        android:textSize="@dimen/txt_tip3"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="405dp" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="@dimen/imageView13"
-        android:layout_height="56dp"
-        app:srcCompat="@drawable/dimmer"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="347dp" />
-
-    <TextView
-        android:id="@+id/tip3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/tip3"
-        android:textColor="#000000"
-        android:textSize="@dimen/tip3"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="355dp" />
-
-
-    <ImageView
-        android:id="@+id/palette2"
-        android:layout_width="385dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="-356dp"
-        android:backgroundTint="#16FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/txt_tip2"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tip1"
-        app:srcCompat="@drawable/rectangle_view" />
+        app:layout_constraintTop_toBottomOf="@+id/w_txt_tip1" />
 
     <ImageView
         android:id="@+id/imageView12"
-        android:layout_width="@dimen/imageView12"
-        android:layout_height="70dp"
+        android:layout_width="48dp"
+        android:layout_height="60dp"
         android:layout_marginTop="3dp"
-        android:layout_marginEnd="-86dp"
-        app:layout_constraintEnd_toStartOf="@+id/palette2"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tip1"
+        android:layout_marginEnd="7dp"
+        app:layout_constraintEnd_toStartOf="@+id/tip2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tip2"
         app:srcCompat="@drawable/bulb" />
 
     <TextView
         android:id="@+id/txt_tip2"
         android:layout_width="356dp"
         android:layout_height="78dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/txt_tip2"
         android:textColor="#757373"
         android:textSize="@dimen/txt_tip2"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
     <TextView
         android:id="@+id/tip2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-100dp"
-        android:layout_marginEnd="-240dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="169dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/tip2"
         android:textColor="#000000"
         android:textSize="@dimen/tip2"
-        app:layout_constraintEnd_toStartOf="@+id/palette2"
-        app:layout_constraintTop_toBottomOf="@+id/palette2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tip2" />
 
     <TextView
         android:id="@+id/tips_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="170dp"
         android:fontFamily="@font/capriola"
         android:text="@string/tips_title"
         android:textColor="@color/tips_title"
         android:textSize="@dimen/tips_title"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/palette"
-        android:layout_width="385dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="12dp"
-        android:backgroundTint="#16FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tips_title"
-        app:srcCompat="@drawable/rectangle_view" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tip1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-105dp"
-        android:layout_marginEnd="65dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="72dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/tip1"
         android:textColor="@color/tip1"
         android:textSize="@dimen/tip1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/palette" />
+        app:layout_constraintTop_toBottomOf="@+id/tips_title" />
 
     <TextView
         android:id="@+id/w_txt_tip1"
         android:layout_width="356dp"
         android:layout_height="78dp"
-        android:layout_marginTop="-66dp"
-        android:layout_marginEnd="12dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/txt_tip1"
         android:textAlignment="viewStart"
         android:textColor="#757373"
         android:textSize="@dimen/txt_tip1"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/palette" />
-
-    <Button
-        android:id="@+id/more_btn"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/gradient_button"
-        android:drawableRight="@drawable/baseline_arrow_downward_24"
-        android:drawablePadding="-10dp"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/more_btn"
-        android:textColor="@color/white"
-        android:textSize="@dimen/more_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tip4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="@dimen/imageView5"
         android:layout_height="55dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="-90dp"
-        app:layout_constraintEnd_toStartOf="@+id/palette"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/tip1"
         app:layout_constraintTop_toBottomOf="@+id/tips_title"
         app:srcCompat="@drawable/disconnect" />
 
