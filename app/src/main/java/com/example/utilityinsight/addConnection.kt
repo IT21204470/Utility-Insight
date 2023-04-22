@@ -8,6 +8,6 @@ class addConnection : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_connection)
 
-        //Amad
+        //Amadee
     }
 }
