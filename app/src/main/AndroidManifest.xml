@@ -12,6 +12,9 @@
         android:theme="@style/Theme.UtilityInsight"
         tools:targetApi="31">
         <activity
+            android:name=".waterCalculatorPage"
+            android:exported="false" />
+        <activity
             android:name=".paymentMethod"
             android:exported="false" />
         <activity
