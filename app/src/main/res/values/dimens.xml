@@ -169,9 +169,11 @@
 
     <!--Amadee-->
     <!--water calculator/water meter reading-->
+    <dimen name="w_txt_Meter">28sp</dimen>
     <dimen name="txt_Meter">28sp</dimen>
     <dimen name="read">20sp</dimen>
-    <dimen name="no_of_units">20sp</dimen>
+    <dimen name="w_pick_day">20dp</dimen>
+    <dimen name="w_no_of_units">20dp</dimen>
     <dimen name="last_read">18sp</dimen>
     <dimen name="current_read">18dp</dimen>
     <dimen name="number_of_days">18dp</dimen>
@@ -182,7 +184,7 @@
 
 
     <!--water entries-->
-    <dimen name="entry_topic">28sp</dimen>
+    <dimen name="w_entry_topic">28dp</dimen>
     <dimen name="entry_menu">46dp</dimen>
     <dimen name="col1">14sp</dimen>
     <dimen name="col2">14sp</dimen>
@@ -218,13 +220,13 @@
 
     <!--water home-->
     <dimen name="home_menu">46dp</dimen>
-    <dimen name="heading1">34sp</dimen>
+    <dimen name="waterheading">34sp</dimen>
     <dimen name="description">16sp</dimen>
     <dimen name="tps">20sp</dimen>
     <dimen name="notifi">20sp</dimen>
     <dimen name="txt_payment">18sp</dimen>
     <dimen name="calc">18sp</dimen>
-    <dimen name="payment_btn">185dp</dimen>
+    <dimen name="txt_payment_btn">185dp</dimen>
     <dimen name="droplet">87dp</dimen>
     <dimen name="tip_img">74dp</dimen>
     <dimen name="new_notify">68dp</dimen>
@@ -233,49 +235,26 @@
     <!--water tips-->
     <dimen name="tip_menu">48dp</dimen>
     <dimen name="txt_title">28sp</dimen>
-    <dimen name="txt_tip1">20sp</dimen>
+
+    <dimen name="w_txt_tip1">20dp</dimen>
     <dimen name="txt_tip1des">15sp</dimen>
     <dimen name="tip_img1">49dp</dimen>
     <dimen name="palette">388dp</dimen>
+
     <dimen name="tip_img2">43dp</dimen>
-    <dimen name="txt_tip3">20sp</dimen>
+    <dimen name="w_txt_tip3">20dp</dimen>
     <dimen name="txt_tip3dec3">15sp</dimen>
     <dimen name="palette3">385dp</dimen>
+
     <dimen name="tpi_img3">46dp</dimen>
-    <dimen name="txt_tip4">20sp</dimen>
+    <dimen name="w_txt_tip4">20dp</dimen>
     <dimen name="txt_tip4dec4">15sp</dimen>
     <dimen name="txt_tip">20sp</dimen>
+
     <dimen name="tip_btn">150dp</dimen>
 
-    <!--Payment methods page-->
-    <dimen name="card_no">16sp</dimen>
-    <dimen name="number_fill">16sp</dimen>
-    <dimen name="card_date">16sp</dimen>
-    <dimen name="date_fill">16sp</dimen>
-    <dimen name="cvv">16sp</dimen>
-    <dimen name="cvv_fill">16sp</dimen>
-    <dimen name="card_name">16sp</dimen>
-    <dimen name="name_fill">16sp</dimen>
-    <dimen name="save">18dp</dimen>
 
-    <!--Payment details page-->
-    <dimen name="details">28dp</dimen>
-    <dimen name="imageView10">326dp</dimen>
-    <dimen name="select_btn">24sp</dimen>
-    <dimen name="imageView16">78dp</dimen>
-    <dimen name="visa">20sp</dimen>
-    <dimen name="imageView14">78dp</dimen>
-    <dimen name="express">20sp</dimen>
-    <dimen name="imageView22">88dp</dimen>
-    <dimen name="paypal">20sp</dimen>
-    <dimen name="imageView15">78dp</dimen>
-    <dimen name="google">20sp</dimen>
-    <dimen name="to_checkout">20sp</dimen>
-    <dimen name="price">24sp</dimen>
-    <dimen name="details1">28dp</dimen>
-    <dimen name="Select_btn1">21dp</dimen>
-    <dimen name="visa1">18dp</dimen>
-    <dimen name="visa2">18dp</dimen>
-    <dimen name="visa3">20dp</dimen>
+
+
 
 </resources>

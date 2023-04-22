@@ -84,36 +84,10 @@
 
 
     <!--Amadee-->
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-
-    <!--Added colors for background-->
-    <color name="Utility_bc3">#DAA404</color>
-    <color name="Utility_bc4">#34B1DC</color>
-    <color name="txtBackground">#FFFFFF</color>
-    <color name="labelColor">#000000</color>
-    <color name="btnSignUp">#13568B</color>
-    <color name="btnBack">#00FFFFFF</color>
-    <color name="c">#6000BCD4</color>
-    <color name="btnSignOut">#D52A1D</color>
-    <color name="bc_color">#FFFFFF</color>
-    <color name="btnCategories">#916E07</color>
-    <color name="user_background">#B4AD89</color>
-    <color name="btn_background">#F4B00E</color>
-    <color name="home_bc">#EBC280</color>
-    <color name="login_bc">#fad77f</color>
-
-
-
     <!--water home-->
-    <color name="heading1">#3044B1</color>
+    <color name="waterheading">#3044B1</color>
     <color name="description">#474545</color>
-    <color name="txt_tips">F8F3F3</color>
+    <color name="w_txt_tips">F8F3F3</color>
     <color name="notifi">#F8F2F2</color>
     <color name="txt_payment">@color/white</color>
     <color name="txt_calc">@color/white</color>
@@ -129,7 +103,7 @@
 
 
     <!--Water entries-->
-    <color name="entry_topic">@color/purple_700</color>
+    <color name="w_entry_topic">@color/purple_700</color>
     <color name="col1">#3F51B5</color>
     <color name="col2">#3F51B5</color>
     <color name="col3">#3F51B5</color>
@@ -176,15 +150,7 @@
     <color name="txt_tip4dec4">#757373</color>
     <color name="txt_tip">#FFFFFF</color>
     <color name="limit">FF3044B1</color>
-
-    <!--Payment methods page/payment details page-->
-    <color name="pay_topic">#00668B</color>
-    <color name="select_btn">#00668B</color>
-    <color name="to_checkout">#00668B</color>
-    <color name="price">#FFFFFF</color>
-    <color name="details1">#00668B</color>
-    <color name="Select_btn1">#00668B</color>
-    <color name="visa1">#757171</color>
+    <color name="heading2">#3044B1</color>
 
 
 </resources>
