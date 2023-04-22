@@ -44,27 +44,23 @@
 
         app:layout_constraintBottom_toTopOf="@+id/last_read"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
         app:layout_constraintStart_toEndOf="@+id/read"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <RadioButton
         android:id="@+id/read"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="49dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="223dp"
-        android:layout_marginBottom="2dp"
         android:checked="true"
         android:fontFamily="sans-serif-light"
         android:text="@string/pick_day"
         android:textSize="@dimen/pick_day"
-        app:layout_constraintBottom_toTopOf="@+id/txt_Meter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cal_menu"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="68dp" />
 
     <EditText
         android:id="@+id/current_read"
@@ -90,7 +86,7 @@
         android:layout_width="270dp"
         android:layout_height="55dp"
         android:layout_marginStart="24dp"
-        android:layout_marginBottom="154dp"
+        android:layout_marginBottom="76dp"
         android:background="@drawable/edittext_background"
         android:backgroundTint="#D8D3D3"
         android:drawablePadding="5dp"
