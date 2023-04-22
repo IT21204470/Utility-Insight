@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--tips_page-->
+    <dimen name="tips_title">30sp</dimen>
+    <dimen name="tip1">18dp</dimen>
+    <dimen name="txt_tip1">12sp</dimen>
+    <dimen name="tip2">18dp</dimen>
+    <dimen name="txt_tip2">12sp</dimen>
+    <dimen name="tip3">18dp</dimen>
+    <dimen name="txt_tip3">12sp</dimen>
+    <dimen name="tip4">18dp</dimen>
+    <dimen name="txt_tip4">12sp</dimen>
+    <dimen name="more_btn">14sp</dimen>
+    <dimen name="imageView25">50dp</dimen>
+    <dimen name="imageView5">67dp</dimen>
+    <dimen name="imageView12">56dp</dimen>
+    <dimen name="imageView13">51dp</dimen>
+
+
+    <!--add_connection-->
+    <dimen name="connection_txt">26sp</dimen>
+    <dimen name="string">20sp</dimen>
+    <dimen name="acc_name">18sp</dimen>
+    <dimen name="acc_no">18sp</dimen>
+    <dimen name="premisesID">18sp</dimen>
+    <dimen name="save_btn">16sp</dimen>
+    <dimen name="decline_btn">16sp</dimen>
+
+
+    <!--Calculate-->
+    <dimen name="heading1">28dp</dimen>
+    <dimen name="readings">20sp</dimen>
+    <dimen name="no_of_units">20sp</dimen>
+    <dimen name="previous_reading">18dp</dimen>
+    <dimen name="current_reading">18dp</dimen>
+    <dimen name="units">18dp</dimen>
+    <dimen name="calculate_btn">20sp</dimen>
+
+
+    <!--checkout_page-->
+    <dimen name="details">28dp</dimen>
+    <dimen name="imageView10">326dp</dimen>
+    <dimen name="select_btn">24sp</dimen>
+    <dimen name="imageView16">78dp</dimen>
+    <dimen name="visa">20sp</dimen>
+    <dimen name="imageView14">78dp</dimen>
+    <dimen name="express">20sp</dimen>
+    <dimen name="imageView22">88dp</dimen>
+    <dimen name="paypal">20sp</dimen>
+    <dimen name="imageView15">78dp</dimen>
+    <dimen name="google">20sp</dimen>
+    <dimen name="to_checkout">20sp</dimen>
+    <dimen name="price">24sp</dimen>
+
+
+    <!--electricity home-->
+    <dimen name="topic">34sp</dimen>
+    <dimen name="content">16sp</dimen>
+    <dimen name="txt_tips">20sp</dimen>
+    <dimen name="txt_notify">20sp</dimen>
+    <dimen name="img_notify">80dp</dimen>
+    <dimen name="img_tips">80dp</dimen>
+    <dimen name="payment_btn">16sp</dimen>
+    <dimen name="set_limit">20sp</dimen>
+
+
+    <!--entries page-->
+    <dimen name="entry_topic">30dp</dimen>
+    <dimen name="entry_table">158dp</dimen>
+    <dimen name="navigate">20sp</dimen>
+    <dimen name="direct">20sp</dimen>
+
+
+    <!--failed page-->
+    <dimen name="imageView3">100dp</dimen>
+    <dimen name="imageView">360dp</dimen>
+    <dimen name="failed_msg">48sp</dimen>
+    <dimen name="unsuccessful_msg">14sp</dimen>
+    <dimen name="back">14sp</dimen>
+    <dimen name="close">14sp</dimen>
+
+
+    <!--payment page-->
+    <dimen name="txt_payments">34sp</dimen>
+    <dimen name="txt_account">20sp</dimen>
+    <dimen name="spinner">350dp</dimen>
+    <dimen name="no_account">16sp</dimen>
+    <dimen name="add_account">16sp</dimen>
+    <dimen name="txt_amount">20sp</dimen>
+    <dimen name="amount">16sp</dimen>
+    <dimen name="txt_email">20sp</dimen>
+    <dimen name="email">16sp</dimen>
+    <dimen name="proceed">20sp</dimen>
+
+
+    <!--paynow page-->
+    <dimen name="card_no">16sp</dimen>
+    <dimen name="number_fill">16sp</dimen>
+    <dimen name="card_date">16sp</dimen>
+    <dimen name="date_fill">16sp</dimen>
+    <dimen name="cvv">16sp</dimen>
+    <dimen name="cvv_fill">16sp</dimen>
+    <dimen name="card_name">16sp</dimen>
+    <dimen name="name_fill">16sp</dimen>
+    <dimen name="save">18dp</dimen>
+
+
+    <!--sidebar-->
+    <dimen name="imageView11">76dp</dimen>
+    <dimen name="greeting">24sp</dimen>
+    <dimen name="dark_mode">20sp</dimen>
+    <dimen name="profile_txt">20sp</dimen>
+    <dimen name="notify_sidebar">20sp</dimen>
+    <dimen name="bill_sidebar">20sp</dimen>
+    <dimen name="electricity_sidebar">20sp</dimen>
+    <dimen name="water_sidebar">20sp</dimen>
+    <dimen name="gas_sidebar">20sp</dimen>
+    <dimen name="rate">20sp</dimen>
+    <dimen name="logout">20sp</dimen>
+
+
+    <!--success page-->
+    <dimen name="imageView7">85dp</dimen>
+    <dimen name="imageView2">360dp</dimen>
+    <dimen name="success_msg">48sp</dimen>
+    <dimen name="previous">14sp</dimen>
+    <dimen name="done">14sp</dimen>
+
+
+    <!--view_page-->
+    <dimen name="report">34sp</dimen>
+    <dimen name="imageView9">358dp</dimen>
+    <dimen name="imageView26">50dp</dimen>
+    <dimen name="tariff">14sp</dimen>
+    <dimen name="tariff_field">14sp</dimen>
+    <dimen name="period">14sp</dimen>
+    <dimen name="period_field">14sp</dimen>
+    <dimen name="dueamount">14sp</dimen>
+    <dimen name="dueamount_field">14sp</dimen>
+    <dimen name="fixed_charge">14sp</dimen>
+    <dimen name="charge_field">14sp</dimen>
+    <dimen name="total_charge">14sp</dimen>
+    <dimen name="charge_field1">20sp</dimen>
+    <dimen name="edit">152dp</dimen>
+    <dimen name="add">152dp</dimen>
+    <dimen name="question">16sp</dimen>
+    <dimen name="redirect">18dp</dimen>
+
+
+    <!--notification page-->
+    <dimen name="imageView30">50dp</dimen>
+    <dimen name="imageView35">56dp</dimen>
+    <dimen name="unread">20sp</dimen>
+    <dimen name="mark">20sp</dimen>
+    <dimen name="imageView34">49dp</dimen>
+    <dimen name="imageView41">43dp</dimen>
+    <dimen name="imageView36">462dp</dimen>
+    <dimen name="des_1">16sp</dimen>
+    <dimen name="imageView37">462dp</dimen>
+    <dimen name="imageView38">462sp</dimen>
+    <dimen name="des_2">16sp</dimen>
+    <dimen name="des_3">16sp</dimen>
+    <dimen name="des_4">16sp</dimen>
+    <dimen name="imageView39">462dp</dimen>
+    <dimen name="des_5">16sp</dimen>
+    <dimen name="imageView40">462dp</dimen>
+
+</resources>

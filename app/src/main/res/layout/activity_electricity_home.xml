@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/electricity"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TextView
+        android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/topic"
+        android:textColor="@color/topic"
+        android:textSize="@dimen/topic"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculator_btn"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="269dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/calculator_btn"
+        android:textColor="@color/calculator_btn"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/payment_btn"
+        app:layout_constraintTop_toBottomOf="@+id/txt_notify" />
+
+    <Button
+        android:id="@+id/payment_btn"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="269dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/payment_btn"
+        android:textColor="@color/payment_btn"
+        android:textSize="@dimen/payment_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tips" />
+
+    <ImageView
+        android:id="@+id/img_tips"
+        android:layout_width="@dimen/img_tips"
+        android:layout_height="80dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toEndOf="@+id/img_notify"
+        app:layout_constraintTop_toBottomOf="@+id/main_img"
+        app:srcCompat="@drawable/tips" />
+
+    <ImageView
+        android:id="@+id/img_notify"
+        android:layout_width="@dimen/img_notify"
+        android:layout_height="80dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/content"
+        app:srcCompat="@drawable/notifications" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola"
+        android:text="@string/content"
+        android:textSize="@dimen/content"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:id="@+id/txt_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/txt_tips"
+        android:textColor="@color/txt_tips"
+        android:textSize="@dimen/txt_tips"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_notify" />
+
+    <TextView
+        android:id="@+id/txt_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/txt_notify"
+        android:textColor="@color/txt_notify"
+        android:textSize="@dimen/txt_notify"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/txt_tips"
+        app:layout_constraintTop_toBottomOf="@+id/img_tips" />
+
+    <ImageView
+        android:id="@+id/main_img"
+        android:layout_width="78dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/topic"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tower" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <TextView
+        android:id="@+id/set_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/capriola"
+        android:text="@string/set_limit"
+        android:textColor="@color/set_limit"
+        android:textSize="@dimen/set_limit"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="414dp" />
+
+    <Button
+        android:id="@+id/set_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/direct"
+        android:text="@string/set_btn"
+        android:textColor="@color/set_btn"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="405dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

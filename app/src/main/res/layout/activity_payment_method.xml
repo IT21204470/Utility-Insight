@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/pay_topic"
+        android:textColor="@color/pay_topic"
+        android:textSize="@dimen/details"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="@dimen/imageView10"
+        android:layout_height="181dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/credit"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:id="@+id/select_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/select_btn"
+        android:textColor="@color/select_btn"
+        android:textSize="@dimen/select_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <TextView
+        android:id="@+id/visa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:fontFamily="@font/chakra_petch_semibold"
+        android:text="@string/visa"
+        android:textSize="@dimen/visa"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="276dp" />
+
+    <TextView
+        android:id="@+id/express"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:fontFamily="@font/chakra_petch_semibold"
+        android:text="@string/express"
+        android:textSize="@dimen/express"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <TextView
+        android:id="@+id/paypal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:fontFamily="@font/chakra_petch_semibold"
+        android:text="@string/paypal"
+        android:textSize="@dimen/paypal"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="393dp" />
+
+    <TextView
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:fontFamily="@font/chakra_petch_semibold"
+        android:text="@string/google"
+        android:textSize="@dimen/google"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="@dimen/imageView14"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/card"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="@dimen/imageView15"
+        android:layout_height="75dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/google"
+        tools:layout_editor_absoluteY="430dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="@dimen/imageView16"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/visa"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="@dimen/imageView22"
+        android:layout_height="65dp"
+        android:layout_marginEnd="304dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/paypal"
+        tools:layout_editor_absoluteY="376dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="414dp"
+        android:layout_height="244dp"
+        app:srcCompat="@drawable/rectangle_blue"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="537dp" />
+
+    <Button
+        android:id="@+id/to_checkout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pay_btn_bg"
+        android:drawableRight="@drawable/baseline_keyboard_double_arrow_right_24"
+        android:drawablePadding="-15dp"
+        android:fontFamily="@font/chakra_petch_semibold"
+        android:text="@string/to_checkout"
+        android:textColor="@color/to_checkout"
+        android:textSize="@dimen/to_checkout"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="574dp" />
+
+    <TextView
+        android:id="@+id/price_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/chakra_petch_semibold"
+        android:text="@string/price"
+        android:textColor="@color/price"
+        android:textSize="@dimen/price"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="12dp" /> />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

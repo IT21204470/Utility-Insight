@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="313dp"
+        android:layout_height="673dp"
+        app:srcCompat="@drawable/sidebar"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="@dimen/imageView11"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/man"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/greeting"
+        android:textColor="@color/greeting"
+        android:textSize="@dimen/greeting"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:id="@+id/profile_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/profile_txt"
+        android:textColor="@color/profile_txt"
+        android:textSize="@dimen/profile_txt"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="226dp" />
+
+    <TextView
+        android:id="@+id/notify_sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_notifications_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/notify_sidebar"
+        android:textColor="@color/notify_sidebar"
+        android:textSize="@dimen/notify_sidebar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <TextView
+        android:id="@+id/bill_sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_add_circle_24"
+        android:drawablePadding="5dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/bill_sidebar"
+        android:textColor="@color/bill_sidebar"
+        android:textSize="@dimen/bill_sidebar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="316dp" />
+
+    <TextView
+        android:id="@+id/electricity_sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_electric_bolt_24"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/electricity_sidebar"
+        android:textColor="@color/electricity_sidebar"
+        android:textSize="@dimen/electricity_sidebar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <TextView
+        android:id="@+id/rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_star_24"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/rate"
+        android:textColor="@color/rate"
+        android:textSize="@dimen/rate"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="566dp" />
+
+    <TextView
+        android:id="@+id/water_sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_water_drop_24"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/water_sidebar"
+        android:textColor="@color/water_sidebar"
+        android:textSize="@dimen/water_sidebar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="442dp" />
+
+    <TextView
+        android:id="@+id/gas_sidebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/baseline_gas_meter_24"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/gas_sidebar"
+        android:textColor="@color/gas_sidebar"
+        android:textSize="@dimen/gas_sidebar"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="487dp" />
+
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/logout"
+        android:textColor="@color/logout"
+        android:textSize="@dimen/logout"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="605dp" />
+
+    <Switch
+        android:id="@+id/dark_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/dark_mode"
+        android:textColor="@color/dark_mode"
+        android:textSize="@dimen/dark_mode"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UtilityInsight"
+        tools:targetApi="31">
+        <activity
+            android:name=".paymentMethod"
+            android:exported="false" />
+        <activity
+            android:name=".paymentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".addConnection"
+            android:exported="false" />
+        <activity
+            android:name=".electricityCalculate"
+            android:exported="false" />
+        <activity
+            android:name=".electricityReadings"
+            android:exported="false" />
+        <activity
+            android:name=".electricityReport"
+            android:exported="false" />
+        <activity
+            android:name=".electricityTips"
+            android:exported="false" />
+        <activity
+            android:name=".successfulMessage"
+            android:exported="false" />
+        <activity
+            android:name=".mainSidebar"
+            android:exported="false" />
+        <activity
+            android:name=".electricityPayment"
+            android:exported="false" />
+        <activity
+            android:name=".displayNotifications"
+            android:exported="false" />
+        <activity
+            android:name=".unsuccessfulMessage"
+            android:exported="false" />
+        <activity
+            android:name=".electricityEntries"
+            android:exported="false" />
+        <activity
+            android:name=".electricityHome"
+            android:exported="false" />
+        <activity
+            android:name=".checkoutPage"
+            android:exported="false" />
+        <activity
+            android:name=".calculatePage"
+            android:exported="false" />
+        <activity
+            android:name=".addConnectionPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

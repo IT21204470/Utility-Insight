@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/electricity">
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <TextView
+        android:id="@+id/heading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/heading2"
+        android:textColor="#E41A1A"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculate_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/gradient_button"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/calculate_btn"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/units" />
+
+    <EditText
+        android:id="@+id/current_reading"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_electric_meter_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/current_reading"
+        android:inputType="date"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previous_reading" />
+
+    <EditText
+        android:id="@+id/units"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#D8D3D3"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:paddingLeft="-30dp"
+        android:hint="@string/units"
+        android:inputType="date"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_reading" />
+
+    <EditText
+        android:id="@+id/previous_reading"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/baseline_electric_meter_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/previous_reading"
+        android:inputType="date"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_of_units" />
+
+    <RadioButton
+        android:id="@+id/no_of_units"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:checked="false"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/no_of_units"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/readings"
+        app:layout_constraintTop_toBottomOf="@+id/heading2" />
+
+    <RadioButton
+        android:id="@+id/readings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:checked="true"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/readings"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

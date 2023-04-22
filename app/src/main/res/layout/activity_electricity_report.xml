@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="@dimen/imageView26"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="@dimen/imageView9"
+        android:layout_height="480dp"
+        app:srcCompat="@drawable/rectangle_frame"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <TextView
+        android:id="@+id/dueamount_field"
+        android:layout_width="265dp"
+        android:layout_height="49dp"
+        android:text="@string/dueamount_field"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <TextView
+        android:id="@+id/tariff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tariff"
+        android:textSize="@dimen/tariff"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:id="@+id/period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/period"
+        android:textSize="@dimen/period"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="184dp" />
+
+    <TextView
+        android:id="@+id/period_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/period_field"
+        android:textSize="@dimen/period_field"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <TextView
+        android:id="@+id/dueamount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dueamount"
+        android:textSize="@dimen/dueamount"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/fixed_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fixed_charge"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <TextView
+        android:id="@+id/charge_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/charge_field"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <TextView
+        android:id="@+id/total_charge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_charge"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="398dp" />
+
+    <TextView
+        android:id="@+id/charge_field1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/charge_field1"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/charge_field1"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="@dimen/edit"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/edit"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="@dimen/add"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="480dp" />
+
+    <TextView
+        android:id="@+id/tariff_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tariff_field"
+        android:textSize="@dimen/tariff_field"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <Button
+        android:id="@+id/redirect"
+        android:layout_width="145dp"
+        android:layout_height="54dp"
+        android:background="@drawable/gradient_button"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/redirect"
+        android:textColor="@color/white"
+        android:textSize="@dimen/redirect"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="589dp" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question"
+        android:textSize="@dimen/question"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="609dp" />
+
+    <TextView
+        android:id="@+id/report"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/secular_one"
+        android:text="@string/report"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textSize="@dimen/report"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

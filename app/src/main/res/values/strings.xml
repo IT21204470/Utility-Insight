@@ -1,0 +1,203 @@
+<resources>
+
+    <!--Electricity home-->
+    <string name="app_name">Utility Insight</string>
+    <string name="topic">Electricity</string>
+    <string name="content">Last month\'s usage: 85 units</string>
+    <string name="txt_tips">Show Tips</string>
+    <string name="txt_notify">Notifications</string>
+    <string name="set_limit">Set your monthly limit :</string>
+    <string name="set_btn">Set</string>
+    <string name="payment_btn">Pay your bills</string>
+    <string name="calculator_btn">Calculate your usage</string>
+
+
+    <!--Calculate page-->
+    <string name="heading1">Calculate your usage</string>
+    <string name="pick_days">Pick Days</string>
+    <string name="no_of_days">Number of Days</string>
+    <string name="last_date">Last reading date</string>
+    <string name="current_date">Current reading date</string>
+    <string name="days">Enter number of days</string>
+    <string name="move_next">Enter Meter Readings</string>
+
+
+    <!--Readings page-->
+    <string name="heading2">Enter meter readings</string>
+    <string name="readings">Readings</string>
+    <string name="no_of_units">Number of Units</string>
+    <string name="previous_reading">Previous meter reading</string>
+    <string name="current_reading">Current meter reading</string>
+    <string name="units">Enter number of units</string>
+    <string name="calculate_btn">Calculate</string>
+
+
+    <!--Entries page-->
+    <string name="entry_topic">Your Entries</string>
+    <string name="col1">Entry Date</string>
+    <string name="col2">Account Number</string>
+    <string name="col3">Units</string>
+    <string name="col4">Total Amount</string>
+
+    <string name="row1EntryDate">2023/03/06</string>
+    <string name="row1AccountNumber">245861</string>
+    <string name="row1Units">85</string>
+    <string name="row1TotalAmount">LKR 3840.30</string>
+
+    <string name="row2EntryDate">2023/04/10</string>
+    <string name="row2AccountNumber">121820</string>
+    <string name="row2Units">70</string>
+    <string name="row2TotalAmount">LKR 2735.80</string>
+
+    <string name="row3EntryDate">2022/12/14</string>
+    <string name="row3AccountNumber">504872</string>
+    <string name="row3Units">95</string>
+    <string name="row3TotalAmount">LKR 4910.00</string>
+
+    <string name="row4EntryDate">2023/01/15</string>
+    <string name="row4AccountNumber">322971</string>
+    <string name="row4Units">44</string>
+    <string name="row4TotalAmount">LKR 480.50</string>
+
+    <string name="row5EntryDate">2022/10/04</string>
+    <string name="row5AccountNumber">665413</string>
+    <string name="row5Units">12</string>
+    <string name="row5TotalAmount">LKR 228.20</string>
+
+    <string name="row6EntryDate">2023/06/20</string>
+    <string name="row6AccountNumber">897412</string>
+    <string name="row6Units">98</string>
+    <string name="row6TotalAmount">LKR 5050.80</string>
+
+    <string name="navigate">Check Again</string>
+    <string name="direct">Return to Home</string>
+
+
+    <!--Add connection page-->
+    <string name="connection_txt">Subscribe Your Account</string>
+    <string name="string">Choose Service:</string>
+    <string-array name="services">
+        <item>Electricity</item>
+        <item>Water</item>
+        <item>Gas</item>
+    </string-array>
+    <string name="acc_name">Name for account</string>
+    <string name="acc_no">Account Number</string>
+    <string name="premisesID">Premises ID</string>
+    <string name="save_btn">Save</string>
+    <string name="decline_btn">Cancel</string>
+
+
+    <!--Sidebar-->
+    <string name="greeting">Hi Hemsith,</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="profile_txt">Your profile</string>
+    <string name="notify_sidebar">Notifications</string>
+    <string name="bill_sidebar">Add connection</string>
+    <string name="electricity_sidebar">Electricity Home</string>
+    <string name="water_sidebar">Water Home</string>
+    <string name="gas_sidebar">Gas Home</string>
+    <string name="rate">Rate Us</string>
+    <string name="logout">Sign out</string>
+
+
+    <!--Payment page-->
+    <string name="payment_topic">Bill Payments</string>
+    <string name="txt_account">Account to be paid:</string>
+    <string-array name="accounts">
+        <item>Hemsith\'s Account</item>
+        <item>Amadee\'s Account</item>
+    </string-array>
+    <string name="no_account">No account?</string>
+    <string name="add_account">Add an account number</string>
+    <string name="txt_amount">Bill Amount *</string>
+    <string name="amount">Enter amount to be paid</string>
+    <string name="txt_email">Email Address *</string>
+    <string name="email">Enter your email address</string>
+    <string name="proceed">Proceed</string>
+
+
+    <!--Checkout page-->
+    <string name="pay_topic">Select Payment Method</string>
+    <string name="select_btn">Select One:</string>
+    <string name="visa">Credit / Debit Card</string>
+    <string name="express">American Express</string>
+    <string name="paypal">PayPal</string>
+    <string name="google">Google Pay</string>
+    <string name="to_checkout">To checkout</string>
+    <string name="price">2458.50 LKR</string>
+
+
+    <!--Pay now page-->
+    <string name="details">Enter card details</string>
+    <string name="card_no">Card Number</string>
+    <string name="number_fill">4218 8726 0071 2646</string>
+    <string name="card_date">Expiry Date</string>
+    <string name="date_fill">09 / 27</string>
+    <string name="cvv">CVV</string>
+    <string name="cvv_fill">512</string>
+    <string name="card_name">Name On Card</string>
+    <string name="name_fill">H.D. KAHAWEVIDANA</string>
+    <string name="save">Save card details</string>
+    <string name="pay_btn_final">Pay Now</string>
+    <string name="price_final">2458.50 LKR</string>
+
+
+    <!--Success page-->
+    <string name="success_msg">Success!</string>
+    <string name="successful_msg">Payment Successful</string>
+    <string name="back">Back to Home</string>
+    <string name="done">Done</string>
+
+
+    <!--Failed page-->
+    <string name="failed_msg">Failed!</string>
+    <string name="unsuccessful_msg">Payment Unsuccessful</string>
+    <string name="previous">Back to Payment</string>
+    <string name="close">Close</string>
+
+
+    <!--Tips page-->
+    <string name="tips_title">Tips for you</string>
+    <string name="tip1">Unplug unused appliances</string>
+    <string name="txt_tip1">Collectively, all of your smaller appliances and devices add up to your electricity use. What many people don\'t know is that, devices which are plugged in continue to draw trace amounts of electricity from your outlets.</string>
+    <string name="tip2">Switch to LEDs</string>
+    <string name="txt_tip2">LED light bulbs use 90 percent less energy than incandescent bulbs. Switch out the most frequently used bulbs in your home with LEDs. Then, replace the rest once they burn out.</string>
+    <string name="tip3">Install dimmer switches</string>
+    <string name="txt_tip3">Use dimmer switches as much as possible. The key to save energy is within your reach. Switch to dimmer switches, so you only use as much light as you need</string>
+    <string name="tip4">Establish solar power generators</string>
+    <string name="txt_tip4">Embrace the power of solar power systems. Solar energy helps lower your electricity bill and meanwhile fulfill your social responsibility to mitigate climate change. Don\'t wait!</string>
+    <string name="more_btn">More Tips</string>
+
+
+    <!--View usage page-->
+    <string name="report">Usage Report</string>
+    <string name="tariff">Tariff Category:</string>
+    <string name="tariff_field">Domestic</string>
+    <string name="period">Bill Period:</string>
+    <string name="period_field">2022 / 03 / 22 - 2022 / 04 / 01</string>
+    <string name="dueamount">Charge for Units Consumed(LKR):</string>
+    <string name="dueamount_field">32.00 x 18 = 576.00 35.00 x 12 = 420.00 54.00 x 8 = 432.00
+    </string>
+    <string name="fixed_charge">Fixed Charge(LKR):</string>
+    <string name="charge_field">200.00</string>
+    <string name="total_charge">Total Charge(LKR):</string>
+    <string name="charge_field1">1628.00</string>
+    <string name="edit">Edit Selections</string>
+    <string name="add">Add to entries</string>
+    <string name="question">Usage higher than expected?</string>
+    <string name="redirect">View Tips</string>
+
+
+    <!--Notifications page-->
+    <string name="notify_topic">Notifications</string>
+    <string name="all_notify">All*</string>
+    <string name="unread">Unread</string>
+    <string name="mark">Mark all as read</string>
+    <string name="des_1">New tips available on the tip menu!</string>
+    <string name="des_2">Haven\'t checked your usage in a while?Go check now!</string>
+    <string name="des_3">This month\'s electricity usage limit is exceeded.</string>
+    <string name="des_4">Last water bill payment of LKR 1580.00 has been authorized.</string>
+    <string name="des_5">Your profile details have been updated.</string>
+
+</resources>
