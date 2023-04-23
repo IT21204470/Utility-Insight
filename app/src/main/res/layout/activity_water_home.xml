@@ -49,15 +49,17 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="77dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="260dp"
+        android:layout_marginBottom="254dp"
         android:fontFamily="@font/capriola"
         android:text="Notifications"
         android:textColor="@color/notifi"
         android:textSize="@dimen/notifi"
         app:layout_constraintBottom_toTopOf="@+id/payment_btn3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/txt_tips"
-        app:layout_constraintTop_toBottomOf="@+id/new_notify" />
+        app:layout_constraintTop_toBottomOf="@+id/new_notify"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/new_notify"
@@ -71,20 +73,20 @@
 
     <ImageView
         android:id="@+id/payment_btn"
-        android:layout_width="170dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="107dp"
+        android:layout_width="188dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="254dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/limit"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tips"
         app:srcCompat="@drawable/water_gradient_button" />
 
     <TextView
         android:id="@+id/txt_payment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="-158dp"
-        android:layout_marginTop="-40dp"
+        android:layout_marginStart="-168dp"
+        android:layout_marginTop="-43dp"
         android:fontFamily="@font/solway_bold"
         android:text="PAY YOUR BILLS"
         android:textColor="@color/white"
@@ -95,10 +97,12 @@
     <ImageView
         android:id="@+id/payment_btn3"
         android:layout_width="188dp"
-        android:layout_height="61dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="25dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="27dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/payment_btn"
         app:srcCompat="@drawable/water_gradient_button" />
 
@@ -107,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="-180dp"
-        android:layout_marginTop="-42dp"
+        android:layout_marginTop="-43dp"
         android:fontFamily="@font/solway_bold"
         android:text="CALCULATE USAGE"
         android:textColor="@color/txt_calc"
@@ -148,35 +152,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
-
-    <TextView
-        android:id="@+id/limit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="129dp"
-        android:fontFamily="@font/capriola"
-        android:text="@string/limit"
-        android:textColor="#FF3044B1"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tips" />
-
-    <Button
-        android:id="@+id/set"
-        android:layout_width="87dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="125dp"
-        android:layout_marginEnd="16dp"
-        android:background="#5620D3"
-        android:paddingBottom="2dp"
-        android:text="@string/set"
-        android:textColor="@color/bill_sidebar"
-        android:textSize="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/limit"
-        app:layout_constraintTop_toBottomOf="@+id/notifi" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
