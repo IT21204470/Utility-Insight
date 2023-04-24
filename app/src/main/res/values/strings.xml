@@ -241,7 +241,7 @@
     <string name="w_col4">Total Amount</string>
 
     <string name="w_row1EntryDate">2023/02/10</string>
-    <string name="w_row1Units" >85</string>
+    <string name="w_row1Units">85</string>
     <string name="w_row1TotalAmount">LKR 4800.00</string>
     <string name="w_row1AccountNumber">2/07/01/172</string>
 
@@ -285,6 +285,39 @@
     <string name="txt_tip">MORE TIPS</string>
 
 
+    <!--Sahan-->
+    <string name="app_name">UtilityInsight</string>
+    <string name="btnWater">Water</string>
+    <string name="btnGas">Gas</string>
+    <string name="btnElectricity">Electricity</string>
+    <string name="regLabel">Join The Community</string>
+    <string name="nameLabel">Name:</string>
+    <string name="hntName">Full Name</string>
+    <string name="hntUserName">User Name</string>
+    <string name="hntEmail">Email</string>
+    <string name="hntPassword">Password</string>
+    <string name="hntRePass">Re-enter Password</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="txtLogin">Login</string>
+    <string name="btnForgotPass">Forgot Password?</string>
+    <string name="btnLogin">Login</string>
+    <string name="txtNew">Dont Have An Account?</string>
+    <string name="txtDashboard">Choose Service</string>
+    <string name="btnEditUser">Edit Details</string>
+
+
+    <string name="labelUser">User Name:</string>
+    <string name="viewUserName">User Name</string>
+    <string name="lblDark">Dark Mode</string>
+    <string name="lblEmail">Email:</string>
+    <string name="viewEmail">Email</string>
+    <string name="btnSignOut">Sign Out</string>
+    <string name="swtDarkMode">Dark Mode</string>
+    <string name="txtFeedback">Give Us Your Feedback</string>
+    <string name="lblFeedback">Feedback:</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="hntFeedback">Type Here</string>
+    <string name="txt_addentries">Add New Entry</string>
 
 
 </resources>

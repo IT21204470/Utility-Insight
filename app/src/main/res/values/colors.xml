@@ -153,4 +153,30 @@
     <color name="heading2">#3044B1</color>
 
 
+    <!--Sahan-->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--Added colors for background-->
+    <color name="Utility_bc3">#DAA404</color>
+    <color name="Utility_bc4">#34B1DC</color>
+    <color name="txtBackground">#FFFFFF</color>
+    <color name="labelColor">#000000</color>
+    <color name="btnSignUp">#13568B</color>
+    <color name="btnBack">#00FFFFFF</color>
+    <color name="c">#6000BCD4</color>
+    <color name="btnSignOut">#D52A1D</color>
+    <color name="bc_color">#FFFFFF</color>
+    <color name="btnCategories">#916E07</color>
+    <color name="user_background">#B4AD89</color>
+    <color name="btn_background">#F4B00E</color>
+    <color name="home_bc">#EBC280</color>
+    <color name="login_bc">#fad77f</color>
+
+
 </resources>

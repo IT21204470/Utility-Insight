@@ -254,7 +254,22 @@
     <dimen name="tip_btn">150dp</dimen>
 
 
-
+    <!--Sahan-->
+    <dimen name="txtPadding">5dp</dimen>
+    <dimen name="txtDashboard">34dp</dimen>
+    <dimen name="menu_wid">50dp</dimen>
+    <dimen name="menu_height">50dp</dimen>
+    <dimen name="pic_dim">150dp</dimen>
+    <dimen name="reg_wid">90dp</dimen>
+    <dimen name="reg_height">90dp</dimen>
+    <dimen name="btn_wid">150dp</dimen>
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="log_width">330dp</dimen>
+    <dimen name="sup_wid">70dp</dimen>
+    <dimen name="fed_txt">230dp</dimen>
+    <dimen name="feed_height">50dp</dimen>
+    <dimen name="feed_txt">335dp</dimen>
+    <dimen name="feed_txt_height">120dp</dimen>
 
 
 </resources>

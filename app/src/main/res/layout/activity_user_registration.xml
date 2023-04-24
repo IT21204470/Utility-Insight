@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userbackground"
+    android:outlineProvider="paddedBounds"
+    tools:context=".UserRegistration">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/regLabel"
+        android:textColor="@color/labelColor"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="@dimen/log_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/user_text_back"
+        android:ems="10"
+        android:fontFamily="@font/capriola"
+        android:hint="@string/hntName"
+        android:inputType="textPersonName"
+        android:outlineProvider="bounds"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="@dimen/log_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_text_back"
+        android:ems="10"
+        android:fontFamily="@font/capriola"
+        android:hint="@string/hntUserName"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="@dimen/log_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_text_back"
+        android:ems="10"
+        android:fontFamily="@font/capriola"
+        android:hint="@string/hntEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtUserName" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="@dimen/log_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/user_text_back"
+        android:ems="10"
+        android:fontFamily="@font/capriola"
+        android:hint="@string/hntPassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <EditText
+        android:id="@+id/edtReEnterPasswoed"
+        android:layout_width="@dimen/log_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/user_text_back"
+        android:ems="10"
+        android:fontFamily="@font/capriola"
+        android:hint="@string/hntRePass"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="@dimen/log_width"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/user_gradient_button"
+        android:fontFamily="@font/capriola"
+        android:text="@string/btnSignUp"
+        android:textColor="@color/bc_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtReEnterPasswoed"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/reg_wid"
+        android:layout_height="@dimen/reg_height"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/community"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
