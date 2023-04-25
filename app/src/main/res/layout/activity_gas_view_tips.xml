@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_cno"
+    android:layout_width="@dimen/more_tips"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="@dimen/imageView25"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/tips_title"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/txt_tip3"
+        android:layout_width="347dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/txt_tip3"
+        android:textColor="#757373"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/more_tips"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.328"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tip3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/tip3"
+        android:textColor="#000000"
+        android:textSize="@dimen/tip3"
+        app:layout_constraintBottom_toTopOf="@+id/txt_tip3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_tip2"
+        android:layout_width="334dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/txt_tip2"
+        android:textColor="#757373"
+        android:textSize="@dimen/txt_tip2"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.324"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip2" />
+
+    <TextView
+        android:id="@+id/tip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/tip2"
+        android:textColor="@color/tip2"
+        android:textSize="@dimen/tip2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tip1" />
+
+    <TextView
+        android:id="@+id/tips_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/tips_title"
+        android:textColor="#6ECC11"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/tip1"
+        android:textColor="#000000"
+        android:textSize="@dimen/tip1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tips_title" />
+
+    <TextView
+        android:id="@+id/txt_tip1"
+        android:layout_width="343dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/txt_tip1"
+        android:textAlignment="viewStart"
+        android:textColor="@color/txt_tip1"
+        android:textSize="@dimen/txt_tip1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip1" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/tip1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView25"
+        app:srcCompat="@drawable/gasline" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="@dimen/imageView5"
+        android:layout_height="66dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/tip2"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tip1"
+        app:srcCompat="@drawable/boiling" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="@dimen/imageView6"
+        android:layout_height="64dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/tip3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_tip2"
+        app:srcCompat="@drawable/green" />
+
+    <Button
+        android:id="@+id/more_tips"
+        android:layout_width="145dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#6ECC11"
+        android:drawableRight="@drawable/baseline_arrow_downward_24"
+        android:drawablePadding="-10dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/more_tips"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

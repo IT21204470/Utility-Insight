@@ -12,6 +12,27 @@
         android:theme="@style/Theme.UtilityInsight"
         tools:targetApi="31">
         <activity
+            android:name=".gasHomePagenew"
+            android:exported="false" />
+        <activity
+            android:name=".gasViewTips"
+            android:exported="false" />
+        <activity
+            android:name=".gasReadingsEntry"
+            android:exported="false" />
+        <activity
+            android:name=".gasMain"
+            android:exported="false" />
+        <activity
+            android:name=".gasHomePage"
+            android:exported="false" />
+        <activity
+            android:name=".gasEntriesPage"
+            android:exported="false" />
+        <activity
+            android:name=".dateEntryPage"
+            android:exported="false" />
+        <activity
             android:name=".ActivityFront"
             android:exported="false" />
         <activity

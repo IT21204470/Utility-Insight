@@ -272,4 +272,47 @@
     <dimen name="feed_txt_height">120dp</dimen>
 
 
+    <!--Tharushi    -->
+
+    <dimen name="gastopicnew">34sp</dimen>
+    <dimen name="sub_topic">16sp</dimen>
+    <dimen name="imageView4">57dp</dimen>
+    <dimen name="imageviewgas1">98dp</dimen>
+    <dimen name="tips">144dp</dimen>
+    <dimen name="imageViewgas3">67dp</dimen>
+    <dimen name="notify">20sp</dimen>
+    <dimen name="imageViewgas9">50dp</dimen>
+    <dimen name="txt_history">24sp</dimen>
+    <dimen name="t1">14sp</dimen>
+    <dimen name="t2">14sp</dimen>
+    <dimen name="t3">14sp</dimen>
+    <dimen name="t4">14sp</dimen>
+    <dimen name="t5">12sp</dimen>
+    <dimen name="t6">12sp</dimen>
+    <dimen name="t7">12sp</dimen>
+    <dimen name="t8">12sp</dimen>
+    <dimen name="checkgas_btn">20sp</dimen>
+    <dimen name="returngas_btn">20sp</dimen>
+    <dimen name="headinggas1">28dp</dimen>
+    <dimen name="days">20sp</dimen>
+    <dimen name="no_of_days">20sp</dimen>
+    <dimen name="previous_meter">18dp</dimen>
+    <dimen name="current_meter">18dp</dimen>
+    <dimen name="txt_day">18dp</dimen>
+    <dimen name="meter_reading_btn">20sp</dimen>
+    <dimen name="imageView24">50dp</dimen>
+    <dimen name="imageViewgas25">50dp</dimen>
+    <dimen name="imageViewgas26">56dp</dimen>
+    <dimen name="tip1gas">18dp</dimen>
+    <dimen name="txt_tip1gas">12sp</dimen>
+    <dimen name="imageViewgs5">59dp</dimen>
+    <dimen name="tip2gas">18dp</dimen>
+    <dimen name="txt_tip2gas">12sp</dimen>
+    <dimen name="palette2">385dp</dimen>
+    <dimen name="palettegas">385dp</dimen>
+    <dimen name="imageView6">53dp</dimen>
+    <dimen name="tipgas3">18dp</dimen>
+    <dimen name="txt_tipgas3">356dp</dimen>
+    <dimen name="more_tips">match_parent</dimen>
+
 </resources>
