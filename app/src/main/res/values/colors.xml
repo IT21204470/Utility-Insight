@@ -171,12 +171,13 @@
     <color name="login_bc">#fad77f</color>
 
     <!--Tharushi-->
-
     <color name="gas_pay_btn">#6ECC11</color>
     <color name="gas_cal_usage_btn">#6ECC11</color>
-    <color name="gas_txt_tip1">#757373</color>
-    <color name="gas_tip2">#000000</color>
+    <color name="gas_txt_tip">#757373</color>
+    <color name="gas_tip_2">#000000</color>
     <color name="gas_set_limit">#4CAF50</color>
     <color name="gas_set_btn">#4CAF50</color>
+
+   
 
 </resources>

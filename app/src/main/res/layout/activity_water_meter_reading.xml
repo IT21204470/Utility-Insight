@@ -53,7 +53,7 @@
         android:id="@+id/w_pick_day"
         android:layout_width="119dp"
         android:layout_height="50dp"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="22dp"
         android:layout_marginTop="14dp"
         android:checked="true"
         android:fontFamily="sans-serif-light"
