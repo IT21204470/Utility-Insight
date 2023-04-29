@@ -20,7 +20,7 @@
         android:textSize="@dimen/notify"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toEndOf="@+id/tips"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -35,12 +35,10 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/set_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -128,9 +126,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/calusage_btn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/set_limit"
-        app:layout_constraintVertical_bias="0.988" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/calusage_btn"
@@ -146,34 +142,4 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/pay_btn" />
 
-    <TextView
-        android:id="@+id/set_limit"
-        android:layout_width="263dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="132dp"
-        android:text="@string/set_limit"
-        android:textColor="@color/set_limit"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tips" />
-
-    <Button
-        android:id="@+id/set_btn"
-        android:layout_width="92dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="44dp"
-        android:backgroundTint="@color/purple_500"
-        android:text="@string/set_btn"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/calusage_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/set_limit"
-        app:layout_constraintTop_toBottomOf="@+id/notify"
-        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -286,7 +286,7 @@
 
 
     <!--Sahan-->
-    <string name="app_name">UtilityInsight</string>
+    <string name="user_app_name">UtilityInsight</string>
     <string name="btnWater">Water</string>
     <string name="btnGas">Gas</string>
     <string name="btnElectricity">Electricity</string>
@@ -322,7 +322,7 @@
     <!--Tharushi    -->
 
     <!--Gas Home-->
-    <string name="app_name">Gas1</string>
+    <string name="gas_app_name">UtilityInsight</string>
     <string name="topic">Gas</string>
     <string name="sub_topic">Last month\'s usage : 60 units</string>
     <string name="tips">Show Tips</string>
