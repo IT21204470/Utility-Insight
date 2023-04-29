@@ -47,11 +47,11 @@
 
     <RadioButton
         android:id="@+id/w_no_of_units"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
         android:layout_marginStart="36dp"
 
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="62dp"
         android:checked="false"
         android:fontFamily="sans-serif-light"
@@ -98,7 +98,7 @@
         android:textSize="@dimen/current_read"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="230dp" />
+        tools:layout_editor_absoluteY="235dp" />
 
     <EditText
         android:id="@+id/number_of_days"
