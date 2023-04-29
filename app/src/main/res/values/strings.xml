@@ -286,7 +286,7 @@
 
 
     <!--Sahan-->
-    <string name="app_name">UtilityInsight</string>
+    <string name="user_app_name">UtilityInsight</string>
     <string name="btnWater">Water</string>
     <string name="btnGas">Gas</string>
     <string name="btnElectricity">Electricity</string>
@@ -329,6 +329,8 @@
     <string name="gas_notify">Notifications</string>
     <string name="gas_pay_btn">Pay your bills</string>
     <string name="gas_set_limit">Set your monthly limit:</string>
+
+
 
 
     <!--Enter dates-->
@@ -411,5 +413,14 @@
     <string name="gas_more_tips">More Tips</string>
     <string name="gas_set_btn">SET</string>
     <string name="gas_cal_usage_btn">CALCULATE YOUR USAGE</string>
+    <string name="gas_previous_meter_reading">Previous Meter Reading</string>
+    <string name="gas_current_meter_reading">Current Meter Reading</string>
+    <string name="gas_meter_reading_topic">Enter Meter Reading</string>
+    <string name="gas_date_entry_calc_heading">Calculate Usage</string>
+    <string name="gas_pick_days_radio">Pick days</string>
+    <string name="gas_pick_days_radio_txt">Pick Days</string>
+    <string name="gas_calc_no_of_days">Enter Number of Days</string>
+    <string name="gas_enter_meter_readings_btn">Enter Meter Readings</string>
+    <string name="gas_home_sub_topic">Last month usage 60 units</string>
 
 </resources>
