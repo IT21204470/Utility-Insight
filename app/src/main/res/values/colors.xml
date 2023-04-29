@@ -178,16 +178,6 @@
     <color name="gas_set_limit">#4CAF50</color>
     <color name="gas_set_btn">#4CAF50</color>
 
-<<<<<<< HEAD
-   
-=======
-    <color name="pay_btn">#6ECC11</color>
-    <color name="calusage_btn">#6ECC11</color>
-    <color name="gas_txt_tip1">#757373</color>
-    <color name="tip2">#000000</color>
-    <color name="gas_set_limit">#4CAF50</color>
-    <color name="gas_set_btn">#4CAF50</color>
-    <color name="number_of_days">#757171</color>
->>>>>>> 7ba73ee450df8ed15afd92c8cfd740eea471ebcf
+
 
 </resources>
