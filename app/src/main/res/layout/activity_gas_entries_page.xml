@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/entry_table"
+        app:layout_constraintEnd_toStartOf="@+id/txt_history"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <TextView
+        android:id="@+id/txt_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/txt_history"
+        android:textColor="@color/purple_700"
+        android:textSize="@dimen/txt_history"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/entry_table"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/check_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Table Heading -->
+        <TableRow android:background="#DED4F1">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="@font/solway_bold"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col1"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/t1" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="@font/solway_bold"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col2"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/t2" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:fontFamily="@font/solway_bold"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col3"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/t3" />
+
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:fontFamily="@font/solway_bold"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/col4"
+                android:textColor="@color/purple_700"
+                android:textSize="@dimen/t4" />
+
+        </TableRow>
+
+
+        <!--Row 1-->
+        <TableRow android:background="#DED4F1">
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row1EntryDate"
+                android:textSize="@dimen/t5" />
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row1AccountNumber"
+                android:textSize="@dimen/t6" />
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row1Units"
+                android:textSize="@dimen/t7" />
+
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:drawableRight="@drawable/baseline_delete_24"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row1TotalAmount"
+                android:textSize="@dimen/t8" />
+
+        </TableRow>
+
+        <!--Row 2-->
+        <TableRow android:background="#DED4F1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row2EntryDate"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row2AccountNumber"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row2Units"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:drawableRight="@drawable/baseline_delete_24"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row2TotalAmount"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <!--Row 3-->
+        <TableRow android:background="#DED4F1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row3EntryDate"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row3AccountNumber"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row3Units"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:drawableRight="@drawable/baseline_delete_24"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row3TotalAmount"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <!--Row 4-->
+        <TableRow android:background="#DED4F1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row4EntryDate"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row4AccountNumber"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row4Units"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:drawableRight="@drawable/baseline_delete_24"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row4TotalAmount"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <!--Row 5-->
+        <TableRow android:background="#DED4F1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row5EntryDate"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row5AccountNumber"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row5Units"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:drawableRight="@drawable/baseline_delete_24"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row5TotalAmount"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+        <!--Row 6-->
+        <TableRow android:background="#DED4F1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row6EntryDate"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row6AccountNumber"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row6Units"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:drawableRight="@drawable/baseline_delete_24"
+                android:gravity="center_horizontal"
+                android:padding="10sp"
+                android:text="@string/row6TotalAmount"
+                android:textSize="12sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_width="198dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="368dp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/check_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/check_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_history" />
+
+    <Button
+        android:id="@+id/return_btn"
+        android:layout_width="247dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/return_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/return_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

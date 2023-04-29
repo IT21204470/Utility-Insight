@@ -241,7 +241,7 @@
     <string name="w_col4">Total Amount</string>
 
     <string name="w_row1EntryDate">2023/02/10</string>
-    <string name="w_row1Units" >85</string>
+    <string name="w_row1Units">85</string>
     <string name="w_row1TotalAmount">LKR 4800.00</string>
     <string name="w_row1AccountNumber">2/07/01/172</string>
 
@@ -285,6 +285,131 @@
     <string name="txt_tip">MORE TIPS</string>
 
 
+    <!--Sahan-->
+    <string name="app_name">UtilityInsight</string>
+    <string name="btnWater">Water</string>
+    <string name="btnGas">Gas</string>
+    <string name="btnElectricity">Electricity</string>
+    <string name="regLabel">Join The Community</string>
+    <string name="nameLabel">Name:</string>
+    <string name="hntName">Full Name</string>
+    <string name="hntUserName">User Name</string>
+    <string name="hntEmail">Email</string>
+    <string name="hntPassword">Password</string>
+    <string name="hntRePass">Re-enter Password</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string name="txtLogin">Login</string>
+    <string name="btnForgotPass">Forgot Password?</string>
+    <string name="btnLogin">Login</string>
+    <string name="txtNew">Dont Have An Account?</string>
+    <string name="txtDashboard">Choose Service</string>
+    <string name="btnEditUser">Edit Details</string>
 
+
+    <string name="labelUser">User Name:</string>
+    <string name="viewUserName">User Name</string>
+    <string name="lblDark">Dark Mode</string>
+    <string name="lblEmail">Email:</string>
+    <string name="viewEmail">Email</string>
+    <string name="btnSignOut">Sign Out</string>
+    <string name="swtDarkMode">Dark Mode</string>
+    <string name="txtFeedback">Give Us Your Feedback</string>
+    <string name="lblFeedback">Feedback:</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="hntFeedback">Type Here</string>
+    <string name="txt_addentries">Add New Entry</string>
+
+    <!--Tharushi    -->
+
+    <!--Gas Home-->
+    <string name="app_name">Gas1</string>
+    <string name="topic">Gas</string>
+    <string name="sub_topic">Last month\'s usage : 60 units</string>
+    <string name="tips">Show Tips</string>
+    <string name="notify">Notifications</string>
+    <string name="pay_btn">Pay your bills</string>
+    <string name="set_limit">Set your monthly limit:</string>
+
+
+    <!--Enter dates-->
+    <string name="heading1">Calculate your usage</string>
+    <string name="days">Pick Days</string>
+    <string name="no_of_days">Number of Days</string>
+    <string name="previous_reading">Last reading date</string>
+    <string name="current_reading">Current reading date</string>
+    <string name="txt_day">Enter number of days</string>
+    <string name="meter_reading_btn">Enter meter readings</string>
+
+    <!--Enter meter readings-->
+    <string name="readings_topic">Enter Meter Readings</string>
+    <string name="readings">Readings</string>
+    <string name="no_of_units">Number of Units</string>
+    <string name="previous_meter">Previous meter reading</string>
+    <string name="current_meter">Current meter reading</string>
+    <string name="units">Enter number of units</string>
+    <string name="calculate_btn">Calculate</string>
+
+    <!--Entries page-->
+    <string name="entry_topic">Your Entries</string>
+    <string name="col1">Entry Date</string>
+    <string name="col2">Account Number</string>
+    <string name="col3">Units</string>
+    <string name="col4">Total Amount</string>
+
+    <string name="row1EntryDate">2023/01/02</string>
+    <string name="row1AccountNumber">24586112356</string>
+    <string name="row1Units">110</string>
+    <string name="row1TotalAmount">LKR 5500.00</string>
+
+    <string name="row2EntryDate">2023/01/6</string>
+    <string name="row2AccountNumber">85679086435</string>
+    <string name="row2Units">80</string>
+    <string name="row2TotalAmount">LKR 4000.00</string>
+
+    <string name="row3EntryDate">2023/01/17</string>
+    <string name="row3AccountNumber">50487287456</string>
+    <string name="row3Units">50</string>
+    <string name="row3TotalAmount">LKR 2500.00</string>
+
+    <string name="row4EntryDate">2023/01/23</string>
+    <string name="row4AccountNumber">32297196456</string>
+    <string name="row4Units">10</string>
+    <string name="row4TotalAmount">LKR 500.00</string>
+
+    <string name="row5EntryDate">2023/02/04</string>
+    <string name="row5AccountNumber">66541367398</string>
+    <string name="row5Units">68</string>
+    <string name="row5TotalAmount">LKR 3400.00</string>
+
+    <string name="row6EntryDate">2023/02/12</string>
+    <string name="row6AccountNumber">897412579073</string>
+    <string name="row6Units">87</string>
+    <string name="row6TotalAmount">LKR 4350.00</string>
+
+    <string name="row7EntryDate">2023/02/26</string>
+    <string name="row7AccountNumber">12541609876</string>
+    <string name="row7Units">74</string>
+    <string name="row7TotalAmount">LKR 3700.00</string>
+
+    <string name="row8EntryDate">2023/03/06</string>
+    <string name="row8AccountNumber">54782187645</string>
+    <string name="row8Units">61</string>
+    <string name="row8TotalAmount">LKR 3050.00</string>
+
+    <string name="txt_history">Gas usage history</string>
+    <string name="check_btn">Check Again</string>
+    <string name="return_btn">Return to Home</string>
+
+    <!--Tips page-->
+    <string name="tips_title">Tips for you</string>
+    <string name="tip1">Fix any leaks in the gas line</string>
+    <string name="tip2">Cook with lids on pots and pans</string>
+    <string name="tip3">Use energy-efficient appliances</string>
+    <string name="txt_tip1">Use energy-efficient appliances and replace old appliances with new ones that are rated as Energy Star.</string>
+    <string name="txt_tip2">Fix any leaks in the gas line or appliances to prevent wasted energy.</string>
+    <string name="txt_tip3">Cook with lids on pots and pans to reduce cooking times and energy usage.</string>
+    <string name="more_tips">More Tips</string>
+    <string name="set_btn">SET</string>
+    <string name="calusage_btn">CALCULATE YOUR USAGE</string>
 
 </resources>
