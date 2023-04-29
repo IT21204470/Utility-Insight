@@ -116,6 +116,8 @@
 
         android:text="@string/w_days"
         android:textAlignment="center"
+        android:textColor="@color/number_of_days"
+        android:textColorHint="#757171"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/current_read" />
 

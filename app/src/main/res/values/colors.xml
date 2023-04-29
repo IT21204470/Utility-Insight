@@ -178,5 +178,6 @@
     <color name="tip2">#000000</color>
     <color name="set_limit">#4CAF50</color>
     <color name="set_btn">#4CAF50</color>
+    <color name="number_of_days">#757171</color>
 
 </resources>
