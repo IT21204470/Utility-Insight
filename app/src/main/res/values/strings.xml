@@ -301,7 +301,7 @@
     <string name="txtLogin">Login</string>
     <string name="btnForgotPass">Forgot Password?</string>
     <string name="btnLogin">Login</string>
-    <string name="txtNew">Dont Have An Account?</string>
+    <string name="txtNew">Don\'t Have An Account?</string>
     <string name="txtDashboard">Choose Service</string>
     <string name="btnEditUser">Edit Details</string>
 
@@ -319,7 +319,7 @@
     <string name="hntFeedback">Type Here</string>
     <string name="txt_addentries">Add New Entry</string>
 
-    <!--Tharushi    -->
+    <!--Tharushi-->
 
     <!--Gas Home-->
     <string name="gas_app_name">Utility Insight</string>
@@ -327,7 +327,7 @@
     <string name="gas_pay_btn">Pay your bills</string>
     <string name="gas_set_limit">Set your monthly limit:</string>
 
-    <string name="gas_home_sub_topic">Last month usage 60 units</string>
+    <string name="gas_home_sub_topic">Last month\'s usage: 60 units</string>
     <string name="gas_show_tips_txt">Show Tips</string>
     <string name="gas_notifications_icon">Notifications</string>
     <string name="gas_pay_btn_txt">Pay Your Bills</string>

@@ -9,15 +9,15 @@
         android:id="@+id/acc_name"
         android:layout_width="315dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="73dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="72dp"
         android:ems="10"
         android:fontFamily="@font/solway_bold"
         android:hint="@string/acc_name"
         android:inputType="textPersonName"
         android:textSize="@dimen/acc_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
 
     <Button
         android:id="@+id/decline_btn"
@@ -46,30 +46,6 @@
         android:textSize="@dimen/save_btn"
         app:layout_constraintEnd_toStartOf="@+id/decline_btn"
         app:layout_constraintTop_toBottomOf="@+id/premisesID" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="45dp"
-        android:contextClickable="false"
-        android:entries="@array/services"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/service" />
-
-    <TextView
-        android:id="@+id/service"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="235dp"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/string"
-        android:textColor="@color/service"
-        android:textSize="@dimen/string"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
 
     <ImageView
         android:id="@+id/imageView27"
@@ -122,4 +98,15 @@
         android:textSize="@dimen/premisesID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acc_no" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="72dp"
+        android:indeterminateDrawable="@drawable/progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premisesID" />
 </androidx.constraintlayout.widget.ConstraintLayout>

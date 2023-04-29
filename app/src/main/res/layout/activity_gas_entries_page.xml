@@ -29,7 +29,7 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="68dp"
         android:fontFamily="@font/capriola"
-        android:text="@string/txt_history"
+        android:text="Your Entries"
         android:textColor="@color/purple_700"
         android:textSize="@dimen/txt_history"
         android:textStyle="bold"
