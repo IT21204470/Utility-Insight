@@ -322,34 +322,45 @@
     <!--Tharushi    -->
 
     <!--Gas Home-->
-    <string name="gas_app_name">Gas1</string>
+    <string name="gas_app_name">Utility Insight</string>
     <string name="gas_topic">Gas</string>
-    <string name="gas_sub_topic">Last month\'s usage : 60 units</string>
-    <string name="gas_tips">Show Tips</string>
-    <string name="gas_notify">Notifications</string>
     <string name="gas_pay_btn">Pay your bills</string>
     <string name="gas_set_limit">Set your monthly limit:</string>
 
+    <string name="gas_home_sub_topic">Last month usage 60 units</string>
+    <string name="gas_show_tips_txt">Show Tips</string>
+    <string name="gas_notifications_icon">Notifications</string>
+    <string name="gas_pay_btn_txt">Pay Your Bills</string>
+    <string name="gas_cal_usage_btn_txt">Calculate Usage</string>
+    <string name="gas_set_btn">SET</string>
 
 
 
     <!--Enter dates-->
-    <string name="gas_heading1">Calculate your usage</string>
-    <string name="gas_days">Pick Days</string>
     <string name="gas_no_of_days">Number of Days</string>
     <string name="gas_previous_reading">Last reading date</string>
     <string name="gas_current_reading">Current reading date</string>
-    <string name="gas_input_txt_day">Enter number of days</string>
-    <string name="gas_meter_reading_btn">Enter meter readings</string>
+    <string name="gas_date_entry_calc_heading">Calculate Usage</string>
+    <string name="gas_pick_days_radio">Pick days</string>
+    <string name="gas_pick_days_radio_txt">Pick Days</string>
+    <string name="gas_calc_no_of_days">Enter Number of Days</string>
+    <string name="gas_enter_meter_readings_btn">Enter Meter Readings</string>
+
+
+
 
     <!--Enter meter readings-->
-    <string name="gas_readings_topic">Enter Meter Readings</string>
+
     <string name="gas_readings">Readings</string>
     <string name="gas_no_of_units">Number of Units</string>
-    <string name="gas_previous_meter">Previous meter reading</string>
-    <string name="gas_current_meter">Current meter reading</string>
     <string name="gas_units">Enter number of units</string>
     <string name="gas_calculate_btn">Calculate</string>
+    <string name="gas_cal_usage_btn">CALCULATE YOUR USAGE</string>
+    <string name="gas_previous_meter_reading">Previous Meter Reading</string>
+    <string name="gas_current_meter_reading">Current Meter Reading</string>
+    <string name="gas_meter_reading_topic">Enter Meter Reading</string>
+
+
 
     <!--Entries page-->
     <string name="gas_entry_topic">Your Entries</string>
@@ -411,16 +422,7 @@
     <string name="gas_txt_tip2">Fix any leaks in the gas line or appliances to prevent wasted energy.</string>
     <string name="gas_txt_tip3">Cook with lids on pots and pans to reduce cooking times and energy usage.</string>
     <string name="gas_more_tips">More Tips</string>
-    <string name="gas_set_btn">SET</string>
-    <string name="gas_cal_usage_btn">CALCULATE YOUR USAGE</string>
-    <string name="gas_previous_meter_reading">Previous Meter Reading</string>
-    <string name="gas_current_meter_reading">Current Meter Reading</string>
-    <string name="gas_meter_reading_topic">Enter Meter Reading</string>
-    <string name="gas_date_entry_calc_heading">Calculate Usage</string>
-    <string name="gas_pick_days_radio">Pick days</string>
-    <string name="gas_pick_days_radio_txt">Pick Days</string>
-    <string name="gas_calc_no_of_days">Enter Number of Days</string>
-    <string name="gas_enter_meter_readings_btn">Enter Meter Readings</string>
-    <string name="gas_home_sub_topic">Last month usage 60 units</string>
+    <string name="gas_tips_2_heading">Cook with lids on pots and pans</string>
+
 
 </resources>
