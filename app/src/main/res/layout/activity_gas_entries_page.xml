@@ -16,20 +16,20 @@
         android:layout_marginTop="12dp"
         android:layout_marginBottom="28dp"
         app:layout_constraintBottom_toTopOf="@+id/entry_table"
-        app:layout_constraintEnd_toStartOf="@+id/txt_history"
+        app:layout_constraintEnd_toStartOf="@+id/gas_entries_history"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
 
     <TextView
-        android:id="@+id/txt_history"
+        android:id="@+id/gas_entries_history"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="152dp"
         android:fontFamily="@font/capriola"
-        android:text="@string/txt_history"
+        android:text="@string/gas_entries_topic"
         android:textColor="@color/purple_700"
         android:textSize="@dimen/txt_history"
         android:textStyle="bold"
@@ -373,7 +373,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_history" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_entries_history" />
 
     <Button
         android:id="@+id/return_btn"

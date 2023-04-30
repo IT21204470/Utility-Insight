@@ -39,7 +39,7 @@
         app:srcCompat="@drawable/credit" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/gas_cylynder_img"
         android:layout_width="414dp"
         android:layout_height="105dp"
         android:layout_marginTop="15dp"
@@ -62,7 +62,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_cylynder_img" />
 
     <TextView
         android:id="@+id/price_final"
@@ -75,7 +75,7 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_cylynder_img" />
 
     <TextView
         android:id="@+id/name_fill"
