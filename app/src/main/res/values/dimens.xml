@@ -29,7 +29,7 @@
 
 
     <!--Calculate-->
-    <dimen name="heading1">28dp</dimen>
+    <dimen name="heading1">32dp</dimen>
     <dimen name="readings">20sp</dimen>
     <dimen name="no_of_units">20sp</dimen>
     <dimen name="previous_reading">18dp</dimen>

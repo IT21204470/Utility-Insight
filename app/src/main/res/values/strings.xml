@@ -14,69 +14,39 @@
 
     <!--Calculate page-->
     <string name="heading1">Calculate your usage</string>
-    <string name="pick_days">Pick Days</string>
-    <string name="no_of_days">Number of Days</string>
+    <string name="acc_number">Enter Account Number</string>
     <string name="last_date">Last reading date</string>
-    <string name="current_date">Current reading date</string>
-    <string name="days">Enter number of days</string>
-    <string name="move_next">Enter Meter Readings</string>
-
-
-    <!--Readings page-->
-    <string name="heading2">Enter meter readings</string>
-    <string name="readings">Readings</string>
-    <string name="no_of_units">Number of Units</string>
-    <string name="previous_reading">Previous meter reading</string>
-    <string name="current_reading">Current meter reading</string>
+    <string name="no_of_days">Number of days</string>
+    <string-array name="tariff_name">
+        <item>Select Tariff Category</item>
+        <item>Domestic</item>
+        <item>Industrial</item>
+        <item>General</item>
+    </string-array>
     <string name="units">Enter number of units</string>
-    <string name="calculate_btn">Calculate</string>
+    <string name="calculate_btn">Calculate Usage</string>
+
+
 
 
     <!--Entries page-->
-    <string name="entry_topic">Your Entries</string>
+    <string name="entry_topic">Usage History</string>
     <string name="col1">Entry Date</string>
     <string name="col2">Account Number</string>
     <string name="col3">Units</string>
     <string name="col4">Total Amount</string>
 
-    <string name="row1EntryDate">2023/03/06</string>
-    <string name="row1AccountNumber">245861</string>
-    <string name="row1Units">85</string>
-    <string name="row1TotalAmount">LKR 3840.30</string>
 
-    <string name="row2EntryDate">2023/04/10</string>
-    <string name="row2AccountNumber">121820</string>
-    <string name="row2Units">70</string>
-    <string name="row2TotalAmount">LKR 2735.80</string>
-
-    <string name="row3EntryDate">2022/12/14</string>
-    <string name="row3AccountNumber">504872</string>
-    <string name="row3Units">95</string>
-    <string name="row3TotalAmount">LKR 4910.00</string>
-
-    <string name="row4EntryDate">2023/01/15</string>
-    <string name="row4AccountNumber">322971</string>
-    <string name="row4Units">44</string>
-    <string name="row4TotalAmount">LKR 480.50</string>
-
-    <string name="row5EntryDate">2022/10/04</string>
-    <string name="row5AccountNumber">665413</string>
-    <string name="row5Units">12</string>
-    <string name="row5TotalAmount">LKR 228.20</string>
-
-    <string name="row6EntryDate">2023/06/20</string>
-    <string name="row6AccountNumber">897412</string>
-    <string name="row6Units">98</string>
-    <string name="row6TotalAmount">LKR 5050.80</string>
 
     <string name="navigate">Check Again</string>
-    <string name="direct">Return to Home</string>
+    <string name="direct">Home</string>
 
 
     <!--Add connection page-->
-    <string name="connection_txt">Subscribe Your Account</string>
+    <string name="connection_txt">Register Your Account</string>
     <string name="string">Choose Service:</string>
-    <string-array name="services">
+    <string-array name="category">
+        <item>Choose Service</item>
         <item>Electricity</item>
         <item>Water</item>
         <item>Gas</item>
@@ -194,11 +164,10 @@
     <string name="all_notify">All</string>
     <string name="unread">Unread</string>
     <string name="mark">Mark all as read</string>
-    <string name="des_1">New tips available on the tip menu!</string>
-    <string name="des_2">Haven\'t checked your usage in a while?Go check now!</string>
-    <string name="des_3">This month\'s electricity usage limit is exceeded.</string>
-    <string name="des_4">Last water bill payment of LKR 1580.00 has been authorized.</string>
-    <string name="des_5">Your profile details have been updated.</string>
+    <string name="des_2">~ Time to check your usage!</string>
+    <string name="des_3">~ Monthly electricity usage limit is exceeded.</string>
+    <string name="des_4">~ Last water bill payment has been authorized.</string>
+    <string name="des_5">~ Your profile details have been updated.</string>
 
 
     <!--Amadee-->
@@ -423,6 +392,10 @@
     <string name="gas_txt_tip3">Cook with lids on pots and pans to reduce cooking times and energy usage.</string>
     <string name="gas_more_tips">More Tips</string>
     <string name="gas_tips_2_heading">Cook with lids on pots and pans</string>
+    <string name="update">Update</string>
+    <string name="update1">Update</string>
+    <string name="delete1">Delete</string>
+    <string name="box1_txt">sdcfasc</string>
 
 
 </resources>
