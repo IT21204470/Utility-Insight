@@ -10,9 +10,9 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class waterMeterReading : AppCompatActivity() {
-    private lateinit var etPreviousMeterReading: EditText
-    private lateinit var etCurrentReading: EditText
-    private lateinit var etNumberOfUnits: EditText
+    private lateinit var etWPreviousRead: EditText
+    private lateinit var etWCurrentRead: EditText
+    private lateinit var etWNumberOfUnits: EditText
     private lateinit var btnCalculate: Button
 
     private var db = Firebase.firestore
@@ -20,20 +20,20 @@ class waterMeterReading : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_water_meter_reading)
 
-        etPreviousMeterReading = findViewById(R.id.previous_meter_read)
-        etCurrentReading = findViewById(R.id.current_read_date)
-        etNumberOfUnits = findViewById(R.id.number_of_units)
+        etWPreviousRead = findViewById(R.id.previous_meter_read)
+        etWCurrentRead = findViewById(R.id.current_read_date)
+        etWNumberOfUnits = findViewById(R.id.number_of_units)
         btnCalculate = findViewById(R.id.txt_calculate1)
 
         btnCalculate.setOnClickListener {
 
-            val sPreviousMeterReading = etPreviousMeterReading.toString().trim()
-            val sCurrentReading = etCurrentReading.toString().trim()
-            val sNumberOfUnits = etNumberOfUnits.toString().trim()
+            val sPreviousMeterRead = etWPreviousRead.toString().trim()
+            val sCurrentRead = etWCurrentRead.toString().trim()
+            val sNumberOfUnits = etWNumberOfUnits.toString().trim()
 
             val userMap = hashMapOf(
-                "previousMeterReading" to sPreviousMeterReading,
-                "currentReading" to sCurrentReading,
+                "previousMeterRead" to sPreviousMeterRead,
+                "currentRead" to sCurrentRead,
                 "numberOfunits" to sNumberOfUnits
             )
 
@@ -42,9 +42,9 @@ class waterMeterReading : AppCompatActivity() {
             db.collection("user").document(userId).set(userMap)
                 .addOnSuccessListener {
                     Toast.makeText(this, "Successfully Added!", Toast.LENGTH_SHORT).show()
-                    etPreviousMeterReading.text.clear()
-                    etCurrentReading.text.clear()
-                    etNumberOfUnits.text.clear()
+                    etWPreviousRead.text.clear()
+                    etWCurrentRead.text.clear()
+                    etWNumberOfUnits.text.clear()
                 }
                 .addOnFailureListener {
                     Toast.makeText(this,"Failed!", Toast.LENGTH_SHORT).show()

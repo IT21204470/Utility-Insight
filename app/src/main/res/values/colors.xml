@@ -7,8 +7,9 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>-->
+
+    <color name="white">#FFFFFF</color>
 
 
     <!--add connection-->
@@ -39,9 +40,9 @@
 
 
     <!--entries-->
-    <color name="entry_topic">#FF3700B3</color>
+   <!-- <color name="entry_topic">#FF3700B3</color>
     <color name="navigate">#FF3700B3</color>
-    <color name="direct">#FF3700B3</color>
+    <color name="direct">#FF3700B3</color>-->
 
 
     <!--failed page-->
@@ -54,7 +55,7 @@
 
     <!--notifications_page-->
     <color name="notify_topic">#3700B3</color>
-    <color name="unread">#FF000000</color>
+    <!--<color name="unread">#FF000000</color>-->
     <color name="mark">#5C5F61</color>
 
     <!--Tips-->
@@ -65,7 +66,7 @@
     <!--Payment page-->
     <color name="txt_payments">#E41A1A</color>
     <color name="txt_account">#0B0909</color>
-    <color name="no_account">#FF000000</color>
+
     <color name="details">#00668B</color>
     <color name="save">#00668B</color>
 
@@ -89,8 +90,7 @@
     <color name="description">#474545</color>
     <color name="w_txt_tips">#F8F3F3</color>
     <color name="notifi">#F8F2F2</color>
-    <color name="txt_payment">@color/white</color>
-    <color name="txt_calc">@color/white</color>
+
 
 
     <!--Water calculator-->
@@ -103,7 +103,7 @@
 
 
     <!--Water entries-->
-    <color name="w_entry_topic">@color/purple_700</color>
+
     <color name="col1">#3F51B5</color>
     <color name="col2">#3F51B5</color>
     <color name="col3">#3F51B5</color>
@@ -141,7 +141,7 @@
     <color name="txt_calculate1">#FFFFFF</color>
 
     <!--Water tips-->
-    <color name="txt_title">#FF3700B3</color>
+    <!--<color name="txt_title">#FF3700B3</color>-->
     <color name="txt_tip1">#000000</color>
     <color name="txt_tip1des">#757373</color>
     <color name="txt_tip3">#000000</color>
@@ -149,7 +149,7 @@
     <color name="txt_tip4">#000000</color>
     <color name="txt_tip4dec4">#757373</color>
     <color name="txt_tip">#FFFFFF</color>
-    <color name="limit">#FF3044B1</color>
+    <!--<color name="limit">#FF3044B1</color>-->
     <color name="heading2">#3044B1</color>
 
 
@@ -161,7 +161,7 @@
     <color name="labelColor">#000000</color>
     <color name="btnSignUp">#13568B</color>
     <color name="btnBack">#00FFFF</color>
-    <color name="c">#6000BCD4</color>
+   <!-- <color name="c">#6000BCD4</color>-->
     <color name="btnSignOut">#D52A1D</color>
     <color name="bc_color">#FFFFFF</color>
     <color name="btnCategories">#916E07</color>
@@ -177,7 +177,8 @@
     <color name="gas_tip_2">#000000</color>
     <color name="gas_set_limit">#4CAF50</color>
     <color name="gas_set_btn">#4CAF50</color>
-    <color name="next_btn" />
+
+
 
 
 </resources>

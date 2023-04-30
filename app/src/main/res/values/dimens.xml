@@ -313,6 +313,6 @@
     <dimen name="imageView6">53dp</dimen>
     <dimen name="tipgas3">18dp</dimen>
     <dimen name="txt_tipgas3">356dp</dimen>
-    <dimen name="more_tips">match_parent</dimen>
+
 
 </resources>

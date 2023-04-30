@@ -111,14 +111,14 @@
 
 
     <!--Success page-->
-    <string name="success_msg">Success!</string>
+    <string name="success_msg">Success\!</string>
     <string name="successful_msg">Payment Successful</string>
     <string name="back">Back to Home</string>
     <string name="done">Done</string>
 
 
     <!--Failed page-->
-    <string name="failed_msg">Failed!</string>
+    <string name="failed_msg">Failed\!</string>
     <string name="unsuccessful_msg">Payment Unsuccessful</string>
     <string name="previous">Back to Payment</string>
     <string name="close">Close</string>
@@ -161,7 +161,7 @@
     <string name="all_notify">All</string>
     <string name="unread">Unread</string>
     <string name="mark">Mark all as read</string>
-    <string name="des_2">~ Time to check your usage!</string>
+    <string name="des_2">~ Time to check your usage\!</string>
     <string name="des_3">~ Monthly electricity usage limit is exceeded.</string>
     <string name="des_4">~ Last water bill payment has been authorized.</string>
     <string name="des_5">~ Your profile details have been updated.</string>

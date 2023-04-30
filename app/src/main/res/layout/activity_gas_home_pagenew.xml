@@ -12,7 +12,6 @@
         android:id="@+id/gas_notify_txt"
         android:layout_width="144dp"
         android:layout_height="30dp"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/capriola"
         android:text="@string/gas_notifications_icon"
@@ -20,25 +19,7 @@
         android:textSize="@dimen/notify"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/gas_tips_txt"
         app:layout_constraintTop_toBottomOf="@+id/gas_notify_imageView3" />
-
-    <TextView
-        android:id="@+id/gas_tips_txt"
-        android:layout_width="107dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="20dp"
-        android:background=""
-        android:fontFamily="@font/capriola"
-        android:text="@string/gas_show_tips_txt"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.22"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_tips_imageView2" />
 
     <ImageView
         android:id="@+id/gas_cylynder_img"
@@ -119,7 +100,6 @@
         android:id="@+id/gas_pay_btn"
         android:layout_width="160dp"
         android:layout_height="60dp"
-        android:layout_marginTop="255dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/gas_pay_btn"
         android:fontFamily="@font/solway_bold"
@@ -128,8 +108,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/gas_calusage_btn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_tips_txt" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/gas_calusage_btn"

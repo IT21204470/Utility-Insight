@@ -114,7 +114,7 @@
         android:layout_marginTop="-43dp"
         android:fontFamily="@font/solway_bold"
         android:text="CALCULATE USAGE"
-        android:textColor="@color/txt_calc"
+
         android:textSize="@dimen/calc"
         app:layout_constraintStart_toEndOf="@+id/payment_btn3"
         app:layout_constraintTop_toBottomOf="@+id/payment_btn3" />
