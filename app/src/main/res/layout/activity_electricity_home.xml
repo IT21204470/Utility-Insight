@@ -8,92 +8,58 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="25dp">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintEnd_toStartOf="@+id/txt_payments"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
     <TextView
         android:id="@+id/gas_home_topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="94dp"
         android:fontFamily="@font/exo_2"
         android:text="@string/topic"
-        android:textColor="@color/black"
+        android:textColor="#F80025"
         android:textSize="@dimen/topic"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/calculator_btn"
         android:layout_width="150dp"
         android:layout_height="55dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="223dp"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="@color/purple_700"
         android:fontFamily="@font/solway_bold"
         android:padding="8dp"
         android:text="@string/calculator_btn"
         android:textColor="@color/calculator_btn"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/payment_btn" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gas_home_topic" />
 
     <Button
         android:id="@+id/payment_btn"
         android:layout_width="150dp"
         android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="224dp"
+        android:layout_marginTop="458dp"
+        android:layout_marginEnd="68dp"
         android:backgroundTint="@color/purple_700"
         android:fontFamily="@font/solway_bold"
         android:padding="8dp"
         android:text="@string/payment_btn"
         android:textColor="@color/payment_btn"
         android:textSize="@dimen/payment_btn"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/calculator_btn"
+        app:layout_constraintTop_toBottomOf="@+id/gas_home_topic" />
 
-    <ImageView
-        android:id="@+id/img_tips"
-        android:layout_width="@dimen/img_tips"
-        android:layout_height="80dp"
-        android:layout_marginStart="104dp"
-        app:layout_constraintStart_toEndOf="@+id/img_notify"
-        app:srcCompat="@drawable/tips"
-        tools:layout_editor_absoluteY="184dp" />
-
-    <ImageView
-        android:id="@+id/img_notify"
-        android:layout_width="@dimen/img_notify"
-        android:layout_height="80dp"
-        android:layout_marginStart="72dp"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </ImageView>
-
-
-    <TextView
-        android:id="@+id/txt_tips"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="13dp"
-        android:fontFamily="@font/capriola"
-        android:text="@string/txt_tips"
-        android:textColor="@color/txt_tips"
-        android:textSize="@dimen/txt_tips"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_notify" />
-
-    <TextView
-        android:id="@+id/txt_notify"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/capriola"
-        android:text="@string/txt_notify"
-        android:textColor="@color/txt_notify"
-        android:textSize="@dimen/txt_notify"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/txt_tips"
-        app:layout_constraintTop_toBottomOf="@+id/img_tips" />
 </androidx.constraintlayout.widget.ConstraintLayout>

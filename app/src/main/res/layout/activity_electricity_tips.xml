@@ -11,7 +11,7 @@
         android:layout_width="@dimen/imageView25"
         android:layout_height="40dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toStartOf="@+id/tips_title"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
@@ -95,10 +95,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="170dp"
-        android:fontFamily="@font/capriola"
+        android:fontFamily="@font/exo_2"
         android:text="@string/tips_title"
-        android:textColor="@color/tips_title"
-        android:textSize="@dimen/tips_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/connection_txt"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

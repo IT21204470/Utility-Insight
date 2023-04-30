@@ -12,6 +12,9 @@
         android:theme="@style/Theme.UtilityInsight"
         tools:targetApi="31">
         <activity
+            android:name=".electricityEntries"
+            android:exported="false" />
+        <activity
             android:name=".gas_calculate"
             android:exported="false" />
         <activity
@@ -84,10 +87,10 @@
             android:name=".paymentDetails"
             android:exported="false" />
         <activity
-            android:name=".addConnection"
+            android:name=".electricityCalculate"
             android:exported="false" />
         <activity
-            android:name=".electricityCalculate"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".electricityReadings"
@@ -114,9 +117,6 @@
             android:name=".unsuccessfulMessage"
             android:exported="false" />
         <activity
-            android:name=".electricityEntries"
-            android:exported="false" />
-        <activity
             android:name=".electricityHome"
             android:exported="false" />
         <activity
@@ -129,7 +129,7 @@
             android:name=".addConnectionPage"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".addConnection"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
