@@ -89,7 +89,7 @@
 
 
     <!--Sidebar-->
-    <string name="greeting">Hi Hemsith,</string>
+    <string name="greeting">Hi Hemsith</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="profile_txt">Your profile</string>
     <string name="notify_sidebar">Notifications</string>

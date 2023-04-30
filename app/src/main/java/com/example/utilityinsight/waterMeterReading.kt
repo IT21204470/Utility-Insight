@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class waterMeterReading : AppCompatActivity() {
@@ -33,7 +36,20 @@ class waterMeterReading : AppCompatActivity() {
                 "currentReading" to sCurrentReading,
                 "numberOfunits" to sNumberOfUnits
             )
-            db.collection
+
+            val userId = FirebaseAuth.getInstance().currentUser!!.uid
+
+            db.collection("user").document(userId).set(userMap)
+                .addOnSuccessListener {
+                    Toast.makeText(this, "Successfully Added!", Toast.LENGTH_SHORT).show()
+                    etPreviousMeterReading.text.clear()
+                    etCurrentReading.text.clear()
+                    etNumberOfUnits.text.clear()
+                }
+                .addOnFailureListener {
+                    Toast.makeText(this,"Failed!", Toast.LENGTH_SHORT).show()
+
+                }
         }
     }
 }
