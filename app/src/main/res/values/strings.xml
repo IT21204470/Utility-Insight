@@ -27,15 +27,12 @@
     <string name="calculate_btn">Calculate Usage</string>
 
 
-
-
     <!--Entries page-->
     <string name="entry_topic">Usage History</string>
     <string name="col1">Entry Date</string>
     <string name="col2">Account Number</string>
     <string name="col3">Units</string>
     <string name="col4">Total Amount</string>
-
 
 
     <string name="navigate">Check Again</string>
@@ -300,18 +297,7 @@
     <string name="gas_pay_btn_txt">Pay Your Bills</string>
     <string name="gas_cal_usage_btn_txt">Calculate Usage</string>
 
-
-    <!--Enter dates-->
-    <string name="gas_no_of_days">Number of Days</string>
-    <string name="gas_previous_reading">Last reading date</string>
-    <string name="gas_current_reading">Current reading date</string>
-    <string name="gas_date_entry_calc_heading">Calculate Usage</string>
-    <string name="gas_pick_days_radio_txt">Pick Days</string>
-    <string name="gas_calc_no_of_days">Enter Number of Days</string>
-    <string name="gas_enter_meter_readings_btn">Enter Meter Readings</string>
-
     <!--Enter meter readings-->
-
     <string name="gas_readings">Readings</string>
     <string name="gas_no_of_units">Number of Units</string>
     <string name="gas_units">Enter number of units</string>
@@ -321,59 +307,12 @@
     <string name="gas_current_meter_reading">Current Meter Reading</string>
     <string name="gas_meter_reading_topic">Enter Meter Reading</string>
 
-
-
-    <!--Entries page-->
-
-    <string name="gas_entries_topic">Your Entries</string>
-    <string name="gas_col1">Entry Date</string>
-    <string name="gas_col2">Account Number</string>
-    <string name="gas_col3">Units</string>
-    <string name="gas_col4">Total Amount</string>
-
-    <string name="gas_row1EntryDate">2023/01/02</string>
-    <string name="gas_row1AccountNumber">24586112356</string>
-    <string name="gas_row1Units">110</string>
-    <string name="gas_row1TotalAmount">LKR 5500.00</string>
-
-    <string name="gas_row2EntryDate">2023/01/6</string>
-    <string name="gas_row2AccountNumber">85679086435</string>
-    <string name="gas_row2Units">80</string>
-    <string name="gas_row2TotalAmount">LKR 4000.00</string>
-
-    <string name="gas_row3EntryDate">2023/01/17</string>
-    <string name="gas_row3AccountNumber">50487287456</string>
-    <string name="gas_row3Units">50</string>
-    <string name="gas_row3TotalAmount">LKR 2500.00</string>
-
-    <string name="gas_row4EntryDate">2023/01/23</string>
-    <string name="gas_row4AccountNumber">32297196456</string>
-    <string name="gas_row4Units">10</string>
-    <string name="gas_row4TotalAmount">LKR 500.00</string>
-
-    <string name="gas_row5EntryDate">2023/02/04</string>
-    <string name="gas_row5AccountNumber">66541367398</string>
-    <string name="gas_row5Units">68</string>
-    <string name="gas_row5TotalAmount">LKR 3400.00</string>
-
-    <string name="gas_row6EntryDate">2023/02/12</string>
-    <string name="gas_row6AccountNumber">897412579073</string>
-    <string name="gas_row6Units">87</string>
-    <string name="gas_row6TotalAmount">LKR 4350.00</string>
-
-    <string name="gas_row7EntryDate">2023/02/26</string>
-    <string name="gas_row7AccountNumber">12541609876</string>
-    <string name="gas_row7Units">74</string>
-    <string name="gas_row7TotalAmount">LKR 3700.00</string>
-
-    <string name="gas_row8EntryDate">2023/03/06</string>
-    <string name="gas_row8AccountNumber">54782187645</string>
-    <string name="gas_row8Units">61</string>
-    <string name="gas_row8TotalAmount">LKR 3050.00</string>
-
-    <string name="gas_txt_history">Gas usage history</string>
-    <string name="gas_check_btn">Check Again</string>
-    <string name="gas_return_btn">Return to Home</string>
+    <!--Calculate page-->
+    <string name="gas_calc_heading">Calculate your usage</string>
+    <string name="gas_number_of_days">Number of days</string>
+    <string name="gas_number_of_units">Enter number of units</string>
+    <string name="gas_calc_usage_btn">CALCULATE USAGE ></string>
+    <string name="gas_accno_hint">Enter Account Number</string>
 
     <!--Tips page-->
     <string name="gas_tips_title">Tips for you</string>
@@ -389,6 +328,5 @@
     <string name="update1">Update</string>
     <string name="delete1">Delete</string>
     <string name="box1_txt">sdcfasc</string>
-
 
 </resources>

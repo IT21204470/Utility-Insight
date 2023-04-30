@@ -13,14 +13,14 @@
         android:layout_width="144dp"
         android:layout_height="30dp"
         android:layout_marginStart="60dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/capriola"
         android:text="@string/gas_notifications_icon"
         android:textColor="@color/white"
         android:textSize="@dimen/notify"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/gas_tips_txt"
         app:layout_constraintTop_toBottomOf="@+id/gas_notify_imageView3" />
 
