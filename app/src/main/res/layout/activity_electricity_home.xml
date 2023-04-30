@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY="25dp">
 
     <TextView
-        android:id="@+id/topic"
+        android:id="@+id/gas_home_topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -34,8 +34,7 @@
         android:text="@string/calculator_btn"
         android:textColor="@color/calculator_btn"
         android:textSize="16sp"
-        app:layout_constraintStart_toEndOf="@+id/payment_btn"
-        app:layout_constraintTop_toBottomOf="@+id/txt_notify" />
+        app:layout_constraintStart_toEndOf="@+id/payment_btn" />
 
     <Button
         android:id="@+id/payment_btn"
@@ -49,8 +48,7 @@
         android:text="@string/payment_btn"
         android:textColor="@color/payment_btn"
         android:textSize="@dimen/payment_btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_tips" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/img_tips"
@@ -66,9 +64,10 @@
         android:layout_width="@dimen/img_notify"
         android:layout_height="80dp"
         android:layout_marginStart="72dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/notifications"
-        tools:layout_editor_absoluteY="187dp" />
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
 
     <TextView
         android:id="@+id/txt_tips"
@@ -97,5 +96,4 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/txt_tips"
         app:layout_constraintTop_toBottomOf="@+id/img_tips" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

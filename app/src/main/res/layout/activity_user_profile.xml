@@ -8,14 +8,14 @@
     tools:context=".userProfile">
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/gas_cylynder_img"
         android:layout_width="@dimen/pic_dim"
         android:layout_height="@dimen/pic_dim"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/gas_tips_imageView2"
         app:srcCompat="@drawable/person" />
 
     <TextView
@@ -28,7 +28,7 @@
         android:text="@string/hntName"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_cylynder_img" />
 
     <TextView
         android:id="@+id/lblName"
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toStartOf="@+id/viewName"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_cylynder_img" />
 
     <TextView
         android:id="@+id/lblUserName"
@@ -135,7 +135,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/gas_tips_imageView2"
         android:layout_width="@dimen/menu_wid"
         android:layout_height="@dimen/menu_height"
         android:layout_marginTop="24dp"

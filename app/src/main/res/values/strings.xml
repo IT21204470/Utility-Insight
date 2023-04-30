@@ -59,7 +59,7 @@
 
 
     <!--Sidebar-->
-    <string name="greeting">Hi Hemsith,</string>
+    <string name="greeting">Hi Hemsith</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="profile_txt">Your profile</string>
     <string name="notify_sidebar">Notifications</string>
@@ -292,17 +292,13 @@
 
     <!--Gas Home-->
     <string name="gas_app_name">Utility Insight</string>
-    <string name="gas_topic">Gas</string>
     <string name="gas_pay_btn">Pay your bills</string>
-    <string name="gas_set_limit">Set your monthly limit:</string>
-
-    <string name="gas_home_sub_topic">Last month\'s usage: 60 units</string>
+    <string name="gas_home_topic">Gas</string>
+    <string name="gas_home_sub_topic">Last month usage 60 units</string>
     <string name="gas_show_tips_txt">Show Tips</string>
     <string name="gas_notifications_icon">Notifications</string>
     <string name="gas_pay_btn_txt">Pay Your Bills</string>
     <string name="gas_cal_usage_btn_txt">Calculate Usage</string>
-    <string name="gas_set_btn">SET</string>
-
 
 
     <!--Enter dates-->
@@ -310,13 +306,9 @@
     <string name="gas_previous_reading">Last reading date</string>
     <string name="gas_current_reading">Current reading date</string>
     <string name="gas_date_entry_calc_heading">Calculate Usage</string>
-    <string name="gas_pick_days_radio">Pick days</string>
     <string name="gas_pick_days_radio_txt">Pick Days</string>
     <string name="gas_calc_no_of_days">Enter Number of Days</string>
     <string name="gas_enter_meter_readings_btn">Enter Meter Readings</string>
-
-
-
 
     <!--Enter meter readings-->
 
@@ -332,7 +324,8 @@
 
 
     <!--Entries page-->
-    <string name="gas_entry_topic">Your Entries</string>
+
+    <string name="gas_entries_topic">Your Entries</string>
     <string name="gas_col1">Entry Date</string>
     <string name="gas_col2">Account Number</string>
     <string name="gas_col3">Units</string>

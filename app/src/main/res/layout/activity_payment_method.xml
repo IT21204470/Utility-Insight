@@ -78,7 +78,7 @@
         app:layout_constraintTop_toBottomOf="@+id/express" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/gas_cylynder_img"
         android:layout_width="414dp"
         android:layout_height="105dp"
         android:layout_marginTop="82dp"
@@ -99,8 +99,8 @@
         android:text="@string/to_checkout"
         android:textColor="@color/to_checkout"
         android:textSize="@dimen/to_checkout"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintEnd_toStartOf="@+id/gas_cylynder_img"
+        app:layout_constraintTop_toBottomOf="@+id/gas_cylynder_img" />
 
     <TextView
         android:id="@+id/price_final"
@@ -112,8 +112,8 @@
         android:text="@string/price"
         android:textColor="@color/price"
         android:textSize="@dimen/price"
-        app:layout_constraintEnd_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintEnd_toStartOf="@+id/gas_cylynder_img"
+        app:layout_constraintTop_toBottomOf="@+id/gas_cylynder_img" />
 
     <ImageView
         android:id="@+id/imageView18"

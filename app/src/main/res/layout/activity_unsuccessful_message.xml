@@ -18,13 +18,13 @@
         app:srcCompat="@drawable/rectangle_view" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/gas_tips_imageView2"
         android:layout_width="360dp"
         android:layout_height="50dp"
         android:layout_marginTop="-70dp"
         android:layout_marginEnd="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/gas_notify_imageView3"
         app:srcCompat="@drawable/rectangle_red" />
 
     <TextView
@@ -39,7 +39,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_notify_imageView3" />
 
     <Button
         android:id="@+id/previous"
@@ -81,7 +81,7 @@
         app:layout_constraintTop_toBottomOf="@+id/success_msg" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/gas_notify_imageView3"
         android:layout_width="@dimen/imageView3"
         android:layout_height="100dp"
         android:layout_marginTop="169dp"
