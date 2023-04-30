@@ -22,9 +22,10 @@
 
     <!--Entries page-->
     <string name="entry_h1">Usage History</string>
-    <string name="card_d1"> Account Number :</string>
-    <string name="card_d2"> No of days :</string>
-    <string name="card_d3"> No of units :</string>
+    <string name="card_d1">Account Number :</string>
+    <string name="card_d2">No of days :</string>
+    <string name="card_d3">No of units :</string>
+    <string name="card_d4">Bill Amount :</string>
     <string name="update1">Update</string>
     <string name="delete1">Delete</string>
 
