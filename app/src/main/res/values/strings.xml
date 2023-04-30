@@ -89,7 +89,7 @@
 
 
     <!--Sidebar-->
-    <string name="greeting">Hi Hemsith,</string>
+    <string name="greeting">Hi Hemsith</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="profile_txt">Your profile</string>
     <string name="notify_sidebar">Notifications</string>
@@ -301,7 +301,7 @@
     <string name="txtLogin">Login</string>
     <string name="btnForgotPass">Forgot Password?</string>
     <string name="btnLogin">Login</string>
-    <string name="txtNew">Dont Have An Account?</string>
+    <string name="txtNew">Don\'t Have An Account?</string>
     <string name="txtDashboard">Choose Service</string>
     <string name="btnEditUser">Edit Details</string>
 
@@ -319,7 +319,7 @@
     <string name="hntFeedback">Type Here</string>
     <string name="txt_addentries">Add New Entry</string>
 
-    <!--Tharushi    -->
+    <!--Tharushi-->
 
     <!--Gas Home-->
     <string name="gas_app_name">Utility Insight</string>
@@ -330,8 +330,6 @@
     <string name="gas_notifications_icon">Notifications</string>
     <string name="gas_pay_btn_txt">Pay Your Bills</string>
     <string name="gas_cal_usage_btn_txt">Calculate Usage</string>
-
-
 
 
     <!--Enter dates-->
