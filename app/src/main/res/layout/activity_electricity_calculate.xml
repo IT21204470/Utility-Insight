@@ -4,41 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    tools:layout_editor_absoluteY="81dp">
 
     <Spinner
-        android:id="@+id/category2"
+        android:id="@+id/spinner2"
         android:layout_width="270dp"
         android:layout_height="55dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="112dp"
-        android:entries="@array/tariff_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
-
-    <EditText
-        android:id="@+id/unit_amount"
-        android:layout_width="270dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="113dp"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:fontFamily="@font/solway_bold"
-        android:hint="@string/units"
-        android:inputType="date"
-        android:paddingLeft="15dp"
-        android:textAlignment="viewStart"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/no_of_days" />
+        android:layout_marginTop="80dp"
+        android:entries="@array/tariffcat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/acc_number"
         android:layout_width="270dp"
         android:layout_height="55dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="112dp"
+        android:layout_marginTop="8dp"
         android:drawablePadding="5dp"
         android:ems="10"
         android:fontFamily="@font/solway_bold"
@@ -47,77 +29,105 @@
         android:paddingLeft="15dp"
         android:textAlignment="viewStart"
         android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <EditText
+        android:id="@+id/last_reading"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/last_reading"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acc_number" />
+
+    <EditText
+        android:id="@+id/unit_amount"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/units"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_reading" />
+
+    <EditText
+        android:id="@+id/current_reading"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/current_reading"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/current_reading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_reading" />
 
     <TextView
         android:id="@+id/heading1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/exo_2"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/solway_bold"
         android:text="@string/heading1"
         android:textColor="@color/black"
         android:textSize="@dimen/connection_txt"
-        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/calculate_btn"
-        android:layout_width="246dp"
+        android:layout_width="190dp"
         android:layout_height="60dp"
 
-        android:layout_marginTop="54dp"
-        android:layout_marginEnd="27dp"
-        android:backgroundTint="@color/purple_700"
+        android:layout_marginBottom="130dp"
+        android:backgroundTint="#1856F4"
         android:drawableRight="@drawable/baseline_navigate_next_24"
         android:fontFamily="@font/solway_bold"
         android:padding="8dp"
         android:text="@string/calculate_btn"
         android:textColor="@color/white"
         android:textSize="@dimen/calculate_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <EditText
-        android:id="@+id/no_of_days"
-        android:layout_width="270dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="113dp"
-        android:drawablePadding="5dp"
-        android:ems="10"
-        android:fontFamily="@font/solway_bold"
-        android:hint="@string/no_of_days"
-        android:inputType="date"
-        android:paddingLeft="15dp"
-        android:textAlignment="viewStart"
-        android:textSize="@dimen/current_reading"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/acc_number" />
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="17dp"
-        app:layout_constraintEnd_toStartOf="@+id/heading1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
-
-    <ProgressBar
-        android:id="@+id/progressBar2"
-        style="?android:attr/progressBarStyle"
+    <TextView
+        android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:visibility="gone"
-        android:layout_marginEnd="180dp"
-        android:indeterminateDrawable="@drawable/progress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unit_amount" />
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="150dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

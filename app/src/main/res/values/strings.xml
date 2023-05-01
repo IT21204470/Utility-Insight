@@ -9,7 +9,7 @@
 
     <!--Calculate page-->
     <string name="heading1">Calculate your usage</string>
-    <string-array name="tariff_name">
+    <string-array name="tariffcat">
         <item>Select Tariff Category</item>
         <item>Domestic</item>
         <item>Industrial</item>
@@ -18,7 +18,7 @@
     <string name="acc_number">Enter Account Number</string>
     <string name="no_of_days">Number of days</string>
     <string name="units">Enter number of units</string>
-    <string name="calculate_btn">Calculate Usage</string>
+    <string name="calculate_btn">Calculate</string>
 
     <!--Entries page-->
     <string name="entry_h1">Usage History</string>
@@ -372,6 +372,8 @@
     <string name="gas_txt_tip3">Cook with lids on pots and pans to reduce cooking times and energy usage.</string>
     <string name="gas_more_tips">More Tips</string>
     <string name="gas_tips_2_heading">Cook with lids on pots and pans</string>
+    <string name="last_reading">Enter last reading date</string>
+    <string name="current_reading">Enter current reading date</string>
 
 
 </resources>

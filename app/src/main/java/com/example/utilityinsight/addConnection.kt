@@ -35,6 +35,8 @@ class addConnection : AppCompatActivity() {
         btndecline = findViewById(R.id.decline_btn)
         progressBar = findViewById(R.id.progressBar)
 
+        progressBar.visibility = View.INVISIBLE
+
         btnsave.setOnClickListener {
             progressBar.visibility = View.VISIBLE
             val userid = UUID.randomUUID().toString()

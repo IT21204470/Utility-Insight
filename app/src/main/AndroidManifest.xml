@@ -15,28 +15,10 @@
             android:name=".electricityEntries"
             android:exported="false" />
         <activity
-            android:name=".gas_calculate"
-            android:exported="false" />
-        <activity
             android:name=".gasHomePagenew"
             android:exported="false" />
         <activity
             android:name=".gasViewTips"
-            android:exported="false" />
-        <activity
-            android:name=".gasReadingsEntry"
-            android:exported="false" />
-        <activity
-            android:name=".gasMain"
-            android:exported="false" />
-        <activity
-            android:name=".gasHomePage"
-            android:exported="false" />
-        <activity
-            android:name=".gasEntriesPage"
-            android:exported="false" />
-        <activity
-            android:name=".dateEntryPage"
             android:exported="false" />
         <activity
             android:name=".ActivityFront"
@@ -57,15 +39,6 @@
             android:name=".UserRegistration"
             android:exported="false" />
         <activity
-            android:name=".activity_user_registration"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".mainPaymentMethod"
-            android:exported="false" />
-        <activity
             android:name=".waterShowtips"
             android:exported="false" />
         <activity
@@ -75,25 +48,16 @@
             android:name=".waterHome"
             android:exported="false" />
         <activity
-            android:name=".waterEntries"
-            android:exported="false" />
-        <activity
-            android:name=".waterCalculatorPage"
-            android:exported="false" />
-        <activity
             android:name=".paymentMethod"
             android:exported="false" />
         <activity
             android:name=".paymentDetails"
             android:exported="false" />
         <activity
-            android:name=".electricityCalculate"
+            android:name=".addConnection"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".electricityReadings"
             android:exported="false" />
         <activity
             android:name=".electricityReport"
@@ -120,16 +84,7 @@
             android:name=".electricityHome"
             android:exported="false" />
         <activity
-            android:name=".checkoutPage"
-            android:exported="false" />
-        <activity
-            android:name=".calculatePage"
-            android:exported="false" />
-        <activity
-            android:name=".addConnectionPage"
-            android:exported="false" />
-        <activity
-            android:name=".addConnection"
+            android:name=".electricityCalculate"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
