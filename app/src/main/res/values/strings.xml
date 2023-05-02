@@ -375,6 +375,11 @@
     <string name="last_reading">Enter last reading date</string>
     <string name="current_reading">Enter current reading date</string>
     <string name="store_btn">View Entries</string>
+    <string name="card1_name">Calculate Usage</string>
+    <string name="card2_name">Pay Bills</string>
+    <string name="card3_name">Add Connection</string>
+    <string name="card4_name">Tips</string>
+    <string name="e_newtopic">Electricity Home</string>
 
 
 </resources>

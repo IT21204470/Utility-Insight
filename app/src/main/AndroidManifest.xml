@@ -81,10 +81,10 @@
             android:name=".unsuccessfulMessage"
             android:exported="false" />
         <activity
-            android:name=".electricityHome"
+            android:name=".electricityCalculate"
             android:exported="false" />
         <activity
-            android:name=".electricityCalculate"
+            android:name=".electricityHome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

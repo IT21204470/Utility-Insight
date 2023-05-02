@@ -32,6 +32,12 @@ class electricityCalculate : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_electricity_calculate)
 
+        val backButton = findViewById<ImageButton>(R.id.back_btn)
+        backButton.setOnClickListener {
+            val intent = Intent(this, electricityHome::class.java)
+            startActivity(intent)
+        }
+
         etDatePicker = findViewById(R.id.last_reading)
         etDatePicker2 = findViewById(R.id.current_reading)
 
@@ -87,7 +93,7 @@ class electricityCalculate : AppCompatActivity() {
         btnstore.visibility = View.INVISIBLE
 
         btncalculate.setOnClickListener {
-            btnstore.visibility = View.VISIBLE
+
             val accnumber = etaccnumber.text.toString().trim()
             val unitsText = etunits.text.toString().trim()
             val lastReading = etDatePicker.text.toString().trim()
@@ -96,9 +102,11 @@ class electricityCalculate : AppCompatActivity() {
             // Check if any of the fields are empty
             if (accnumber.isEmpty() || unitsText.isEmpty() || lastReading.isEmpty() || currentReading.isEmpty()) {
                 Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
+                btnstore.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
+            btnstore.visibility = View.VISIBLE
             val units: Int
             try {
                 units = unitsText.toInt()
@@ -122,6 +130,9 @@ class electricityCalculate : AppCompatActivity() {
             val diffInMillis = currentReadingDate.time - lastReadingDate.time
             val diffInDays = TimeUnit.MILLISECONDS.toDays(diffInMillis)
 
+
+
+            //calculations
             var importcharge = 0f
             var fixedcharge = 0f
             var totalcharge = 0f
@@ -140,7 +151,7 @@ class electricityCalculate : AppCompatActivity() {
                 totalcharge = importcharge + fixedcharge
             }
 
-            ans.text = "Bill Period: $diffInDays days\nImport Charge: $importcharge\nFixed Charge: $fixedcharge\nTotal Bill Amount: $totalcharge"
+            ans.text = "Bill Period: $diffInDays days\nImport Charge: $importcharge LKR\nFixed Charge: $fixedcharge LKR\nTotal Bill Amount: $totalcharge LKR"
         }
 
 
@@ -169,8 +180,8 @@ class electricityCalculate : AppCompatActivity() {
                 .addOnSuccessListener {
                     etaccnumber.text.clear()
                     etunits.text.clear()
-                    Toast.makeText(this, "Calculation Succeeded", Toast.LENGTH_SHORT).show()
-                    val i = Intent(this, electricityCalculate::class.java)
+                    Toast.makeText(this, "Record Successfully Added", Toast.LENGTH_SHORT).show()
+                    val i = Intent(this, electricityEntries::class.java)
                     startActivity(i)
                     finish()
                 }
