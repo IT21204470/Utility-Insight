@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="72dp"
-        android:fontFamily="@font/exo_2"
+
         android:text="@string/connection_txt"
         android:textColor="@color/black"
         android:textSize="@dimen/connection_txt"

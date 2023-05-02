@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".waterCalculate">
+
+
+    <Button
+        android:id="@+id/w_home_store"
+        android:layout_width="195dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/purple_700"
+        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/w_home_store"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_home_store"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/w_acc_name"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:hint="@string/w_acc_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/w_txt_Meter"
+        android:layout_width="298dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/capriola"
+        android:text="@string/w_txt_Meter"
+        android:textColor="#000000"
+        android:textSize="@dimen/w_txt_Meter"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/meter_menu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/meter_menu"
+        android:layout_width="53dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/w_txt_Meter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu" />
+
+    <EditText
+        android:id="@+id/w_acc_number"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:hint="@string/w_acc_number"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w_acc_name" />
+
+    <EditText
+        android:id="@+id/w_number_of_days"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:hint="@string/w_number_of_days"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w_acc_number" />
+
+    <EditText
+        android:id="@+id/w_number_of_units"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:hint="@string/w_number_of_units"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w_number_of_days" />
+
+    <Button
+        android:id="@+id/w_home_calculate_btn"
+        android:layout_width="195dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="360dp"
+        android:backgroundTint="@color/purple_700"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/w_home_calculate_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_calculate_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/w_txt_Meter" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/w_home_calculate_btn" />
+
+    <Spinner
+        android:id="@+id/w_fixed_charge"
+        android:layout_width="265dp"
+        android:layout_height="50dp"
+        android:entries="@array/w_fixed_charge"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/w_home_calculate_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

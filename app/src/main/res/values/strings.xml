@@ -169,16 +169,24 @@
     <string name="set">Set</string>
     <string name="txt_payment">PAY YOUR BILLS</string>
     <string name="txt_calc">CALCULATE USAGE</string>
-
+    <string-array name="w_fixed_charge">
+        <item>Fixed Charge(Units)</item>
+        <item>0-25 = 100.00(LKR)</item>
+        <item>26-30 = 200.00(LKR)</item>
+        <item>31-40 = 400.00(LKR)</item>
+        <item>41-50 = 650.00(LKR)</item>
+        <item>51-75 = 1000.00(LKR)</item>
+        <item>Above 75 = 1600.00(LKR)</item>
+    </string-array>
+    <string name="w_home_store">STORE DATA</string>
+    <string name="w_home_calculate_btn">CALCULATE</string>
 
     <!-- water calculator-->
-    <string name="txt_Cal">Calculate Usage</string>
-    <string name="pick_day">Pick Days</string>
-    <string name="w_no_of_days">No Of Days</string>
-    <string name="last_read">Last Reading Date</string>
-    <string name="current_read">Current reading date</string>
-    <string name="w_days">Enter Number of days</string>
-    <string name="txt_read">ENTER METER READINGS</string>
+    <string name="w_acc_name">Enter Account Name</string>
+    <string name="w_txt_Meter">Calculate your usage</string>
+    <string name="w_acc_number">Enter Account Number</string>
+    <string name="w_number_of_days">Number of days</string>
+    <string name="w_number_of_units">Number of units</string>
 
 
     <!--water meter reading-->
@@ -375,6 +383,7 @@
     <string name="last_reading">Enter last reading date</string>
     <string name="current_reading">Enter current reading date</string>
     <string name="store_btn">View Entries</string>
+
 
 
 </resources>
