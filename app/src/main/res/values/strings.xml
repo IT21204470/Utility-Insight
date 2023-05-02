@@ -374,6 +374,7 @@
     <string name="gas_tips_2_heading">Cook with lids on pots and pans</string>
     <string name="last_reading">Enter last reading date</string>
     <string name="current_reading">Enter current reading date</string>
+    <string name="store_btn">View Entries</string>
 
 
 </resources>
