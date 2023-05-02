@@ -63,7 +63,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="72dp"
-        android:fontFamily="@font/exo_2"
+
         android:text="@string/connection_txt"
         android:textColor="@color/black"
         android:textSize="@dimen/connection_txt"
@@ -100,7 +100,7 @@
         app:layout_constraintTop_toBottomOf="@+id/acc_no" />
 
     <ProgressBar
-        android:id="@+id/progressBar"
+        android:id="@+id/wProgressBar"
         style="@style/Widget.AppCompat.ProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

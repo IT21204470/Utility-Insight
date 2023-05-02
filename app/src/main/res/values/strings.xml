@@ -172,13 +172,11 @@
 
 
     <!-- water calculator-->
-    <string name="txt_Cal">Calculate Usage</string>
-    <string name="pick_day">Pick Days</string>
-    <string name="w_no_of_days">No Of Days</string>
-    <string name="last_read">Last Reading Date</string>
-    <string name="current_read">Current reading date</string>
-    <string name="w_days">Enter Number of days</string>
-    <string name="txt_read">ENTER METER READINGS</string>
+    <string name="w_acc_name">Enter Account Name</string>
+    <string name="w_txt_Meter">Calculate your usage</string>
+    <string name="w_acc_number">Enter Account Number</string>
+    <string name="w_number_of_days">Number of days</string>
+    <string name="w_number_of_units">Number of units</string>
 
 
     <!--water meter reading-->
@@ -189,6 +187,17 @@
     <string name="current_read_date">Current meter reading</string>
     <string name="number_of_units">Enter number of units</string>
     <string name="txt_calculate1">CALCULATE</string>
+    <string-array name="w_fixed_charge">
+        <item>Fixed Charge(Units)</item>
+        <item>0-25 = 100.00(LKR)</item>
+        <item>26-30 = 200.00(LKR)</item>
+        <item>31-40 = 400.00(LKR)</item>
+        <item>41-50 = 650.00(LKR)</item>
+        <item>51-75 = 1000.00(LKR)</item>
+        <item>Above 75 = 1600.00(LKR)</item>
+    </string-array>
+    <string name="w_home_store">VIEW ENTRIES</string>
+    <string name="w_home_calculate_btn">CALCULATE</string>
 
     <!--water entries-->
     <string name="w_entry_topic">Water entries history</string>
@@ -380,6 +389,7 @@
     <string name="card3_name">Add Connection</string>
     <string name="card4_name">Tips</string>
     <string name="e_newtopic">Electricity Home</string>
+
 
 
 </resources>
