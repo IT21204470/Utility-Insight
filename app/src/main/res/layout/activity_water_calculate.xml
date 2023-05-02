@@ -11,8 +11,8 @@
         android:id="@+id/w_home_store"
         android:layout_width="195dp"
         android:layout_height="70dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/purple_700"
         android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
         android:fontFamily="@font/solway_bold"
@@ -22,8 +22,7 @@
         android:textSize="@dimen/w_home_store"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/w_acc_name"
@@ -33,7 +32,7 @@
         android:layout_marginEnd="70dp"
         android:ems="10"
         android:hint="@string/w_acc_name"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -73,7 +72,7 @@
         android:layout_marginEnd="70dp"
         android:ems="10"
         android:hint="@string/w_acc_number"
-        android:inputType="textPersonName"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/w_acc_name" />
@@ -86,7 +85,7 @@
         android:layout_marginEnd="70dp"
         android:ems="10"
         android:hint="@string/w_number_of_days"
-        android:inputType="number"
+        android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/w_acc_number" />
@@ -99,7 +98,7 @@
         android:layout_marginEnd="70dp"
         android:ems="10"
         android:hint="@string/w_number_of_units"
-        android:inputType="number"
+        android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/w_number_of_days" />
@@ -108,27 +107,27 @@
         android:id="@+id/w_home_calculate_btn"
         android:layout_width="195dp"
         android:layout_height="70dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="@color/purple_700"
         android:fontFamily="@font/solway_bold"
         android:padding="8dp"
         android:text="@string/w_home_calculate_btn"
         android:textColor="@color/white"
         android:textSize="@dimen/w_calculate_btn"
+        app:layout_constraintBottom_toTopOf="@+id/w_home_store"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/w_txt_Meter" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/viewtotal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
         android:layout_marginEnd="50dp"
-        android:text="TextView"
-        android:textColor="#000000"
-        android:textSize="25dp"
+        android:textColor="#C3C3C3"
+        android:fontFamily="@font/solway_bold"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/w_home_calculate_btn" />
 
@@ -137,10 +136,7 @@
         android:layout_width="265dp"
         android:layout_height="50dp"
         android:entries="@array/w_fixed_charge"
-        android:layout_marginEnd="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/w_home_calculate_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.539"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="41dp"
+        tools:layout_editor_absoluteY="323dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

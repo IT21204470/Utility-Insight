@@ -84,7 +84,7 @@
             android:name=".electricityHome"
             android:exported="false" />
         <activity
-            android:name=".electricityCalculate"
+            android:name=".waterCalculate"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
