@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import android.view.View
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
@@ -16,6 +17,7 @@ class waterCalculate : AppCompatActivity() {
     private lateinit var waccname: EditText
     private lateinit var btncal: Button
     private lateinit var btnventries: Button
+    private lateinit var progressbar: ProgressBar
     val charges = arrayOf("Fixed Charge(Units)","0-25 = 100.00(LKR)", "26-30 = 200.00(LKR)","31-40 = 400.00(LKR)","41-50 = 650.00(LKR)","51-75 = 1000.00(LKR)","Above 75 = 1600.00(LKR)")
     private lateinit var totcal: TextView
 
@@ -26,6 +28,16 @@ class waterCalculate : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_water_calculate)
 
+
+
+        val backButton = findViewById<ImageButton>(R.id.w_cal_page_back_btn)
+        backButton.setOnClickListener {
+            val intent = Intent(this, waterHome::class.java)
+            startActivity(intent)
+        }
+
+
+
         //assigning variables to id
         waccnumber = findViewById(R.id.w_acc_number)
         waccname = findViewById(R.id.w_acc_name)
@@ -34,6 +46,9 @@ class waterCalculate : AppCompatActivity() {
         btncal = findViewById(R.id.w_home_calculate_btn)
         btnventries = findViewById(R.id.w_home_store)
         totcal = findViewById(R.id.viewtotal)
+        progressbar = findViewById(R.id.wProgressBar)
+
+        progressbar.visibility = View.INVISIBLE
 
         btncal.setOnClickListener {
 
@@ -46,8 +61,6 @@ class waterCalculate : AppCompatActivity() {
             if (waterunitText.isEmpty() || waterdaysText.isEmpty() || wateraccountNumber.isEmpty() || wateraccountName.isEmpty()) {
                 Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener }
-
-
 
             val waterunit: Int
             try {
@@ -104,6 +117,9 @@ class waterCalculate : AppCompatActivity() {
         }
 
             btnventries.setOnClickListener{
+
+                progressbar.visibility = View.VISIBLE
+
                 val accountNumber = waccnumber.text.toString().trim()
                 val accountName = waccname.text.toString().trim()
                 val numberOfDays = wdays.text.toString().trim()
@@ -130,11 +146,9 @@ class waterCalculate : AppCompatActivity() {
                         val i = Intent(this, waterHome::class.java)
                         startActivity(i)
                         finish()
+
                     }
             }
-
-
-
         }
 
     }

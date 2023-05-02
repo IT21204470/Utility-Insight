@@ -164,7 +164,7 @@
 
     <!--Amadee-->
     <!--water calculater-->
-    <dimen name="w_txt_Meter">28sp</dimen>
+    <dimen name="w_txt_Meter">26sp</dimen>
     <dimen name="w_calculate_btn">20sp</dimen>
     <dimen name="w_acc_number">18dp</dimen>
     <dimen name="w_number_of_days">18sp</dimen>

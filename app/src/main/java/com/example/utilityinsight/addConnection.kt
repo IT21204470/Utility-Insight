@@ -33,7 +33,7 @@ class addConnection : AppCompatActivity() {
         etpremises = findViewById(R.id.premisesID)
         btnsave = findViewById(R.id.save_btn)
         btndecline = findViewById(R.id.decline_btn)
-        progressBar = findViewById(R.id.progressBar)
+        progressBar = findViewById(R.id.wProgressBar)
 
         progressBar.visibility = View.INVISIBLE
 
