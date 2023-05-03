@@ -8,133 +8,28 @@
     tools:context=".MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
-    <TextView
-        android:id="@+id/gas_notify_txt2"
-        android:layout_width="144dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="32dp"
-        android:fontFamily="@font/capriola"
-        android:text="@string/gas_tips_txt"
-        android:textColor="@color/white"
-        android:textSize="@dimen/notify"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/gas_notify_txt"
-        app:layout_constraintHorizontal_bias="0.389"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_tips_imageView2" />
-
-    <TextView
-        android:id="@+id/gas_notify_txt"
-        android:layout_width="144dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="28dp"
-        android:fontFamily="@font/capriola"
-        android:text="@string/gas_notifications_icon"
-        android:textColor="@color/white"
-        android:textSize="@dimen/notify"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_notify_imageView3" />
-
     <ImageView
-        android:id="@+id/gas_cylynder_img"
-        android:layout_width="@dimen/imageView4"
-        android:layout_height="62dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="56dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gas" />
-
-    <TextView
-        android:id="@+id/gas_sub_topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/capriola"
-        android:text="@string/gas_home_sub_topic"
-        android:textSize="@dimen/sub_topic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.055"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_home_topic" />
-
-    <ImageView
-        android:id="@+id/gas_tips_imageView2"
-        android:layout_width="136dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="44dp"
-        app:layout_constraintEnd_toStartOf="@+id/gas_notify_imageView3"
-        app:layout_constraintHorizontal_bias="0.171"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_sub_topic"
-        app:srcCompat="@drawable/advice" />
-
-    <ImageView
-        android:id="@+id/gas_notify_imageView3"
-        android:layout_width="@dimen/imageView3"
-        android:layout_height="81dp"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_cylynder_img"
-        app:srcCompat="@drawable/notifications" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="53dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="38dp"
-        app:layout_constraintEnd_toStartOf="@+id/gas_home_topic"
+        android:id="@+id/gas_home_menu"
+        android:layout_width="55dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="58dp"
+        app:layout_constraintEnd_toStartOf="@+id/gas_home_heading"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+        app:srcCompat="@drawable/gasmenu" />
 
     <TextView
-        android:id="@+id/gas_home_topic"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="124dp"
-        android:fontFamily="@font/capriola"
-        android:text="@string/gas_home_topic"
-        android:textColor="#6ECC11"
-        android:textSize="@dimen/topic"
+        android:id="@+id/gas_home_heading"
+        android:layout_width="127dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="168dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/gas_home_heading"
+        android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/gas_cylynder_img"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/gas_pay_btn"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="28dp"
-        android:backgroundTint="@color/gas_pay_btn"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/gas_pay_btn_txt"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/gas_calusage_btn"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_notify_txt2"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <Button
-        android:id="@+id/gas_calusage_btn"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="28dp"
-        android:backgroundTint="@color/gas_cal_usage_btn"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/gas_cal_usage_btn_txt"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/gas_pay_btn" />
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,106 +4,122 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".gas_calculate">
+    tools:context=".GasCalculate">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="56dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/gasmenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/acc_name" />
 
     <TextView
-        android:id="@+id/gas_calculate_heading"
-        android:layout_width="241dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="68dp"
-        android:text="@string/gas_calculate_heading"
-        android:textSize="24sp"
-        android:textStyle="bold"
+        android:id="@+id/gas_calc_heading"
+        android:layout_width="323dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/gas_calc_heading"
+        android:textSize="@dimen/gas_calc_heading"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/gas_cal_accno"
-        android:layout_width="328dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="53dp"
+        android:id="@+id/gas_calc_accnoinputx"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="57dp"
         android:ems="10"
-        android:hint="@string/gas_calc_accno"
-        android:inputType="number"
+        android:hint="@string/gas_calc_accnoinputx"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_calculate_heading" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_calc_heading"
+        android:autofillHints="Account Number" />
 
     <EditText
         android:id="@+id/gas_calc_date"
-        android:layout_width="326dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="363dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/gas_calc_date"
         android:inputType="date"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_cal_accno" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_calc_accnoinputx"
+        android:autofillHints="Date" />
 
     <EditText
-        android:id="@+id/gas_calc_units"
-        android:layout_width="325dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="30dp"
+        android:id="@+id/editTextNumber"
+        android:layout_width="365dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="@string/gas_calc_units"
+        android:hint="@string/gas_units_count"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_calc_date" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_calc_date"
+        android:autofillHints="Unit Count" />
 
     <EditText
-        android:id="@+id/gas_calc_days"
-        android:layout_width="323dp"
-        android:layout_height="48dp"
+        android:id="@+id/gas_days_count"
+        android:layout_width="361dp"
+        android:layout_height="54dp"
         android:layout_marginTop="25dp"
         android:ems="10"
-        android:hint="@string/gas_cal_days"
+        android:hint="@string/gas_days_count"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_calc_units" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        android:autofillHints="Number of days" />
 
     <Button
         android:id="@+id/gas_cal_btn"
-        android:layout_width="150dp"
-        android:layout_height="62dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="126dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/btnSignUp"
         android:text="@string/gas_cal_btn"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/gas_view_entriesbtn"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_calc_days"
-        app:layout_constraintVertical_bias="0.98" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_days_count" />
 
-    <Button
-        android:id="@+id/gas_view_entriesbtn"
-        android:layout_width="146dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="117dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="40dp"
-        android:text="@string/gas_view_entries_btn"
+    <TextView
+        android:id="@+id/gas_calc_amount_txt"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/gas_calc_amount_txt"
+        android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gas_cal_btn" />
+
+    <TextView
+        android:id="@+id/gas_calamount_output"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_calc_days"
-        app:layout_constraintVertical_bias="0.687" />
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/gas_calc_amount_txt" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="64dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="42dp"
-        app:layout_constraintEnd_toStartOf="@+id/gas_calculate_heading"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
 </androidx.constraintlayout.widget.ConstraintLayout>

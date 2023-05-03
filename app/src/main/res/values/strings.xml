@@ -287,109 +287,30 @@
 
     <!--Tharushi-->
 
-    <!--Gas Home-->
-    <string name="gas_app_name">Utility Insight</string>
-    <string name="gas_pay_btn">Pay your bills</string>
-    <string name="gas_home_topic">Gas</string>
-    <string name="gas_home_sub_topic">Last month usage 60 units</string>
-    <string name="gas_show_tips_txt">Show Tips</string>
-    <string name="gas_notifications_icon">Notifications</string>
-    <string name="gas_pay_btn_txt">Pay Your Bills</string>
-    <string name="gas_cal_usage_btn_txt">Calculate Usage</string>
-
-
-    <!--Enter dates-->
-    <string name="gas_no_of_days">Number of Days</string>
-    <string name="gas_previous_reading">Last reading date</string>
-    <string name="gas_current_reading">Current reading date</string>
-    <string name="gas_date_entry_calc_heading">Calculate Usage</string>
-    <string name="gas_pick_days_radio_txt">Pick Days</string>
-    <string name="gas_calc_no_of_days">Enter Number of Days</string>
-    <string name="gas_enter_meter_readings_btn">Enter Meter Readings</string>
-
-    <!--Enter meter readings-->
-
-    <string name="gas_readings">Readings</string>
-    <string name="gas_no_of_units">Number of Units</string>
-    <string name="gas_units">Enter number of units</string>
-    <string name="gas_calculate_btn">Calculate</string>
-    <string name="gas_cal_usage_btn">CALCULATE YOUR USAGE</string>
-    <string name="gas_previous_meter_reading">Previous Meter Reading</string>
-    <string name="gas_current_meter_reading">Current Meter Reading</string>
-    <string name="gas_meter_reading_topic">Enter Meter Reading</string>
-
-
-    <!--Entries page-->
-
-    <string name="gas_entries_topic">Your Entries</string>
-    <string name="gas_col1">Entry Date</string>
-    <string name="gas_col2">Account Number</string>
-    <string name="gas_col3">Units</string>
-    <string name="gas_col4">Total Amount</string>
-
-    <string name="gas_row1EntryDate">2023/01/02</string>
-    <string name="gas_row1AccountNumber">24586112356</string>
-    <string name="gas_row1Units">110</string>
-    <string name="gas_row1TotalAmount">LKR 5500.00</string>
-
-    <string name="gas_row2EntryDate">2023/01/6</string>
-    <string name="gas_row2AccountNumber">85679086435</string>
-    <string name="gas_row2Units">80</string>
-    <string name="gas_row2TotalAmount">LKR 4000.00</string>
-
-    <string name="gas_row3EntryDate">2023/01/17</string>
-    <string name="gas_row3AccountNumber">50487287456</string>
-    <string name="gas_row3Units">50</string>
-    <string name="gas_row3TotalAmount">LKR 2500.00</string>
-
-    <string name="gas_row4EntryDate">2023/01/23</string>
-    <string name="gas_row4AccountNumber">32297196456</string>
-    <string name="gas_row4Units">10</string>
-    <string name="gas_row4TotalAmount">LKR 500.00</string>
-
-    <string name="gas_row5EntryDate">2023/02/04</string>
-    <string name="gas_row5AccountNumber">66541367398</string>
-    <string name="gas_row5Units">68</string>
-    <string name="gas_row5TotalAmount">LKR 3400.00</string>
-
-    <string name="gas_row6EntryDate">2023/02/12</string>
-    <string name="gas_row6AccountNumber">897412579073</string>
-    <string name="gas_row6Units">87</string>
-    <string name="gas_row6TotalAmount">LKR 4350.00</string>
-
-    <string name="gas_row7EntryDate">2023/02/26</string>
-    <string name="gas_row7AccountNumber">12541609876</string>
-    <string name="gas_row7Units">74</string>
-    <string name="gas_row7TotalAmount">LKR 3700.00</string>
-
-    <string name="gas_row8EntryDate">2023/03/06</string>
-    <string name="gas_row8AccountNumber">54782187645</string>
-    <string name="gas_row8Units">61</string>
-    <string name="gas_row8TotalAmount">LKR 3050.00</string>
-
-    <string name="gas_txt_history">Gas usage history</string>
-    <string name="gas_check_btn">Check Again</string>
-    <string name="gas_return_btn">Return to Home</string>
-
     <!--Tips page-->
-    <string name="gas_tips_title">Tips for you</string>
-    <string name="gas_tip1">Fix any leaks in the gas line</string>
-    <string name="gas_tip2">Cook with lids on pots and pans</string>
-    <string name="gas_tip3">Use energy-efficient appliances</string>
-    <string name="gas_txt_tip1">Use energy-efficient appliances and replace old appliances with new ones that are rated as Energy Star.</string>
-    <string name="gas_txt_tip2">Fix any leaks in the gas line or appliances to prevent wasted energy.</string>
-    <string name="gas_txt_tip3">Cook with lids on pots and pans to reduce cooking times and energy usage.</string>
-    <string name="gas_more_tips">More Tips</string>
-    <string name="gas_tips_2_heading">Cook with lids on pots and pans</string>
-    <string name="last_reading">Enter last reading date</string>
-    <string name="current_reading">Enter current reading date</string>
-    <string name="store_btn">View Entries</string>
-    <string name="card1_name">Calculate Usage</string>
-    <string name="card2_name">Pay Bills</string>
-    <string name="card3_name">Add Connection</string>
-    <string name="card4_name">Tips</string>
-    <string name="e_newtopic">Electricity Home</string>
+    <string name="gas_tips_heading">Tips for you</string>
+    <string name="gas_tip1_heading">Fix leaks in the gas line</string>
+    <string name="gas_tip1des">Fix any leaks in the gas line or appliances to prevent wasted energy</string>
+    <string name="gas_tip2_heading">Cook with liids onpots andpans to reduce cooking time and energy usage</string>
+    <string name="gas_tip2x">Cook with lids on pots and pans</string>
+    <string name="gas_tip3_heading">Use energy-efficient appliances</string>
+    <string name="gas_tip3x">Use energy-efficient appliaces and replace old appliances with new ones</string>
+    <string name="menu">menu</string>
+    <string name="line">line</string>
+    <string name="boil">boil</string>
 
+    <!--Gas Home-->
+
+    <string name="gas_home_heading">GAS</string>
+    <string name="gas_calc_heading">Calculate your usage</string>
+    <string name="gas_accno_input">Enter Account Number</string>
+    <string name="gas_calc_accnoinput">Account Number</string>
+    <string name="gas_calc_accnoinputx">Account Number</string>
+    <string name="gas_calc_date">Date</string>
+    <string name="gas_units_count">Unit Count</string>
+    <string name="gas_days_count">Number of days</string>
+    <string name="gas_cal_btn">CALCULATE</string>
+    <string name="gas_calc_amount_txt">Your Amount</string>
 
 
 </resources>
