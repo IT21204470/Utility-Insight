@@ -12,6 +12,9 @@
         android:theme="@style/Theme.UtilityInsight"
         tools:targetApi="31">
         <activity
+            android:name=".electricityCalculate"
+            android:exported="false" />
+        <activity
             android:name=".electricityEntries"
             android:exported="false" />
         <activity
@@ -59,9 +62,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <activity
-            android:name=".electricityReport"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".electricityReport"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".electricityTips"
             android:exported="false" />
@@ -84,7 +87,7 @@
             android:name=".electricityHome"
             android:exported="false" />
         <activity
-            android:name=".electricityCalculate"
+            android:name=".gas_calculate"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
