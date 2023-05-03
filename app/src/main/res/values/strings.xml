@@ -299,9 +299,7 @@
     <string name="line">line</string>
     <string name="boil">boil</string>
 
-    <!--Gas Home-->
-
-    <string name="gas_home_heading">GAS</string>
+<!--    Calculate page-->
     <string name="gas_calc_heading">Calculate your usage</string>
     <string name="gas_accno_input">Enter Account Number</string>
     <string name="gas_calc_accnoinput">Account Number</string>
@@ -311,6 +309,11 @@
     <string name="gas_days_count">Number of days</string>
     <string name="gas_cal_btn">CALCULATE</string>
     <string name="gas_calc_amount_txt">Your Amount</string>
+
+    <!--Gas Home-->
+
+    <string name="gas_home_heading">GAS</string>
+    <string name="menuicon">menuicon</string>
 
 
 </resources>
