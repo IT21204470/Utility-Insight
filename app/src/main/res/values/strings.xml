@@ -172,13 +172,11 @@
 
 
     <!-- water calculator-->
-    <string name="txt_Cal">Calculate Usage</string>
-    <string name="pick_day">Pick Days</string>
-    <string name="w_no_of_days">No Of Days</string>
-    <string name="last_read">Last Reading Date</string>
-    <string name="current_read">Current reading date</string>
-    <string name="w_days">Enter Number of days</string>
-    <string name="txt_read">ENTER METER READINGS</string>
+    <string name="w_acc_name">Enter Account Name</string>
+    <string name="w_txt_Meter">Calculate your usage</string>
+    <string name="w_acc_number">Enter Account Number</string>
+    <string name="w_number_of_days">Number of days</string>
+    <string name="w_number_of_units">Number of units</string>
 
 
     <!--water meter reading-->
@@ -189,6 +187,17 @@
     <string name="current_read_date">Current meter reading</string>
     <string name="number_of_units">Enter number of units</string>
     <string name="txt_calculate1">CALCULATE</string>
+    <string-array name="w_fixed_charge">
+        <item>Fixed Charge(Units)</item>
+        <item>0-25 = 100.00(LKR)</item>
+        <item>26-30 = 200.00(LKR)</item>
+        <item>31-40 = 400.00(LKR)</item>
+        <item>41-50 = 650.00(LKR)</item>
+        <item>51-75 = 1000.00(LKR)</item>
+        <item>Above 75 = 1600.00(LKR)</item>
+    </string-array>
+    <string name="w_home_store">VIEW ENTRIES</string>
+    <string name="w_home_calculate_btn">CALCULATE</string>
 
     <!--water entries-->
     <string name="w_entry_topic">Water entries history</string>
@@ -310,6 +319,58 @@
     <string name="gas_meter_reading_topic">Enter Meter Reading</string>
 
 
+    <!--Entries page-->
+
+    <string name="gas_entries_topic">Your Entries</string>
+    <string name="gas_col1">Entry Date</string>
+    <string name="gas_col2">Account Number</string>
+    <string name="gas_col3">Units</string>
+    <string name="gas_col4">Total Amount</string>
+
+    <string name="gas_row1EntryDate">2023/01/02</string>
+    <string name="gas_row1AccountNumber">24586112356</string>
+    <string name="gas_row1Units">110</string>
+    <string name="gas_row1TotalAmount">LKR 5500.00</string>
+
+    <string name="gas_row2EntryDate">2023/01/6</string>
+    <string name="gas_row2AccountNumber">85679086435</string>
+    <string name="gas_row2Units">80</string>
+    <string name="gas_row2TotalAmount">LKR 4000.00</string>
+
+    <string name="gas_row3EntryDate">2023/01/17</string>
+    <string name="gas_row3AccountNumber">50487287456</string>
+    <string name="gas_row3Units">50</string>
+    <string name="gas_row3TotalAmount">LKR 2500.00</string>
+
+    <string name="gas_row4EntryDate">2023/01/23</string>
+    <string name="gas_row4AccountNumber">32297196456</string>
+    <string name="gas_row4Units">10</string>
+    <string name="gas_row4TotalAmount">LKR 500.00</string>
+
+    <string name="gas_row5EntryDate">2023/02/04</string>
+    <string name="gas_row5AccountNumber">66541367398</string>
+    <string name="gas_row5Units">68</string>
+    <string name="gas_row5TotalAmount">LKR 3400.00</string>
+
+    <string name="gas_row6EntryDate">2023/02/12</string>
+    <string name="gas_row6AccountNumber">897412579073</string>
+    <string name="gas_row6Units">87</string>
+    <string name="gas_row6TotalAmount">LKR 4350.00</string>
+
+    <string name="gas_row7EntryDate">2023/02/26</string>
+    <string name="gas_row7AccountNumber">12541609876</string>
+    <string name="gas_row7Units">74</string>
+    <string name="gas_row7TotalAmount">LKR 3700.00</string>
+
+    <string name="gas_row8EntryDate">2023/03/06</string>
+    <string name="gas_row8AccountNumber">54782187645</string>
+    <string name="gas_row8Units">61</string>
+    <string name="gas_row8TotalAmount">LKR 3050.00</string>
+
+    <string name="gas_txt_history">Gas usage history</string>
+    <string name="gas_check_btn">Check Again</string>
+    <string name="gas_return_btn">Return to Home</string>
+
     <!--Tips page-->
     <string name="gas_tips_title">Tips for you</string>
     <string name="gas_tip1">Fix any leaks in the gas line</string>
@@ -322,15 +383,13 @@
     <string name="gas_tips_2_heading">Cook with lids on pots and pans</string>
     <string name="last_reading">Enter last reading date</string>
     <string name="current_reading">Enter current reading date</string>
-    <string name="gas_entries_heading">Your Records</string>
-    <string name="gas_calculate_heading">Calculate your usage</string>
-    <string name="gas_calc_accno">Enter Account No</string>
-    <string name="gas_calc_date">Pick the date</string>
-    <string name="gas_calc_units">Enter no of units</string>
-    <string name="gas_cal_days">Enter no of days</string>
-    <string name="gas_cal_btn">Calculate</string>
-    <string name="gas_view_entries_btn">View Entries</string>
-    <string name="gas_tips_txt">View Tips</string>
+    <string name="store_btn">View Entries</string>
+    <string name="card1_name">Calculate Usage</string>
+    <string name="card2_name">Pay Bills</string>
+    <string name="card3_name">Add Connection</string>
+    <string name="card4_name">Tips</string>
+    <string name="e_newtopic">Electricity Home</string>
+
 
 
 </resources>
