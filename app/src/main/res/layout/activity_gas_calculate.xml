@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GasCalculate">
+    tools:context=".gasCalculate">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -60,7 +60,7 @@
         android:autofillHints="Date" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/gas_unit_countinput"
         android:layout_width="365dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/gas_unit_countinput"
         android:autofillHints="Number of days" />
 
     <Button
