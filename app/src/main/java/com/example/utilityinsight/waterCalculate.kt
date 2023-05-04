@@ -18,7 +18,6 @@ class waterCalculate : AppCompatActivity() {
     private lateinit var btncal: Button
     private lateinit var btnventries: Button
     private lateinit var progressbar: ProgressBar
-    val charges = arrayOf("Fixed Charge(Units)","0-25 = 100.00(LKR)", "26-30 = 200.00(LKR)","31-40 = 400.00(LKR)","41-50 = 650.00(LKR)","51-75 = 1000.00(LKR)","Above 75 = 1600.00(LKR)")
     private lateinit var totcal: TextView
 
 
@@ -37,7 +36,6 @@ class waterCalculate : AppCompatActivity() {
         }
 
 
-
         //assigning variables to id
         waccnumber = findViewById(R.id.w_acc_number)
         waccname = findViewById(R.id.w_acc_name)
@@ -48,9 +46,12 @@ class waterCalculate : AppCompatActivity() {
         totcal = findViewById(R.id.viewtotal)
         progressbar = findViewById(R.id.wProgressBar)
 
+        btnventries.visibility = View.INVISIBLE
         progressbar.visibility = View.INVISIBLE
 
         btncal.setOnClickListener {
+
+            btnventries.visibility = View.VISIBLE
 
             val waterunitText = wunits.text.toString().trim()
             val waterdaysText = wdays.text.toString().trim()
@@ -110,9 +111,7 @@ class waterCalculate : AppCompatActivity() {
                 wtotal = wfixedcharge + wnormalcharge
             }
 
-            totcal.append("Total Payable Amount: $wtotal\n")
-            totcal.append("Bill Period: $waterdays\n")
-            totcal.append("Fixed Charge: $wfixedcharge")
+            totcal.text = "Bill Period: $waterdays days\nImport Charge: $wnormalcharge LKR\nFixed Charge: $wfixedcharge LKR\nTotal Bill Amount: $wtotal LKR"
 
         }
 
@@ -124,15 +123,15 @@ class waterCalculate : AppCompatActivity() {
                 val accountName = waccname.text.toString().trim()
                 val numberOfDays = wdays.text.toString().trim()
                 val numberOfUnits = wunits.text.toString().trim()
-                val wtotamount = totcal.text.toString().trim()
+                val totalAmount = totcal.text.toString().trim()
 
 
                 val userMap = hashMapOf(
-                    "Account Number" to accountNumber,
-                    "Account Name" to accountName,
-                    "Number of days" to numberOfDays,
-                    "Number of units" to numberOfUnits,
-                    "Total Amount" to wtotamount
+                    "accountname" to accountName,
+                    "accountnumber" to accountNumber,
+                    "numberofdays" to numberOfDays,
+                    "numberofunits" to numberOfUnits,
+                    "totalamount" to totalAmount
 
                     )
 
@@ -142,8 +141,8 @@ class waterCalculate : AppCompatActivity() {
                         waccname.text.clear()
                         wdays.text.clear()
                         wunits.text.clear()
-                        Toast.makeText(this, "Calculate successfully",Toast.LENGTH_SHORT).show()
-                        val i = Intent(this, waterHome::class.java)
+                        Toast.makeText(this, "Added successfully",Toast.LENGTH_SHORT).show()
+                        val i = Intent(this, waterEntries::class.java)
                         startActivity(i)
                         finish()
 

@@ -70,8 +70,8 @@
         android:layout_width="@dimen/imageView7"
         android:layout_height="85dp"
         app:layout_constraintBottom_toBottomOf="@+id/gas_tips_imageView2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/gas_tips_imageView2"
+        app:layout_constraintStart_toStartOf="@+id/gas_tips_imageView2"
         app:srcCompat="@drawable/success" />
 
     <TextView

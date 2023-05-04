@@ -6,18 +6,29 @@ import android.os.Bundle
 import android.widget.Button
 
 class successfulMessage : AppCompatActivity() {
-    private lateinit var homebutton: Button
+    private lateinit var backbutton: Button
+    private lateinit var donebutton: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_successful_message)
 
-        homebutton = findViewById(R.id.previous)
+        backbutton = findViewById(R.id.previous)
 
-        homebutton.setOnClickListener {
+        backbutton.setOnClickListener {
+            val i = Intent(this, paymentDetails::class.java)
+            startActivity(i)
+            finish()
+
+        }
+
+        donebutton = findViewById(R.id.close)
+
+        donebutton.setOnClickListener {
             val i = Intent(this, waterHome::class.java)
             startActivity(i)
             finish()
 
         }
+
     }
 }

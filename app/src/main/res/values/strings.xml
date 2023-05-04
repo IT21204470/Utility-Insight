@@ -2,10 +2,11 @@
 
     <!--Electricity home-->
     <string name="app_name">Utility Insight</string>
-    <string name="topic">Electricity Home</string>
-    <string name="payment_btn">Pay your bills</string>
-    <string name="calculator_btn">Calculate your usage</string>
-
+    <string name="e_newtopic">Electricity Home</string>
+    <string name="card1_name">Calculate Usage</string>
+    <string name="card2_name">Pay Bills</string>
+    <string name="card3_name">Add Connection</string>
+    <string name="card4_name">Tips</string>
 
     <!--Calculate page-->
     <string name="heading1">Calculate your usage</string>
@@ -16,16 +17,19 @@
         <item>General</item>
     </string-array>
     <string name="acc_number">Enter Account Number</string>
-    <string name="no_of_days">Number of days</string>
+    <string name="last_reading">Enter last reading date</string>
+    <string name="current_reading">Enter current reading date</string>
     <string name="units">Enter number of units</string>
     <string name="calculate_btn">Calculate</string>
+    <string name="store_btn">View Entries</string>
 
     <!--Entries page-->
     <string name="entry_h1">Usage History</string>
     <string name="card_d1">Account Number :</string>
-    <string name="card_d2">No of days :</string>
-    <string name="card_d3">No of units :</string>
-    <string name="card_d4">Bill Amount :</string>
+    <string name="card_d2">Last Reading Date :</string>
+    <string name="card_d3">Current Reading Date :</string>
+    <string name="card_d4">No of units :</string>
+    <string name="card_d5">Bill Amount :</string>
     <string name="update1">Update</string>
     <string name="delete1">Delete</string>
 
@@ -61,23 +65,23 @@
 
     <!--Payment page-->
     <string name="payment_topic">Bill Payments</string>
-    <string name="txt_account">Account to be paid:</string>
+    <string name="txt_account">Account to be paid :</string>
     <string-array name="accounts">
         <item>Hemsith\'s Account</item>
         <item>Amadee\'s Account</item>
     </string-array>
     <string name="no_account">No account?</string>
     <string name="add_account">Add an account number</string>
-    <string name="txt_amount">Bill Amount *</string>
+    <string name="txt_amount">Bill Amount :</string>
     <string name="amount">Enter amount to be paid</string>
-    <string name="txt_email">Email Address *</string>
+    <string name="txt_email">Email Address :</string>
     <string name="email">Enter your email address</string>
     <string name="proceed">Proceed</string>
 
 
     <!--Checkout page-->
     <string name="pay_topic">Select Payment Method</string>
-    <string name="select_btn">Select One:</string>
+    <string name="select_btn">Select One</string>
     <string name="visa">Credit / Debit Card</string>
     <string name="express">American Express</string>
     <string name="paypal">PayPal</string>
@@ -89,16 +93,14 @@
     <!--Pay now page-->
     <string name="details">Enter card details</string>
     <string name="card_no">Card Number</string>
-    <string name="number_fill">4218 8726 0071 2646</string>
+    <string name="number_fill">Enter card number</string>
     <string name="card_date">Expiry Date</string>
-    <string name="date_fill">09 / 27</string>
+    <string name="date_fill">Enter expiry date</string>
     <string name="cvv">CVV</string>
-    <string name="cvv_fill">512</string>
-    <string name="card_name">Name On Card</string>
-    <string name="name_fill">H.D. KAHAWEVIDANA</string>
-    <string name="save">Save card details</string>
+    <string name="cvv_fill">Enter CVV</string>
+    <string name="card_name">Cardholder\'s Name</string>
+    <string name="name_fill">Enter your name on card</string>
     <string name="pay_btn_final">Pay Now</string>
-    <string name="price_final">2458.50 LKR</string>
 
 
     <!--Success page-->
@@ -120,7 +122,7 @@
     <string name="tip1">Unplug unused appliances</string>
     <string name="txt_tip1">~ Collectively, all of your smaller appliances and devices add up to your electricity use. What many people don\'t know is that, devices which are plugged in continue to draw trace amounts of electricity from your outlets.</string>
     <string name="tip2">Switch to LEDs</string>
-    <string name="txt_tip2">~ LED light bulbs use 90 percent less energy than incandescent bulbs. Switch out the most frequently used bulbs in your home with LEDs. Then, replace the rest once they burn out.</string>
+    <string name="txt_tip2">~ LED light bulbs use 90 % less energy than incandescent bulbs. Switch out the most frequently used bulbs in your home with LEDs. Then, replace the rest once they burn out.</string>
     <string name="tip3">Install dimmer switches</string>
     <string name="txt_tip3">~ Use dimmer switches as much as possible. The key to save energy is within your reach. Switch to dimmer switches, so you only use as much light as you need</string>
     <string name="tip4">Establish solar power generators</string>
@@ -299,7 +301,7 @@
     <string name="line">line</string>
     <string name="boil">boil</string>
 
-<!--    Calculate page-->
+    <!--Calculate page-->
     <string name="gas_calc_heading">Calculate your usage</string>
     <string name="gas_accno_input">Enter Account Number</string>
     <string name="gas_calc_accnoinput">Account Number</string>
@@ -311,7 +313,6 @@
     <string name="gas_calc_amount_txt">Your Amount</string>
 
     <!--Gas Home-->
-
     <string name="gas_home_heading">GAS</string>
     <string name="menuicon">menuicon</string>
 

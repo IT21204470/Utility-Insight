@@ -63,7 +63,7 @@
         android:layout_marginEnd="-340dp"
         android:background="@drawable/extra_failed"
         android:fontFamily="@font/secular_one"
-        android:text="@string/close"
+        android:text="@string/fclose"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
