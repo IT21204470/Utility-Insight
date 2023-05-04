@@ -164,6 +164,7 @@
 
     <!--Amadee-->
     <!--water calculater-->
+    <dimen name="w_home_store">20dp</dimen>
     <dimen name="w_txt_Meter">26sp</dimen>
     <dimen name="w_calculate_btn">20sp</dimen>
     <dimen name="w_acc_number">18dp</dimen>
@@ -172,8 +173,9 @@
 
 
     <!--water entries-->
+    <dimen name="w_entry_h1">30dp</dimen>
     <dimen name="w_tot_amount">22dp</dimen>
-    <dimen name="w_home_store">20dp</dimen>
+
     <dimen name="w_card1_name">16dp</dimen>
     <dimen name="w_card2_name">16dp</dimen>
     <dimen name="w_card3_name">16dp</dimen>
@@ -235,6 +237,7 @@
     <dimen name="gas_tip3_heading">20sp</dimen>
     <dimen name="gas_calc_heading">30sp</dimen>
     <dimen name="gas_calc_amount_txt">20sp</dimen>
+
 
 
 </resources>
