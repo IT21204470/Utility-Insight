@@ -94,7 +94,7 @@
         android:layout_marginStart="18dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/solway_bold"
-        android:text="@string/txt_tip1des"
+        android:text="@string/txt_tip1dec1"
         android:textColor="#5D5E5E"
         android:textSize="@dimen/txt_tip1des"
         app:layout_constraintStart_toStartOf="parent"

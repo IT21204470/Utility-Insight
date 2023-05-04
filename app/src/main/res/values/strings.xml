@@ -25,6 +25,8 @@
 
     <!--Entries page-->
     <string name="entry_h1">Usage History</string>
+
+    <!--single usage History-->
     <string name="card_d1">Account Number :</string>
     <string name="card_d2">Last Reading Date :</string>
     <string name="card_d3">Current Reading Date :</string>
@@ -36,7 +38,6 @@
 
     <!--Add connection page-->
     <string name="connection_txt">Register Your Account</string>
-    <string name="string">Choose Service:</string>
     <string-array name="category">
         <item>Choose Service</item>
         <item>Electricity</item>
@@ -70,8 +71,6 @@
         <item>Hemsith\'s Account</item>
         <item>Amadee\'s Account</item>
     </string-array>
-    <string name="no_account">No account?</string>
-    <string name="add_account">Add an account number</string>
     <string name="txt_amount">Bill Amount :</string>
     <string name="amount">Enter amount to be paid</string>
     <string name="txt_email">Email Address :</string>
@@ -79,18 +78,15 @@
     <string name="proceed">Proceed</string>
 
 
-    <!--Checkout page-->
+    <!--Payment method page-->
     <string name="pay_topic">Select Payment Method</string>
-    <string name="select_btn">Select One</string>
     <string name="visa">Credit / Debit Card</string>
     <string name="express">American Express</string>
     <string name="paypal">PayPal</string>
-    <string name="google">Google Pay</string>
     <string name="to_checkout">To checkout</string>
-    <string name="price">2458.50 LKR</string>
 
 
-    <!--Pay now page-->
+    <!--Payment Details page-->
     <string name="details">Enter card details</string>
     <string name="card_no">Card Number</string>
     <string name="number_fill">Enter card number</string>
@@ -107,53 +103,26 @@
     <string name="success_msg">Success!</string>
     <string name="successful_msg">Payment Successful</string>
     <string name="back">Back to Home</string>
-    <string name="done">Done</string>
-
 
     <!--Failed page-->
     <string name="failed_msg">Failed!</string>
     <string name="unsuccessful_msg">Payment Unsuccessful</string>
     <string name="previous">Back to Payment</string>
-    <string name="close">Close</string>
 
 
-    <!--Tips page-->
+
+    <!--Electricity Tips page-->
     <string name="tips_title">Tips for you</string>
     <string name="tip1">Unplug unused appliances</string>
     <string name="txt_tip1">~ Collectively, all of your smaller appliances and devices add up to your electricity use. What many people don\'t know is that, devices which are plugged in continue to draw trace amounts of electricity from your outlets.</string>
     <string name="tip2">Switch to LEDs</string>
     <string name="txt_tip2">~ LED light bulbs use 90 % less energy than incandescent bulbs. Switch out the most frequently used bulbs in your home with LEDs. Then, replace the rest once they burn out.</string>
-    <string name="tip3">Install dimmer switches</string>
-    <string name="txt_tip3">~ Use dimmer switches as much as possible. The key to save energy is within your reach. Switch to dimmer switches, so you only use as much light as you need</string>
     <string name="tip4">Establish solar power generators</string>
     <string name="txt_tip4">~ Embrace the power of solar power systems. Solar energy helps lower your electricity bill and meanwhile fulfill your social responsibility to mitigate climate change. Don\'t wait!</string>
-    <string name="more_btn">More Tips</string>
-
-
-    <!--View usage page-->
-    <string name="report">Usage Report</string>
-    <string name="tariff">Tariff Category:</string>
-    <string name="tariff_field">Domestic</string>
-    <string name="period">Bill Period:</string>
-    <string name="period_field">2022 / 03 / 22 - 2022 / 04 / 01</string>
-    <string name="dueamount">Charge for Units Consumed(LKR):</string>
-    <string name="dueamount_field">32.00 x 18 = 576.00 35.00 x 12 = 420.00 54.00 x 8 = 432.00
-    </string>
-    <string name="fixed_charge">Fixed Charge(LKR):</string>
-    <string name="charge_field">200.00</string>
-    <string name="total_charge">Total Charge(LKR):</string>
-    <string name="charge_field1">1628.00</string>
-    <string name="edit">Edit Selections</string>
-    <string name="add">Add to entries</string>
-    <string name="question">Usage higher than expected?</string>
-    <string name="redirect">View Tips</string>
 
 
     <!--Notifications page-->
     <string name="notify_topic">Notifications</string>
-    <string name="all_notify">All</string>
-    <string name="unread">Unread</string>
-    <string name="mark">Mark all as read</string>
     <string name="des_2">~ Time to check your usage!</string>
     <string name="des_3">~ Monthly electricity usage limit is exceeded.</string>
     <string name="des_4">~ Last water bill payment has been authorized.</string>
@@ -171,21 +140,11 @@
 
 
     <!-- water calculator-->
-    <string name="w_acc_name">Enter Account Name</string>
     <string name="w_txt_Meter">Calculate your usage</string>
+    <string name="w_acc_name">Enter Account Name</string>
     <string name="w_acc_number">Enter Account Number</string>
     <string name="w_number_of_days">Number of days</string>
     <string name="w_number_of_units">Number of units</string>
-
-
-    <!--water meter reading-->
-    <string name="txt_Meter">Enter Meter Reading</string>
-    <string name="read">Readings</string>
-    <string name="w_no_of_units">No of units</string>
-    <string name="previous_meter_read">Previous meter reading</string>
-    <string name="current_read_date">Current meter reading</string>
-    <string name="number_of_units">Enter number of units</string>
-    <string name="txt_calculate1">CALCULATE</string>
     <string-array name="w_fixed_charge">
         <item>Fixed Charge(Units)</item>
         <item>0-25 = 100.00(LKR)</item>
@@ -195,11 +154,15 @@
         <item>51-75 = 1000.00(LKR)</item>
         <item>Above 75 = 1600.00(LKR)</item>
     </string-array>
-    <string name="w_home_store">VIEW ENTRIES</string>
     <string name="w_home_calculate_btn">CALCULATE</string>
+    <string name="w_home_store">VIEW ENTRIES</string>
+
+
 
     <!--water entries-->
     <string name="w_entry_h1">Usage History</string>
+
+    <!--water singal usage-->
     <string name="w_card_d1">Account Name:</string>
     <string name="w_card_d2">Account Number:</string>
     <string name="w_card_d3">Number of days:</string>
@@ -211,12 +174,12 @@
     <!--water tips-->
     <string name="txt_title">Tips for you</string>
     <string name="w_txt_tip1">Get Water Audit</string>
-    <string name="txt_tip1des">Many utility companies offer a free home energy audit to customers,and it is well worth taking advantage of.If there is no such program in your area, conduct your own energy audit instead.</string>
+    <string name="txt_tip1dec1">Many utility companies offer a free home energy audit to customers,and it is well worth taking advantage of.If there is no such program in your area, conduct your own energy audit instead.</string>
     <string name="w_txt_tip3">Wash clothes with less water</string>
     <string name="txt_tip3dec3">Some washing machines are designed specifically to use less water. They use special techniques to clean clothes with less water.</string>
     <string name="w_txt_tip4">Fix leaky ductwork</string>
     <string name="txt_tip4dec4">Improve the efficiency of heating and cooling systems by repairing leaky heating, ventilation and air conditioning ducts.</string>
-    <string name="txt_tip">MORE TIPS</string>
+
 
     <!--Sahan-->
     <string name="user_app_name">UtilityInsight</string>

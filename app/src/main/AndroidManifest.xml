@@ -48,7 +48,7 @@
 <!--            android:name=".waterMeterReading"-->
 <!--            android:exported="false" />-->
         <activity
-            android:name=".waterHome"
+            android:name=".electricityHome"
             android:exported="false" />
         <activity
             android:name=".paymentMethod"
@@ -87,7 +87,13 @@
             android:name=".electricityCalculate"
             android:exported="false" />
         <activity
-            android:name=".electricityHome"
+            android:name=".waterCalculate"
+            android:exported="false"/>
+        <activity
+            android:name=".waterEntries"
+            android:exported="false"/>
+        <activity
+            android:name=".waterHome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
