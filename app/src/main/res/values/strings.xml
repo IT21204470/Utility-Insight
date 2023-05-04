@@ -266,8 +266,8 @@
     <string name="line">line</string>
     <string name="boil">boil</string>
 
-    <!--Calculate page-->
-    <string name="gas_calc_heading">Calculate your usage</string>
+    <!--    Calculate page-->
+
     <string name="gas_accno_input">Enter Account Number</string>
     <string name="gas_calc_accnoinput">Account Number</string>
     <string name="gas_calc_accnoinputx">Account Number</string>
@@ -276,10 +276,23 @@
     <string name="gas_days_count">Number of days</string>
     <string name="gas_cal_btn">CALCULATE</string>
     <string name="gas_calc_amount_txt">Your Amount</string>
+    <string name="gas_calamount_output" />
 
     <!--Gas Home-->
+
     <string name="gas_home_heading">GAS</string>
     <string name="menuicon">menuicon</string>
+    <string name="gas_hometxt1">Calculate Usage</string>
+    <string name="gas_hometxt2">View Tips</string>
+    <string name="gas_hometxt3">View Entries</string>
+    <string name="gas_hometxt4">Pay Bills</string>
+    <string name="gas_calc_heading">Calculate Usage</string>
+    <string name="gas_home_headingnew">Gas Home</string>
+    <string name="card_g1_name">Tips</string>
+    <string name="card_g4_txt">Calculate Usage</string>
+    <string name="gcardpay_name">Pay Bills</string>
+    <string name="g_viewEntries_btn">View Entries</string>
+    <string name="gcard2_txtnew">Add Connection</string>
 
 
 </resources>

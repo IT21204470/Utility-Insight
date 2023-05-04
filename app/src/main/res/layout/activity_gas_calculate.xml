@@ -12,24 +12,25 @@
         android:layout_height="54dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
+        android:contentDescription="@string/acc_name"
         android:src="@drawable/gasmenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/acc_name" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/gas_calc_heading"
-        android:layout_width="323dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="256dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/gas_calc_heading"
         android:textSize="@dimen/gas_calc_heading"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
 
     <EditText
         android:id="@+id/gas_calc_accnoinputx"
@@ -78,14 +79,14 @@
         android:layout_width="361dp"
         android:layout_height="54dp"
         android:layout_marginTop="25dp"
+        android:autofillHints="Number of days"
         android:ems="10"
         android:hint="@string/gas_days_count"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_unit_countinput"
-        android:autofillHints="Number of days" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_unit_countinput" />
 
     <Button
         android:id="@+id/gas_cal_btn"
@@ -94,9 +95,10 @@
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/btnSignUp"
         android:text="@string/gas_cal_btn"
+        android:textColor="@color/gas_sidebar"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gas_days_count" />
 
@@ -105,21 +107,40 @@
         android:layout_width="140dp"
         android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="24dp"
         android:text="@string/gas_calc_amount_txt"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_cal_btn" />
+        app:layout_constraintTop_toBottomOf="@+id/gas_cal_btn"
+        app:layout_constraintVertical_bias="0.446"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/gas_calamount_output"
         android:layout_width="183dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/gas_calamount_output"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.527"
         app:layout_constraintStart_toEndOf="@+id/gas_calc_amount_txt" />
+
+    <Button
+        android:id="@+id/g_viewEntries_btn"
+        android:layout_width="148dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/btnSignUp"
+        android:text="@string/g_viewEntries_btn"
+        android:textColor="@color/gas_sidebar"
+        app:layout_constraintBottom_toTopOf="@+id/gas_calamount_output"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.735"
+        app:layout_constraintStart_toEndOf="@+id/gas_cal_btn"
+        app:layout_constraintTop_toBottomOf="@+id/gas_days_count" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

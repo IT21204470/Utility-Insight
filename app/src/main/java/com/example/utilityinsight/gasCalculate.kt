@@ -6,9 +6,9 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.util.UUID
 
 class gasCalculate : AppCompatActivity() {
 
@@ -37,7 +37,7 @@ class gasCalculate : AppCompatActivity() {
         gcaloutouttxt= findViewById(R.id.gas_calc_amount_txt)
         gcaloutoutans= findViewById(R.id.gas_calamount_output)
 
-        gcalcbtn.setOnClickListener(){
+        gcalcbtn.setOnClickListener{
 
             val gasaccountno = gaccountno.text.toString().trim()
             val  gascalcdate= gcalcdate.text.toString().trim()
@@ -51,9 +51,10 @@ class gasCalculate : AppCompatActivity() {
                 "Days" to gascalcdays
             )
 
-            val userId = FirebaseAuth.getInstance().currentUser!!.uid
+//            val userId =
+            val userId = UUID.randomUUID().toString()
 
-            db.collection("gascalculate").document(userId).set(gasuserMap)
+           db.collection("gascalculate").document(userId).set(gasuserMap)
                 .addOnSuccessListener {
                     Toast.makeText(this,"Successfully added!", Toast.LENGTH_SHORT).show()
                     gaccountno.text.clear()
@@ -66,13 +67,7 @@ class gasCalculate : AppCompatActivity() {
                     Toast.makeText(this,"Failed!", Toast.LENGTH_SHORT).show()
                 }
 
-
-
-
         }
-
-
-
 
     }
 }
