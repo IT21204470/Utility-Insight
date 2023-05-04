@@ -110,7 +110,6 @@
     <string name="previous">Back to Payment</string>
 
 
-
     <!--Electricity Tips page-->
     <string name="tips_title">Tips for you</string>
     <string name="tip1">Unplug unused appliances</string>
@@ -156,7 +155,6 @@
     </string-array>
     <string name="w_home_calculate_btn">CALCULATE</string>
     <string name="w_home_store">VIEW ENTRIES</string>
-
 
 
     <!--water entries-->
@@ -256,6 +254,8 @@
     <string name="gcardpay_name">Pay Bills</string>
     <string name="g_viewEntries_btn">View Entries</string>
     <string name="gcard2_txtnew">Add Connection</string>
+    <string name="gasentries_heading">Usage History</string>
+    <string name="gentries_backbtn">Backbuttong</string>
 
 
 </resources>

@@ -59,7 +59,7 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:id="@+id/card_g1"
+                        android:id="@+id/gas_card_cal"
                         android:backgroundTint="#FAF9F9"
                         android:layout_weight="1">
 
@@ -90,10 +90,11 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/gas_card_pay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#FAF9F9"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:backgroundTint="#FAF9F9">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -112,8 +113,8 @@
                             android:id="@+id/gcardpay_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/gcardpay_name"
                             android:fontFamily="@font/solway_bold"
+                            android:text="@string/gcardpay_name"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -129,10 +130,11 @@
                 android:weightSum="2">
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/gas_card_addcon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#FAF9F9"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:backgroundTint="#FAF9F9">
 
 
                     <LinearLayout
@@ -152,8 +154,8 @@
                             android:id="@+id/gcard2_txtnew"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/gcard2_txtnew"
                             android:fontFamily="@font/solway_bold"
+                            android:text="@string/gcard2_txtnew"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -162,10 +164,11 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/gas_card_tips"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#FAF9F9"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:backgroundTint="#FAF9F9">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -184,8 +187,8 @@
                             android:id="@+id/card_g1_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/card_g1_name"
                             android:fontFamily="@font/solway_bold"
+                            android:text="@string/card_g1_name"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
