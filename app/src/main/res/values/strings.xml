@@ -163,14 +163,11 @@
     <!--Amadee-->
 
     <!--water home-->
-    <string name="waterheading">Water Tracker</string>
-    <string name="description">Last month\'s usage: 50 units</string>
-    <string name="txt_tps">Show Tips</string>
-    <string name="txt_notifi">Notifications</string>
-    <string name="limit">Set your monthly limit :</string>
-    <string name="set">Set</string>
-    <string name="txt_payment">PAY YOUR BILLS</string>
-    <string name="txt_calc">CALCULATE USAGE</string>
+    <string name="w_hometopic">Water  Home</string>
+    <string name="w_card1_name">Calculate Usage</string>
+    <string name="w_card2_name">Pay Bills</string>
+    <string name="w_card3_name">Add Connection</string>
+    <string name="w_card4_name">Tips</string>
 
 
     <!-- water calculator-->
@@ -202,45 +199,14 @@
     <string name="w_home_calculate_btn">CALCULATE</string>
 
     <!--water entries-->
-    <string name="w_entry_topic">Water entries history</string>
-    <string name="w_col1">Entry Date</string>
-    <string name="w_col2">Account Number</string>
-    <string name="w_col3">Units</string>
-    <string name="w_col4">Total Amount</string>
-
-    <string name="w_row1EntryDate">2023/02/10</string>
-    <string name="w_row1Units">85</string>
-    <string name="w_row1TotalAmount">LKR 4800.00</string>
-    <string name="w_row1AccountNumber">2/07/01/172</string>
-
-    <string name="w_row2EntryDate">2023/02/14</string>
-    <string name="w_row2AccountNumber">3/05/17/263</string>
-    <string name="w_row2Units">70</string>
-    <string name="w_row2TotalAmount">LKR 2500.00</string>
-
-    <string name="w_row3EntryDate">2022/11/04</string>
-    <string name="w_row3AccountNumber">2/07/12/326</string>
-    <string name="w_row3Units">45</string>
-    <string name="w_row3TotalAmount">LKR 530.50</string>
-
-    <string name="w_row4EntryDate">2023/01/08</string>
-    <string name="w_row4AccountNumber">5/07/16/569</string>
-    <string name="w_row4Units">50</string>
-    <string name="w_row4TotalAmount">LKR 600.00</string>
-
-    <string name="w_row5EntryDate">2022/05/08</string>
-    <string name="w_row5AccountNumber">8/07/18/639</string>
-    <string name="w_row5Units">105</string>
-    <string name="w_row5TotalAmount">LKR 5263.50</string>
-
-    <string name="w_row6EntryDate">2023/03/08</string>
-    <string name="w_row6AccountNumber">8/07/19/654</string>
-    <string name="w_row6Units">68</string>
-    <string name="w_row6TotalAmount">LKR 2360.00</string>
-
-    <string name="check_btn">CHECK AGAIN</string>
-    <string name="return_btn">RETURN TO HOME</string>
-
+    <string name="w_entry_h1">Usage History</string>
+    <string name="w_card_d1">Account Name:</string>
+    <string name="w_card_d2">Account Number:</string>
+    <string name="w_card_d3">Number of days:</string>
+    <string name="w_card_d4">Number of units:</string>
+    <string name="w_card_d5">Bill Amount:</string>
+    <string name="w_delete1">Delete</string>
+    <string name="w_update1">Update</string>
 
     <!--water tips-->
     <string name="txt_title">Tips for you</string>
@@ -251,7 +217,6 @@
     <string name="w_txt_tip4">Fix leaky ductwork</string>
     <string name="txt_tip4dec4">Improve the efficiency of heating and cooling systems by repairing leaky heating, ventilation and air conditioning ducts.</string>
     <string name="txt_tip">MORE TIPS</string>
-
 
     <!--Sahan-->
     <string name="user_app_name">UtilityInsight</string>

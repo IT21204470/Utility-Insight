@@ -49,7 +49,8 @@
         android:textColor="@color/notify_sidebar"
         android:textSize="@dimen/notify_sidebar"
         app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="272dp" />
 
     <TextView
         android:id="@+id/bill_sidebar"
@@ -61,8 +62,8 @@
         android:text="@string/bill_sidebar"
         android:textColor="@color/bill_sidebar"
         android:textSize="@dimen/bill_sidebar"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="317dp" />
+        app:layout_constraintStart_toStartOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/notify_sidebar" />
 
     <TextView
         android:id="@+id/electricity_sidebar"
@@ -133,17 +134,5 @@
         android:textSize="@dimen/dark_mode"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="153dp" />
-
-    <Button
-        android:id="@+id/profile_btn"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:background="#20206C"
-        android:backgroundTint="#4F2A3365"
-        android:text="@string/profile_btn"
-        android:textColor="#FFFCFC"
-        android:textSize="@dimen/profile_btn"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="211dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
