@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/userbackground"
     tools:context=".userProfile">
 
     <ImageView
@@ -102,11 +101,10 @@
         app:layout_constraintTop_toBottomOf="@+id/viewUser" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/btnSignOut"
         android:layout_width="@dimen/btn_wid"
         android:layout_height="@dimen/btn_height"
         android:layout_marginTop="76dp"
-        android:layout_marginEnd="24dp"
         android:background="@drawable/user_gradient_button"
         android:fontFamily="@font/capriola"
         android:text="@string/btnSignOut"
@@ -114,25 +112,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnEdtProfile"
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
         app:layout_constraintTop_toBottomOf="@+id/viewEmail"
-        app:layout_constraintVertical_bias="0.395" />
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnEdtProfile"
-        android:layout_width="@dimen/btn_wid"
-        android:layout_height="@dimen/btn_height"
-        android:layout_marginTop="92dp"
-        android:background="@drawable/user_gradient_button"
-        android:fontFamily="@font/capriola"
-        android:text="@string/btnEditUser"
-        android:textColor="@color/bc_color"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblEmail"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.139" />
 
     <ImageView
         android:id="@+id/gas_tips_imageView2"
@@ -144,5 +126,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDelete"
+        android:layout_width="@dimen/btn_wid"
+        android:layout_height="@dimen/btn_height"
+        android:background="@drawable/user_gradient_button"
+        android:fontFamily="@font/capriola"
+        android:text="@string/btnDeleteAcc"
+        android:textColor="@color/bc_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSignOut"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblEmail"
+        app:layout_constraintVertical_bias="0.686" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

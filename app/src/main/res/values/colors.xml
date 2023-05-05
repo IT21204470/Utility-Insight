@@ -7,9 +7,9 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>-->
+    <color name="black">#FF000000</color>
 
-    <color name="white">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
 
 
     <!--add connection-->
@@ -115,6 +115,14 @@
     <color name="heading2">#3044B1</color>
 
 
+    <!--Sahan-->
+    <!--<color name="purple_200">#FFBB86FC</color>-->
+    <!--<color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>-->
 
     <!--Added colors for background-->
     <color name="Utility_bc3">#DAA404</color>
@@ -131,16 +139,6 @@
     <color name="btn_background">#F4B00E</color>
     <color name="home_bc">#EBC280</color>
     <color name="login_bc">#fad77f</color>
-
-    <!--Tharushi-->
-    <color name="gas_pay_btn">#6ECC11</color>
-    <color name="gas_cal_usage_btn">#6ECC11</color>
-    <color name="gas_txt_tip">#757373</color>
-    <color name="gas_tip_2">#000000</color>
-    <color name="gas_set_limit">#4CAF50</color>
-    <color name="gas_set_btn">#4CAF50</color>
-
-
 
 
 </resources>
