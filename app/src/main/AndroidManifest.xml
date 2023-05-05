@@ -21,7 +21,7 @@
             android:name=".gasViewTips"
             android:exported="false" />-->
         <activity
-            android:name=".waterHome"
+            android:name=".mainSidebar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +31,9 @@
         </activity>
         <activity
             android:name=".userProfile"
+            android:exported="false" />
+        <activity
+            android:name=".waterCalculate"
             android:exported="false" />
         <activity
             android:name=".user_feedback"
@@ -88,10 +91,10 @@
             android:name=".successfulMessage"
             android:exported="false" />
         <activity
-            android:name=".electricityHome"
+            android:name=".ForgotPassword"
             android:exported="false" />
         <activity
-            android:name=".ForgotPassword"
+            android:name=".waterEntries"
             android:exported="false" />
         <activity
             android:name=".electricityCalculate"
