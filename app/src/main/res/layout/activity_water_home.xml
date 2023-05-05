@@ -79,7 +79,6 @@
                             android:fontFamily="@font/solway_bold"
                             android:text="@string/w_card1_name"
                             android:textAlignment="center"
-                            android:textSize="@dimen/w_card1_name"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -113,7 +112,6 @@
                             android:fontFamily="@font/solway_bold"
                             android:text="@string/w_card2_name"
                             android:textAlignment="center"
-                            android:textSize="@dimen/w_card2_name"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -155,7 +153,6 @@
                             android:fontFamily="@font/solway_bold"
                             android:text="@string/w_card3_name"
                             android:textAlignment="center"
-                            android:textSize="@dimen/w_card3_name"
                             android:textStyle="bold" />
 
                     </LinearLayout>
@@ -189,7 +186,6 @@
                             android:fontFamily="@font/solway_bold"
                             android:text="@string/w_card4_name"
                             android:textAlignment="center"
-                            android:textSize="@dimen/w_card4_name"
                             android:textStyle="bold" />
 
                     </LinearLayout>

@@ -2,101 +2,103 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
 
     <EditText
         android:id="@+id/acc_name"
         android:layout_width="315dp"
         android:layout_height="48dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:fontFamily="@font/capriola"
+        android:fontFamily="@font/solway_bold"
         android:hint="@string/acc_name"
         android:inputType="textPersonName"
         android:textSize="@dimen/acc_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
 
     <Button
         android:id="@+id/decline_btn"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="@color/purple_700"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1567F4"
         android:fontFamily="@font/solway_bold"
         android:text="@string/decline_btn"
         android:textColor="@color/white"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/premisesID" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/save_btn"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="156dp"
-        android:backgroundTint="@color/purple_700"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#1567F4"
         android:fontFamily="@font/solway_bold"
         android:text="@string/save_btn"
         android:textColor="@color/save_btn"
         android:textSize="@dimen/save_btn"
-        app:layout_constraintEnd_toStartOf="@+id/decline_btn"
-        app:layout_constraintTop_toBottomOf="@+id/premisesID" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView27"
+    <ImageButton
+        android:id="@+id/back_btn"
         android:layout_width="50dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toStartOf="@+id/connection_txt"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+        app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/connection_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="72dp"
-
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/solway_bold"
         android:text="@string/connection_txt"
         android:textColor="@color/black"
         android:textSize="@dimen/connection_txt"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_btn"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/acc_no"
         android:layout_width="315dp"
         android:layout_height="48dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginEnd="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:fontFamily="@font/solway_bold"
         android:hint="@string/acc_no"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textSize="@dimen/acc_no"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acc_name" />
 
     <EditText
         android:id="@+id/premisesID"
         android:layout_width="315dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:fontFamily="@font/solway_bold"
         android:hint="@string/premisesID"
         android:inputType="textPersonName"
         android:textSize="@dimen/premisesID"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/acc_no" />
 
     <ProgressBar
@@ -104,18 +106,20 @@
         style="@style/Widget.AppCompat.ProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="182dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/premisesID" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Spinner
         android:id="@+id/category"
         android:layout_width="270dp"
         android:layout_height="55dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="117dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="94dp"
         android:entries="@array/category"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,6 +25,7 @@ class electricityCalculate : AppCompatActivity() {
     private lateinit var ans: TextView
     private lateinit var btnstore: Button
     private lateinit var progressBar2: ProgressBar
+    private lateinit var finaltot: TextView
 
     private var db = Firebase.firestore
 
@@ -88,25 +89,35 @@ class electricityCalculate : AppCompatActivity() {
         ans = findViewById(R.id.result)
         btnstore = findViewById(R.id.store_btn)
         progressBar2 = findViewById(R.id.progressBar2)
+        finaltot = findViewById(R.id.textView6)
 
+        ans.visibility = View.INVISIBLE
+        finaltot.visibility = View.INVISIBLE
         progressBar2.visibility = View.INVISIBLE
         btnstore.visibility = View.INVISIBLE
 
         btncalculate.setOnClickListener {
 
+            ans.visibility = View.VISIBLE
+
+            val myspinner = spinner.selectedItem.toString().trim()
             val accnumber = etaccnumber.text.toString().trim()
             val unitsText = etunits.text.toString().trim()
             val lastReading = etDatePicker.text.toString().trim()
             val currentReading = etDatePicker2.text.toString().trim()
 
             // Check if any of the fields are empty
-            if (accnumber.isEmpty() || unitsText.isEmpty() || lastReading.isEmpty() || currentReading.isEmpty()) {
+            if (myspinner == tariffcat[0] || accnumber.isEmpty() || unitsText.isEmpty() || lastReading.isEmpty() || currentReading.isEmpty()) {
                 Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
+                ans.visibility = View.INVISIBLE
+                finaltot.visibility = View.INVISIBLE
                 btnstore.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
+            ans.visibility = View.VISIBLE
             btnstore.visibility = View.VISIBLE
+
             val units: Int
             try {
                 units = unitsText.toInt()
@@ -131,7 +142,6 @@ class electricityCalculate : AppCompatActivity() {
             val diffInDays = TimeUnit.MILLISECONDS.toDays(diffInMillis)
 
 
-
             //calculations
             var importcharge = 0f
             var fixedcharge = 0f
@@ -149,9 +159,10 @@ class electricityCalculate : AppCompatActivity() {
                 importcharge = (42 * 24) + (50 * 24) + (units - 48) * 75f
                 fixedcharge = 800f
                 totalcharge = importcharge + fixedcharge
-            }
 
+            }
             ans.text = "Bill Period: $diffInDays days\nImport Charge: $importcharge LKR\nFixed Charge: $fixedcharge LKR\nTotal Bill Amount: $totalcharge LKR"
+            finaltot.text = "$totalcharge LKR"
         }
 
 
@@ -164,22 +175,25 @@ class electricityCalculate : AppCompatActivity() {
             val units = etunits.text.toString().trim()
             val lastreading = etDatePicker.text.toString().trim()
             val currentreading = etDatePicker2.text.toString().trim()
-            val calculation = ans.text.toString().trim()
+            val calculation = finaltot.text.toString().trim()
 
             val userMap = hashMapOf(
-                "User ID" to userid,
-                "Tariff Category" to myspinner,
-                "Account Number" to accnumber,
-                "Last Reading Date" to lastreading,
-                "Current Reading Date" to currentreading,
-                "No of units" to units,
-                "Total Amount" to calculation
+                "userID" to userid,
+                "category" to myspinner,
+                "accountNumber" to accnumber,
+                "lastDate" to lastreading,
+                "currentDate" to currentreading,
+                "units" to units,
+                "totalAmount" to calculation
             )
 
             db.collection("eCalculations").document(userid).set(userMap)
                 .addOnSuccessListener {
                     etaccnumber.text.clear()
+                    etDatePicker.text.clear()
+                    etDatePicker2.text.clear()
                     etunits.text.clear()
+
                     Toast.makeText(this, "Record Successfully Added", Toast.LENGTH_SHORT).show()
                     val i = Intent(this, electricityEntries::class.java)
                     startActivity(i)
@@ -199,6 +213,4 @@ class electricityCalculate : AppCompatActivity() {
         val sdf = SimpleDateFormat(myFormat, Locale.UK )
         etDatePicker2.setText(sdf.format(myCalendar2.time))
     }
-
-
 }

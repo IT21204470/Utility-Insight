@@ -2,38 +2,49 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="TextView"
+        android:textColor="#1567F4"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageButton
-        android:id="@+id/paymentdetail_back_btn"
+        android:id="@+id/back_btn"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:backgroundTint="#C8C7C7"
+        android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/back" />
 
     <TextView
         android:id="@+id/details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
-        android:layout_marginEnd="25dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/details"
         android:textColor="@color/black"
-        android:textSize="26dp"
+        android:textSize="@dimen/connection_txt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/paymentdetail_back_btn"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="298dp"
-        android:layout_height="169dp"
-        android:layout_marginTop="35dp"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,29 +52,18 @@
 
     <Button
         android:id="@+id/to_checkout"
-        android:layout_width="180dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#1567F4"
         android:drawablePadding="-15dp"
+        android:fontFamily="@font/solway_bold"
         android:text="@string/pay_btn_final"
         android:textColor="@color/white"
         android:textSize="@dimen/to_checkout"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/price_final"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="190dp"
-        android:layout_marginBottom="35dp"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/name_fill"
@@ -73,6 +73,7 @@
         android:hint="@string/name_fill"
         android:paddingTop="12dp"
         android:textAlignment="center"
+        android:inputType="text"
         android:textSize="@dimen/name_fill"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,6 +88,7 @@
         android:layout_marginEnd="6dp"
         android:hint="@string/number_fill"
         android:paddingTop="12dp"
+        android:inputType="number"
         android:textAlignment="center"
         android:textSize="@dimen/number_fill"
         android:textStyle="bold"
@@ -116,6 +118,7 @@
         android:layout_marginEnd="210dp"
         android:hint="@string/date_fill"
         android:paddingTop="12dp"
+        android:inputType="date"
         android:textAlignment="center"
         android:textSize="@dimen/date_fill"
         android:textStyle="bold"
@@ -133,6 +136,7 @@
         android:hint="@string/cvv_fill"
         android:paddingTop="12dp"
         android:textAlignment="center"
+        android:inputType="number"
         android:textSize="@dimen/cvv_fill"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -158,7 +162,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="230dp"
+        android:layout_marginEnd="190dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/card_name"
         android:textColor="#000000"

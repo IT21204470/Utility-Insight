@@ -20,7 +20,7 @@
         android:padding="8dp"
         android:text="@string/w_home_store"
         android:textColor="@color/white"
-        android:textSize="@dimen/w_home_store"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
