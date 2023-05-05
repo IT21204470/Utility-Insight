@@ -41,7 +41,11 @@ class userProfile : AppCompatActivity() {
             if(it != null){
                 val name = it.data?.get("Name")?.toString()
                 val username = it.data?.get("UserName")?.toString()
-                val email = it.data?.get("Email").toString()
+                val email = it.data?.get("Email")?.toString()
+
+                viewName.text = name
+                viewUser.text = username
+                viewEmail.text = email
             }
         }
 

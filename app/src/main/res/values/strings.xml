@@ -103,6 +103,7 @@
     <string name="success_msg">Success!</string>
     <string name="successful_msg">Payment Successful</string>
     <string name="back">Back to Home</string>
+    <string name="done">Done</string>
 
     <!--Failed page-->
     <string name="failed_msg">Failed!</string>
@@ -348,6 +349,6 @@
     <string name="current_reading">Enter current reading date</string>
     <string name="store_btn">View Entries</string>
     <string name="btnDeleteAcc">Delete Account</string>
-
+    <string name="select_btn">Select</string>
 
 </resources>
