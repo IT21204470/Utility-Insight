@@ -351,4 +351,9 @@
     <string name="btnDeleteAcc">Delete Account</string>
     <string name="select_btn">Select</string>
 
+
+    <!--Side Bar-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
 </resources>
