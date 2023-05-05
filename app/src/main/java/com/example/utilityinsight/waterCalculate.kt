@@ -9,9 +9,9 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-
-
 class waterCalculate : AppCompatActivity() {
+
+    val fixedprice = arrayOf("Select Fixed Charge", "0-25 = 100.00(LKR)", "26-30 = 200.00(LKR)", "31-40 = 400.00(LKR)", "41-50 = 650.00(LKR)", "51-75 = 1000.00(LKR)", "Above 75 = 1600.00(LKR)")
 
     private lateinit var waccnumber: EditText
     private lateinit var wdays: EditText
@@ -38,6 +38,20 @@ class waterCalculate : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //implementing spinner
+        val fspinner = findViewById<Spinner>(R.id.w_fixed_charge)
+        val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, fixedprice)
+        fspinner.adapter = arrayAdapter
+        fspinner.setSelection(0, false)
+        fspinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+                Toast.makeText(applicationContext, "Fixed Price: " + fixedprice[p2], Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+                Toast.makeText(applicationContext, "Please select an item", Toast.LENGTH_SHORT).show()
+            }
+        }
 
         //assigning variables to id
         waccnumber = findViewById(R.id.w_acc_number)
@@ -51,22 +65,29 @@ class waterCalculate : AppCompatActivity() {
         billdb = findViewById(R.id.textView62)
 
         btnventries.visibility = View.INVISIBLE
+        totcal.visibility = View.INVISIBLE
         billdb.visibility = View.INVISIBLE
         progressbar.visibility = View.INVISIBLE
 
         btncal.setOnClickListener {
 
-            btnventries.visibility = View.VISIBLE
-
+            val waterspinner = fspinner.selectedItem.toString().trim()
             val waterunitText = wunits.text.toString().trim()
             val waterdaysText = wdays.text.toString().trim()
             val wateraccountNumber = waccnumber.toString().trim()
             val wateraccountName = waccname.toString().trim()
 
             // Check if any of the fields are empty
-            if (waterunitText.isEmpty() || waterdaysText.isEmpty() || wateraccountNumber.isEmpty() || wateraccountName.isEmpty()) {
+            if (waterspinner == fixedprice[0] || waterunitText.isEmpty() || waterdaysText.isEmpty() || wateraccountNumber.isEmpty() || wateraccountName.isEmpty()) {
                 Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener }
+                billdb.visibility = View.INVISIBLE
+                totcal.visibility = View.INVISIBLE
+                btnventries.visibility = View.INVISIBLE
+                return@setOnClickListener
+            }
+
+            totcal.visibility = View.VISIBLE
+            btnventries.visibility = View.VISIBLE
 
             val waterunit: Int
             try {
@@ -117,15 +138,16 @@ class waterCalculate : AppCompatActivity() {
             }
 
             totcal.text = "Bill Period: $waterdays days\nImport Charge: $wnormalcharge LKR\nFixed Charge: $wfixedcharge LKR\nTotal Bill Amount: $wtotal LKR"
-
             billdb.text = "$wtotal LKR"
 
         }
 
         btnventries.setOnClickListener{
 
+            totcal.visibility = View.INVISIBLE
             progressbar.visibility = View.VISIBLE
 
+            val waterspinner = fspinner.selectedItem.toString().trim()
             val accountNumber = waccnumber.text.toString().trim()
             val accountName = waccname.text.toString().trim()
             val numberOfDays = wdays.text.toString().trim()
@@ -139,10 +161,9 @@ class waterCalculate : AppCompatActivity() {
                 "accountnumber" to accountNumber,
                 "numberofdays" to numberOfDays,
                 "numberofunits" to numberOfUnits,
+                "fixedCharge" to waterspinner,
                 "totalamount" to totalAmount
             )
-
-
 
             db.collection("wcalculate").document().set(userMap)
                 .addOnSuccessListener {

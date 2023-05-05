@@ -146,15 +146,7 @@
     <string name="w_acc_number">Enter Account Number</string>
     <string name="w_number_of_days">Number of days</string>
     <string name="w_number_of_units">Number of units</string>
-    <string-array name="w_fixed_charge">
-        <item>Fixed Charge(Units)</item>
-        <item>0-25 = 100.00(LKR)</item>
-        <item>26-30 = 200.00(LKR)</item>
-        <item>31-40 = 400.00(LKR)</item>
-        <item>41-50 = 650.00(LKR)</item>
-        <item>51-75 = 1000.00(LKR)</item>
-        <item>Above 75 = 1600.00(LKR)</item>
-    </string-array>
+    <string-array name="w_fixed_charge"></string-array>
     <string name="w_home_calculate_btn">CALCULATE</string>
     <string name="w_home_store">VIEW ENTRIES</string>
 

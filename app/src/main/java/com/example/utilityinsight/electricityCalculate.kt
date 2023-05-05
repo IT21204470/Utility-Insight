@@ -98,8 +98,6 @@ class electricityCalculate : AppCompatActivity() {
 
         btncalculate.setOnClickListener {
 
-            ans.visibility = View.VISIBLE
-
             val myspinner = spinner.selectedItem.toString().trim()
             val accnumber = etaccnumber.text.toString().trim()
             val unitsText = etunits.text.toString().trim()
