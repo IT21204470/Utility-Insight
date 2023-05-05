@@ -121,6 +121,9 @@ class electricityCalculate : AppCompatActivity() {
                 units = unitsText.toInt()
             } catch (e: NumberFormatException) {
                 Toast.makeText(applicationContext, "Invalid input for units", Toast.LENGTH_SHORT).show()
+                ans.visibility = View.INVISIBLE
+                finaltot.visibility = View.INVISIBLE
+                btnstore.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
@@ -133,6 +136,9 @@ class electricityCalculate : AppCompatActivity() {
                 currentReadingDate = dateFormat.parse(currentReading)!!
             } catch (e: ParseException) {
                 Toast.makeText(applicationContext, "Invalid date format", Toast.LENGTH_SHORT).show()
+                ans.visibility = View.INVISIBLE
+                finaltot.visibility = View.INVISIBLE
+                btnstore.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 

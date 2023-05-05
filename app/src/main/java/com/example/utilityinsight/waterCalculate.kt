@@ -74,8 +74,8 @@ class waterCalculate : AppCompatActivity() {
             val waterspinner = fspinner.selectedItem.toString().trim()
             val waterunitText = wunits.text.toString().trim()
             val waterdaysText = wdays.text.toString().trim()
-            val wateraccountNumber = waccnumber.toString().trim()
-            val wateraccountName = waccname.toString().trim()
+            val wateraccountNumber = waccnumber.text.toString().trim()
+            val wateraccountName = waccname.text.toString().trim()
 
             // Check if any of the fields are empty
             if (waterspinner == fixedprice[0] || waterunitText.isEmpty() || waterdaysText.isEmpty() || wateraccountNumber.isEmpty() || wateraccountName.isEmpty()) {
@@ -84,6 +84,13 @@ class waterCalculate : AppCompatActivity() {
                 totcal.visibility = View.INVISIBLE
                 btnventries.visibility = View.INVISIBLE
                 return@setOnClickListener
+            }
+
+            if (!isValidAccountNumber(wateraccountNumber)) {
+                Toast.makeText(applicationContext, "Account number invalid", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else {
+            Toast.makeText(this, "Account number verified", Toast.LENGTH_SHORT).show()
             }
 
             totcal.visibility = View.VISIBLE
@@ -95,6 +102,8 @@ class waterCalculate : AppCompatActivity() {
             } catch (e: NumberFormatException) {
                 Toast.makeText(applicationContext, "Invalid input for units", Toast.LENGTH_SHORT)
                     .show()
+                btnventries.visibility = View.INVISIBLE
+                totcal.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
@@ -104,6 +113,8 @@ class waterCalculate : AppCompatActivity() {
             } catch (e: NumberFormatException) {
                 Toast.makeText(applicationContext, "Invalid input for days", Toast.LENGTH_SHORT)
                     .show()
+                btnventries.visibility = View.INVISIBLE
+                totcal.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
@@ -181,6 +192,11 @@ class waterCalculate : AppCompatActivity() {
                     Toast.makeText(this, "Failed!", Toast.LENGTH_SHORT).show()
                 }
         }
+    }
+
+    private fun isValidAccountNumber(accountNumber: String): Boolean {
+        val regex = "\\d{16}".toRegex()
+        return accountNumber.matches(regex)
     }
 
 }
