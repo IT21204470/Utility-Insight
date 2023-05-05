@@ -3,6 +3,7 @@ package com.example.utilityinsight
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -11,6 +12,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
+
 class waterEntries : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
@@ -18,9 +20,13 @@ class waterEntries : AppCompatActivity() {
 
     private var db = Firebase.firestore
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_water_entries)
+
+
 
         val wEntriesbackButton = findViewById<ImageButton>(R.id.w_entries_back_btn)
         wEntriesbackButton.setOnClickListener {
@@ -28,14 +34,19 @@ class waterEntries : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
         recyclerView = findViewById(R.id.w_recyclerview)
+
         recyclerView.layoutManager = LinearLayoutManager(this)
+
 
         entryList = arrayListOf()
 
+
         db = FirebaseFirestore.getInstance()
 
-        db.collection("entries").get().addOnSuccessListener {
+        db.collection("wcalculate").get().addOnSuccessListener {
             if (!it.isEmpty) {
                 for (data in it.documents) {
                     val entry: Records? = data.toObject(Records::class.java)
@@ -44,7 +55,11 @@ class waterEntries : AppCompatActivity() {
                     }
                 }
                 recyclerView.adapter = WaterMyAdapter(entryList)
+
+
             }
+
+
         }
 
             .addOnFailureListener {

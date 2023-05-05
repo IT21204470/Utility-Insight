@@ -12,8 +12,14 @@ class paymentDetails : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment_details)
 
-        val paymetDetailsbackButton = findViewById<ImageButton>(R.id.paymentdetail_back_btn)
+        val paymetDetailsbackButton = findViewById<ImageButton>(R.id.back_btn)
         paymetDetailsbackButton.setOnClickListener {
+            val intent = Intent(this, paymentMethod::class.java)
+            startActivity(intent)
+        }
+
+        val backButton = findViewById<ImageButton>(R.id.back_btn)
+        backButton.setOnClickListener {
             val intent = Intent(this, paymentMethod::class.java)
             startActivity(intent)
         }

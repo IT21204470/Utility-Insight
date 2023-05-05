@@ -24,7 +24,7 @@ class successfulMessage : AppCompatActivity() {
         donebutton = findViewById(R.id.close)
 
         donebutton.setOnClickListener {
-            val i = Intent(this, waterHome::class.java)
+            val i = Intent(this, electricityHome::class.java)
             startActivity(i)
             finish()
 

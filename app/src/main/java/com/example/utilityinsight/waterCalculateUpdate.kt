@@ -3,34 +3,31 @@ package com.example.utilityinsight
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.*
 import android.view.View
+import android.widget.*
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
+class waterCalculateUpdate : AppCompatActivity() {
 
-
-class waterCalculate : AppCompatActivity() {
-
+    // declare the views and data source
     private lateinit var waccnumber: EditText
     private lateinit var wdays: EditText
     private lateinit var wunits: EditText
     private lateinit var waccname: EditText
     private lateinit var btncal: Button
-    private lateinit var btnventries: Button
+    private lateinit var btnupdate: Button
     private lateinit var progressbar: ProgressBar
     private lateinit var totcal: TextView
     private lateinit var billdb: TextView
 
-
     private var db = Firebase.firestore
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_water_calculate)
-
-
+        setContentView(R.layout.activity_water_calculate_update)
 
         val backButton = findViewById<ImageButton>(R.id.w_cal_page_back_btn)
         backButton.setOnClickListener {
@@ -38,25 +35,25 @@ class waterCalculate : AppCompatActivity() {
             startActivity(intent)
         }
 
-
-        //assigning variables to id
-        waccnumber = findViewById(R.id.w_acc_number)
-        waccname = findViewById(R.id.w_acc_name)
-        wdays = findViewById(R.id.w_number_of_days)
-        wunits = findViewById(R.id.w_number_of_units)
-        btncal = findViewById(R.id.w_home_calculate_btn)
-        btnventries = findViewById(R.id.w_home_store)
+        //initialize the views and data source
+        waccname = findViewById(R.id.w_update_acc_name)
+        waccnumber = findViewById(R.id.w_update_acc_number)
+        wdays = findViewById(R.id.w_update_number_of_days)
+        wunits = findViewById(R.id.w_update_number_of_units)
+        btncal = findViewById(R.id.w_update_calculate_btn)
+        btnupdate = findViewById(R.id.w_update_entries)
         totcal = findViewById(R.id.viewtotal)
         progressbar = findViewById(R.id.wProgressBar)
         billdb = findViewById(R.id.textView62)
 
-        btnventries.visibility = View.INVISIBLE
+        btnupdate.visibility = View.INVISIBLE
         billdb.visibility = View.INVISIBLE
         progressbar.visibility = View.INVISIBLE
 
-        btncal.setOnClickListener {
 
-            btnventries.visibility = View.VISIBLE
+
+        btncal.setOnClickListener {
+            btnupdate.visibility = View.VISIBLE
 
             val waterunitText = wunits.text.toString().trim()
             val waterdaysText = wdays.text.toString().trim()
@@ -122,44 +119,56 @@ class waterCalculate : AppCompatActivity() {
 
         }
 
-            btnventries.setOnClickListener{
+        setData()
 
-                progressbar.visibility = View.VISIBLE
+        btnupdate.setOnClickListener {
 
-                val accountNumber = waccnumber.text.toString().trim()
-                val accountName = waccname.text.toString().trim()
-                val numberOfDays = wdays.text.toString().trim()
-                val numberOfUnits = wunits.text.toString().trim()
-                val totalAmount = billdb.text.toString().trim()
+            progressbar.visibility = View.VISIBLE
 
+            val accountNumber = waccnumber.text.toString().trim()
+            val accountName = waccname.text.toString().trim()
+            val numberOfDays = wdays.text.toString().trim()
+            val numberOfUnits = wunits.text.toString().trim()
+            val totalAmount = billdb.text.toString().trim()
 
+            val updateMap = mapOf(
+                "accountname" to accountName,
+                "accountnumber" to accountNumber,
+                "numberofdays" to numberOfDays,
+                "numberofunits" to numberOfUnits,
+                "totalamount" to totalAmount
+            )
 
-                val userMap = hashMapOf(
-                    "accountname" to accountName,
-                    "accountnumber" to accountNumber,
-                    "numberofdays" to numberOfDays,
-                    "numberofunits" to numberOfUnits,
-                    "totalamount" to totalAmount
-                    )
+            db.collection("wcalculate").document().update(updateMap)
 
+            Toast.makeText(this,"Successfully Edited", Toast.LENGTH_SHORT).show()
 
-
-                db.collection("wcalculate").document().set(userMap)
-                    .addOnSuccessListener {
-                        waccnumber.text.clear()
-                        waccname.text.clear()
-                        wdays.text.clear()
-                        wunits.text.clear()
-                        Toast.makeText(this, "Added successfully",Toast.LENGTH_SHORT).show()
-                        val i = Intent(this, waterEntries::class.java)
-                        startActivity(i)
-                        finish()
-
-                    }
-                    .addOnFailureListener {
-                        Toast.makeText(this, "Failed!", Toast.LENGTH_SHORT).show()
-                    }
-            }
+            val i = Intent(this, waterEntries::class.java)
+            startActivity(i)
+            finish()
         }
 
     }
+
+    private fun setData(){
+        val ref = db.collection("wcalculate").document()
+        ref.get().addOnSuccessListener {
+            if (it != null){
+                val uaccountNumber = it.data?.get("accountnumber")?.toString()
+                val uaccountName = it.data?.get("accountname")?.toString()
+                val unumberOfDays = it.data?.get("numberofdays")?.toString()
+                val unumberOfUnits = it.data?.get("numberofunits")?.toString()
+                val utotalAmount = it.data?.get("totalamount")?.toString()
+
+                waccnumber.setText(uaccountNumber)
+                waccname.setText(uaccountName)
+                wdays.setText(unumberOfDays)
+                wunits.setText(unumberOfUnits)
+                totcal.setText(utotalAmount)
+            }
+        }
+                .addOnFailureListener {
+                    Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()
+                }
+    }
+}

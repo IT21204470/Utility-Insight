@@ -12,9 +12,15 @@ class paymentMethod : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_payment_method)
 
-        val paymetMethodbackButton = findViewById<ImageButton>(R.id.paymentmethod_back_btn)
-        paymetMethodbackButton.setOnClickListener {
+        val backbtn = findViewById<ImageButton>(R.id.back_btn)
+        backbtn.setOnClickListener {
             val intent = Intent(this, waterHome::class.java)
+            startActivity(intent)
+        }
+
+        val backButton = findViewById<ImageButton>(R.id.back_btn)
+        backButton.setOnClickListener {
+            val intent = Intent(this, electricityPayment::class.java)
             startActivity(intent)
         }
 
