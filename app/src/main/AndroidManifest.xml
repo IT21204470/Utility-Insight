@@ -21,7 +21,7 @@
             android:name=".gasViewTips"
             android:exported="false" />-->
         <activity
-            android:name=".mainSidebar"
+            android:name=".waterHome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,6 +31,9 @@
         </activity>
         <activity
             android:name=".userProfile"
+            android:exported="false" />
+        <activity
+            android:name=".waterShowtips"
             android:exported="false" />
         <activity
             android:name=".waterCalculate"
@@ -49,7 +52,7 @@
             android:name=".UserRegistration"
             android:exported="false" />
         <activity
-            android:name=".waterShowtips"
+            android:name=".ActivityFront"
             android:exported="false" />
         <!--<activity
             android:name=".waterMeterReading"

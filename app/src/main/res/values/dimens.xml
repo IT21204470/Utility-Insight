@@ -173,9 +173,8 @@
 
 
     <!--water entries-->
-    <dimen name="w_entry_h1">30dp</dimen>
+    <dimen name="w_entry_h1">26dp</dimen>
     <dimen name="w_tot_amount">22dp</dimen>
-
     <dimen name="w_card1_name">16dp</dimen>
     <dimen name="w_card2_name">16dp</dimen>
     <dimen name="w_card3_name">16dp</dimen>
@@ -192,20 +191,20 @@
 
     <!--water tips-->
     <dimen name="tip_menu">48dp</dimen>
-    <dimen name="txt_title">30sp</dimen>
+    <dimen name="txt_title">26sp</dimen>
 
-    <dimen name="w_txt_tip1">22dp</dimen>
+    <dimen name="w_txt_tip1">18dp</dimen>
     <dimen name="txt_tip1des">12sp</dimen>
     <dimen name="tip_img1">49dp</dimen>
     <dimen name="palette">388dp</dimen>
 
     <dimen name="tip_img2">43dp</dimen>
-    <dimen name="w_txt_tip3">22dp</dimen>
+    <dimen name="w_txt_tip3">18dp</dimen>
     <dimen name="txt_tip3dec3">12sp</dimen>
     <dimen name="palette3">385dp</dimen>
 
     <dimen name="tpi_img3">46dp</dimen>
-    <dimen name="w_txt_tip4">22dp</dimen>
+    <dimen name="w_txt_tip4">18dp</dimen>
     <dimen name="txt_tip4dec4">12sp</dimen>
     <dimen name="txt_tip">20sp</dimen>
 

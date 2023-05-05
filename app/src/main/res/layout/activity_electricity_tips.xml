@@ -83,7 +83,7 @@
         android:id="@+id/tip2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/tip2"
