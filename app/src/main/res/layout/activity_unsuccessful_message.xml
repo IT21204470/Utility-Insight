@@ -48,7 +48,7 @@
         android:id="@+id/previous"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="24dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/extra_failed"
         android:fontFamily="@font/secular_one"
@@ -61,12 +61,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/search_close_btn"
+        android:id="@+id/close"
         android:layout_width="140dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="48dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/extra_failed"
+
         android:fontFamily="@font/secular_one"
         android:text="@string/close"
         android:textColor="@color/white"

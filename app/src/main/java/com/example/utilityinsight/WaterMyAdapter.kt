@@ -1,8 +1,10 @@
 package com.example.utilityinsight
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -13,6 +15,7 @@ class WaterMyAdapter(private val entryList:ArrayList<Records>) : RecyclerView.Ad
         val wnumofdays: TextView = itemView.findViewById(R.id.w_d3_txt)
         val wnumofunits: TextView = itemView.findViewById(R.id.w_d4_txt)
         val wtotal: TextView = itemView.findViewById(R.id.w_d5_txt)
+        val updatebtn: Button = itemView.findViewById(R.id.update1)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -30,5 +33,11 @@ class WaterMyAdapter(private val entryList:ArrayList<Records>) : RecyclerView.Ad
         holder.wnumofdays.text = entryList[position].numberofdays
         holder.wnumofunits.text = entryList[position].numberofunits
         holder.wtotal.text = entryList[position].totalamount
+
+        holder.updatebtn.findViewById<Button>(R.id.update1).setOnClickListener {
+            val context = holder.itemView.context
+            val intent = Intent(context, waterCalculateUpdate::class.java)
+            context.startActivity(intent)
+        }
     }
 }
