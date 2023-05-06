@@ -28,7 +28,7 @@
             android:exported="false" />
         -->
         <activity
-            android:name=".waterHome"
+            android:name=".ActivityFront"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -58,7 +58,7 @@
             android:name=".UserRegistration"
             android:exported="false" />
         <activity
-            android:name=".ActivityFront"
+            android:name=".waterHome"
             android:exported="false" />
         <!--
 <activity

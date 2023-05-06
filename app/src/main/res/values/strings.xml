@@ -356,6 +356,7 @@
     <!--Side Bar-->
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="uheading1">Update your entries</string>
 
 
 </resources>

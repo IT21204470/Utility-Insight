@@ -47,12 +47,11 @@ class MyAdapter(
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             intent.putExtra("accNumber", entryList[position].accountNumber)
             intent.putExtra("lastDate", entryList[position].lastDate)
-            intent.putExtra("cDate", entryList[position].currentDate)
+            intent.putExtra("currentDate", entryList[position].currentDate)
             intent.putExtra("noOfUnits", entryList[position].units)
-            intent.putExtra("total", entryList[position].totalAmount)
+            intent.putExtra("billAmount", entryList[position].totalAmount)
             intent.putExtra("uID", entryList[position].userID)
             conntext.startActivity(intent)
-
         }
     }
 }
