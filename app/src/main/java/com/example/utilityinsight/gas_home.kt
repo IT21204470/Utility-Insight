@@ -19,7 +19,7 @@ class gas_home : AppCompatActivity() {
         }
         val gasPayCardView = findViewById<CardView>(R.id.gas_card_pay)
         gasPayCardView.setOnClickListener {
-            val intent = Intent(this, paymentMethod::class.java)
+            val intent = Intent(this, electricityPayment::class.java)
             startActivity(intent)
         }
         val gasAddCardView = findViewById<CardView>(R.id.gas_card_addcon)
@@ -27,9 +27,19 @@ class gas_home : AppCompatActivity() {
             val intent = Intent(this, addConnection::class.java)
             startActivity(intent)
         }
+        val gasUsageCardView = findViewById<CardView>(R.id.gas_card_usage)
+        gasUsageCardView.setOnClickListener {
+            val intent = Intent(this, gasEntries::class.java)
+            startActivity(intent)
+        }
         val gasTipsCardView = findViewById<CardView>(R.id.gas_card_tips)
         gasTipsCardView.setOnClickListener {
             val intent = Intent(this, gasTips::class.java)
+            startActivity(intent)
+        }
+        val gasNotifyCardView = findViewById<CardView>(R.id.gas_card_notify)
+        gasNotifyCardView.setOnClickListener {
+            val intent = Intent(this, displayNotifications::class.java)
             startActivity(intent)
         }
     }

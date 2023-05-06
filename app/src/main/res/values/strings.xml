@@ -250,22 +250,23 @@
 
 
     <!--Gas Home-->
-
     <string name="gas_home_heading">GAS</string>
     <string name="menuicon">menuicon</string>
     <string name="gas_hometxt1">Calculate Usage</string>
     <string name="gas_hometxt2">View Tips</string>
     <string name="gas_hometxt3">View Entries</string>
     <string name="gas_hometxt4">Pay Bills</string>
-    <string name="gas_calc_heading">Calculate Usage</string>
+    <string name="gas_calc_heading">Calculate your usage</string>
     <string name="gas_home_headingnew">Gas Home</string>
-    <string name="card_g1_name">Tips</string>
-    <string name="card_g4_txt">Calculate Usage</string>
-    <string name="gcardpay_name">Pay Bills</string>
-    <string name="g_viewEntries_btn">View Entries</string>
-    <string name="gcard2_txtnew">Add Connection</string>
+    <string name="card_g1_txt">Calculate Usage</string>
+    <string name="card_g2_txt">Pay Bills</string>
+    <string name="card_g3_txt">Add Connection</string>
+    <string name="card_g4_txt">View Usages</string>
+    <string name="card_g5_txt">Tips</string>
+    <string name="card_g6_txt">Notifications</string>
     <string name="gasentries_heading">Usage History</string>
-    <string name="gentries_backbtn">Backbuttong</string>
+    <string name="gentries_backbtn">Backbutton</string>
+
     <!--Enter dates-->
     <string name="gas_no_of_days">Number of Days</string>
     <string name="gas_previous_reading">Last reading date</string>

@@ -2,43 +2,28 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--menu icon-->
-    <ImageView
-        android:id="@+id/gas_imageView9"
-        android:layout_width="64dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gasmenu"
-        android:contentDescription="gmenuimg" />
-
-<!--    heading-->
-
     <TextView
-        android:id="@+id/gas_home_headingnew"
-        android:layout_width="202dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/hometopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/solway_bold"
         android:text="@string/gas_home_headingnew"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.42"
-        app:layout_constraintStart_toEndOf="@+id/gas_imageView9"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,8 +44,8 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
                         android:id="@+id/gas_card_cal"
-                        android:backgroundTint="#FAF9F9"
                         android:layout_weight="1">
 
                         <LinearLayout
@@ -72,15 +57,15 @@
                             android:padding="30dp">
 
                         <ImageView
-                            android:layout_width="139dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="125dp"
-                            android:src="@drawable/g_calc_icon" />
+                            android:src="@drawable/gcal" />
 
                             <TextView
                                 android:id="@+id/card_g4_txt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="@string/card_g4_txt"
+                                android:text="@string/card_g1_txt"
                                 android:fontFamily="@font/solway_bold"
                                 android:textAlignment="center"
                                 android:textStyle="bold" />
@@ -91,10 +76,10 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/gas_card_pay"
+                    android:layout_margin="8dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="#FAF9F9">
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -105,16 +90,16 @@
                         android:padding="30dp">
 
                         <ImageView
-                            android:layout_width="139dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="125dp"
-                            android:src="@drawable/g_pay_icon" />
+                            android:src="@drawable/gmoney" />
 
                         <TextView
                             android:id="@+id/gcardpay_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/solway_bold"
-                            android:text="@string/gcardpay_name"
+                            android:text="@string/card_g2_txt"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -131,10 +116,10 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/gas_card_addcon"
+                    android:layout_margin="8dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="#FAF9F9">
+                    android:layout_weight="1">
 
 
                     <LinearLayout
@@ -146,16 +131,16 @@
                         android:padding="30dp">
 
                         <ImageView
-                            android:layout_width="139dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="125dp"
-                            android:src="@drawable/g_add_con" />
+                            android:src="@drawable/gdatabase" />
 
                         <TextView
                             android:id="@+id/gcard2_txtnew"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/solway_bold"
-                            android:text="@string/gcard2_txtnew"
+                            android:text="@string/card_g3_txt"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -164,11 +149,11 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/gas_card_tips"
+                    android:id="@+id/gas_card_usage"
+                    android:layout_margin="8dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:backgroundTint="#FAF9F9">
+                    android:layout_weight="1">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
@@ -179,16 +164,16 @@
                         android:padding="30dp">
 
                         <ImageView
-                            android:layout_width="139dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="125dp"
-                            android:src="@drawable/g_tips" />
+                            android:src="@drawable/gpie" />
 
                         <TextView
                             android:id="@+id/card_g1_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/solway_bold"
-                            android:text="@string/card_g1_name"
+                            android:text="@string/card_g4_txt"
                             android:textAlignment="center"
                             android:textStyle="bold" />
 
@@ -196,6 +181,78 @@
 
                 </androidx.cardview.widget.CardView>
 
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gas_card_tips"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="125dp"
+                        android:src="@drawable/glight" />
+
+                    <TextView
+                        android:id="@+id/card3_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_g5_txt"
+                        android:fontFamily="@font/solway_bold"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gas_card_notify"
+                android:layout_margin="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="30dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="125dp"
+                        android:src="@drawable/galarm" />
+
+                    <TextView
+                        android:id="@+id/card4_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/solway_bold"
+                        android:text="@string/card_g6_txt"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
             </LinearLayout>
 
         </GridLayout>
