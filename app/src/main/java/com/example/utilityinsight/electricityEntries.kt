@@ -24,7 +24,7 @@ class electricityEntries : AppCompatActivity() {
 
         val backButton = findViewById<ImageButton>(R.id.back_btn)
         backButton.setOnClickListener {
-            val intent = Intent(this, electricityHome::class.java)
+            val intent = Intent(this, electricityCalculate::class.java)
             startActivity(intent)
         }
 
@@ -43,7 +43,7 @@ class electricityEntries : AppCompatActivity() {
                         entryList.add(entry)
                     }
                 }
-                recyclerView.adapter = MyAdapter(entryList)
+                recyclerView.adapter = MyAdapter(entryList,this)
             }
         }
             .addOnFailureListener {

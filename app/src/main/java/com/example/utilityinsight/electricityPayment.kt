@@ -53,6 +53,12 @@ class electricityPayment : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            // Check if the email address is valid
+            if (!eaddress.contains("@gmail.com")) {
+                Toast.makeText(applicationContext, "Please enter a valid email address", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             progressBar4.visibility = View.VISIBLE
 
             val userMap = hashMapOf(

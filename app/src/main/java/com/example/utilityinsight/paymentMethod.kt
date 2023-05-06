@@ -26,18 +26,33 @@ class paymentMethod : AppCompatActivity() {
         val billAmount = intent.getStringExtra("billAmount")
         enterbill.text = "$billAmount LKR"
 
-        checkoutbutton.setOnClickListener {
-            val selectedButtonId = rdGroup.checkedRadioButtonId
-            if (selectedButtonId != -1) {
-                val checkoutbutton = findViewById<RadioButton>(selectedButtonId)
-                Toast.makeText(this, checkoutbutton.text, Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, paymentDetails::class.java)
-                intent.putExtra("billAmount", billAmount)
-                startActivity(intent)
-                finish()
-            } else {
-                Toast.makeText(this, "Please select a payment method", Toast.LENGTH_SHORT).show()
+        rdGroup.setOnCheckedChangeListener { group, checkedId ->
+            when (checkedId) {
+                R.id.express, R.id.paypal -> {
+                    Toast.makeText(this, "Not yet available", Toast.LENGTH_SHORT).show()
+                    checkoutbutton.setOnClickListener{
+                        Toast.makeText(this, "Choose an available payment method", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                else -> {
+                    Toast.makeText(this, findViewById<RadioButton>(checkedId).text, Toast.LENGTH_SHORT).show()
+                    checkoutbutton.setOnClickListener {
+                        val selectedButtonId = rdGroup.checkedRadioButtonId
+                        if (selectedButtonId != -1) {
+                            val checkoutbutton = findViewById<RadioButton>(selectedButtonId)
+                            val intent = Intent(this, paymentDetails::class.java)
+                            intent.putExtra("billAmount", billAmount)
+                            startActivity(intent)
+                            finish()
+
+                        } else {
+                            Toast.makeText(this, "Please select a payment method", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+                }
             }
         }
+
+
     }
 }

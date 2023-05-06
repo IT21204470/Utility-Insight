@@ -5,5 +5,6 @@ data class Entries(
     val lastDate: String? = null,
     val currentDate: String? = null,
     val units: String? = null,
-    val totalAmount: String? = null
+    val totalAmount: String? = null,
+    val userID: String? = null
 )

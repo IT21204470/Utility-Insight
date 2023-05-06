@@ -1,9 +1,11 @@
 package com.example.utilityinsight
 
 import android.app.DatePickerDialog
+import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import com.google.firebase.firestore.ktx.firestore
@@ -112,6 +114,29 @@ class electricityCalculate : AppCompatActivity() {
                 btnstore.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
+
+            // Retrieve all account numbers from accountNumbers collection
+            db.collection("accountNumbers")
+                .get()
+                .addOnSuccessListener { querySnapshot ->
+                    val accountNumbers = querySnapshot.documents.mapNotNull { document ->
+                        document.getString("accountNumber")
+                    }
+
+                    if (accnumber in accountNumbers) {
+                        Toast.makeText(applicationContext, "Valid account number", Toast.LENGTH_SHORT).show()
+                        return@addOnSuccessListener
+                    } else {
+                        ans.visibility = View.INVISIBLE
+                        finaltot.visibility = View.INVISIBLE
+                        btnstore.visibility = View.INVISIBLE
+                        Toast.makeText(applicationContext, "Invalid account number", Toast.LENGTH_SHORT).show()
+                    }
+                }
+                .addOnFailureListener { e ->
+                    Log.e(ContentValues.TAG, "Error adding account number to accountNumbers collection", e)
+                    Toast.makeText(this, "Error adding account number", Toast.LENGTH_SHORT).show()
+                }
 
             ans.visibility = View.VISIBLE
             btnstore.visibility = View.VISIBLE

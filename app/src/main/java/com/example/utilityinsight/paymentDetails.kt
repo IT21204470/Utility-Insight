@@ -57,17 +57,24 @@ class paymentDetails : AppCompatActivity() {
             val hname = holdername.text.toString().trim()
 
             if (!isValidCardNumber(cardno)) {
-                Toast.makeText(
-                    applicationContext,
-                    "Payment details cannot be verified",
-                    Toast.LENGTH_SHORT
-                ).show()
-                val i = Intent(this, unsuccessfulMessage::class.java)
-                startActivity(i)
+
+                if (!isValidCVV(cvvno)) {
+                    Toast.makeText(applicationContext, "Payment details cannot be verified", Toast.LENGTH_SHORT).show()
+                    val i = Intent(this, unsuccessfulMessage::class.java)
+                    startActivity(i)
+                }else {
+                    Toast.makeText(applicationContext, "Invalid card number", Toast.LENGTH_SHORT).show()
+                }
+
+
             } else{
-                Toast.makeText(this, "Payment Authenticated", Toast.LENGTH_SHORT).show()
-                val i = Intent(this, successfulMessage::class.java)
-                startActivity(i)
+                if(!isValidCVV(cvvno)){
+                    Toast.makeText(applicationContext, "Invalid CVV", Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(this, "Payment Authenticated", Toast.LENGTH_SHORT).show()
+                    val i = Intent(this, successfulMessage::class.java)
+                    startActivity(i)
+                }
             }
 
             // Check if any of the fields are empty
@@ -83,6 +90,11 @@ class paymentDetails : AppCompatActivity() {
     }
     private fun isValidCardNumber(cardNumber: String): Boolean {
         val regex = "\\d{16}".toRegex()
+        return cardNumber.matches(regex)
+    }
+
+    private fun isValidCVV(cardNumber: String): Boolean {
+        val regex = "\\d{3}".toRegex()
         return cardNumber.matches(regex)
     }
 

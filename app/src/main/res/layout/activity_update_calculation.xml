@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:entries="@array/tariffcat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/uacc_number"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/acc_number"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <EditText
+        android:id="@+id/ulast_reading"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:inputType="date"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/last_reading"
+        android:paddingLeft="15dp"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uacc_number" />
+
+    <EditText
+        android:id="@+id/uunit_amount"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/units"
+        android:inputType="date"
+        android:paddingLeft="15dp"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ucurrent_reading" />
+
+    <EditText
+        android:id="@+id/ucurrent_reading"
+        android:layout_width="270dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:inputType="date"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/current_reading"
+        android:paddingLeft="15dp"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/current_reading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ulast_reading" />
+
+    <TextView
+        android:id="@+id/uheading1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/heading1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/connection_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ucalculate_btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#1567F4"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/calculate_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/calculate_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uunit_amount"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Button
+        android:id="@+id/ustore_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#1567F4"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/store_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/calculate_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/uresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="TextView"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/uback_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ProgressBar
+        android:id="@+id/uprogressBar2"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/utextView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/uresult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ucalculate_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

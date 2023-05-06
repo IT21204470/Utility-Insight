@@ -1,13 +1,16 @@
 package com.example.utilityinsight
 
+import android.content.ContentValues.TAG
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import java.util.UUID
+import java.text.SimpleDateFormat
+import java.util.*
 
 class addConnection : AppCompatActivity() {
 
@@ -77,7 +80,16 @@ class addConnection : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            if (!isValidAccountNumber(accountNo)) {
+                Toast.makeText(applicationContext, "Account number should have 10 characters", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else {
+                Toast.makeText(this, "Account number verified", Toast.LENGTH_SHORT).show()
+            }
+
             progressBar.visibility = View.VISIBLE
+
+            val accountNumber = accountNo.trim()
 
             val userMap = hashMapOf(
                 "userID" to userid,
@@ -90,16 +102,35 @@ class addConnection : AppCompatActivity() {
 
             db.collection("accounts").document(userid).set(userMap)
                 .addOnSuccessListener {
-                    etname.text.clear()
-                    etnumber.text.clear()
-                    etpremises.text.clear()
-                    progressBar.visibility = View.INVISIBLE
-                    Toast.makeText(this, "Account added successfully", Toast.LENGTH_SHORT).show()
-                    val i = Intent(this, electricityHome::class.java)
-                    i.putExtra("accountName", accountName)
-                    startActivity(i)
-                    finish()
+                    val accountNumberMap = hashMapOf(
+                        "accountNumber" to accountNumber
+                    )
+                    db.collection("accountNumbers").add(accountNumberMap)
+                        .addOnSuccessListener {
+                            etname.text.clear()
+                            etnumber.text.clear()
+                            etpremises.text.clear()
+                            progressBar.visibility = View.INVISIBLE
+                            Toast.makeText(this, "Account added successfully", Toast.LENGTH_SHORT).show()
+                            val i = Intent(this, electricityHome::class.java)
+                            i.putExtra("accountName", accountName)
+                            startActivity(i)
+                            finish()
+                        }
+                        .addOnFailureListener { e ->
+                            Log.e(TAG, "Error adding account number to accountNumbers collection", e)
+                            Toast.makeText(this, "Error adding account number", Toast.LENGTH_SHORT).show()
+                        }
+                }
+                .addOnFailureListener { e ->
+                    Log.e(TAG, "Error adding account number to accountNumbers collection", e)
+                    Toast.makeText(this, "Error adding account number", Toast.LENGTH_SHORT).show()
                 }
         }
+    }
+
+    private fun isValidAccountNumber(accountNumber: String): Boolean {
+        val regex = "\\d{10}".toRegex()
+        return accountNumber.matches(regex)
     }
 }
