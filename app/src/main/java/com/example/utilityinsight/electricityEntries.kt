@@ -43,7 +43,7 @@ class electricityEntries : AppCompatActivity() {
                         entryList.add(entry)
                     }
                 }
-                recyclerView.adapter = MyAdapter(entryList,this)
+                recyclerView.adapter = MyAdapter(entryList,this,db)
             }
         }
             .addOnFailureListener {

@@ -7,11 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MyAdapter(
     private val entryList:ArrayList<Entries>,
-    private val conntext: Context
+    private val conntext: Context,
+    private val db: FirebaseFirestore,
     ) : RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
     class MyViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
         val accno: TextView = itemView.findViewById(R.id.d1_txt)
@@ -22,7 +25,7 @@ class MyAdapter(
         val uID: TextView = itemView.findViewById(R.id.d6_txt)
 
         val delete: Button = itemView.findViewById(R.id.delete1)
-        val update :Button = itemView.findViewById(R.id.update1)
+        val update: Button = itemView.findViewById(R.id.update1)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -52,6 +55,20 @@ class MyAdapter(
             intent.putExtra("billAmount", entryList[position].totalAmount)
             intent.putExtra("uID", entryList[position].userID)
             conntext.startActivity(intent)
+        }
+
+        holder.delete.setOnClickListener {
+            entryList[position].userID?.let { it1 ->
+                db.collection("eCalculations")
+                    .document(it1)
+                    .delete()
+                    .addOnCompleteListener {
+                        entryList.removeAt(position)
+                        notifyItemRemoved(position)
+                        notifyItemRangeChanged(position, entryList.size)
+                        Toast.makeText(conntext, "Record has been deleted!", Toast.LENGTH_SHORT).show()
+                    }
+            }
         }
     }
 }

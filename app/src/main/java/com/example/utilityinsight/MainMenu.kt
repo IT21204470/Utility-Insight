@@ -70,9 +70,7 @@ class MainMenu : AppCompatActivity() {
 
 
                     R.id.nav_delete->{
-
                         Toast.makeText(applicationContext,"Clicked Delete",Toast.LENGTH_SHORT).show()
-
                         val mapDelete = mapOf(
                             "Name" to FieldValue.delete()
                         )
@@ -90,7 +88,6 @@ class MainMenu : AppCompatActivity() {
                     }
 
                     R.id.user_feedback->{
-
                         val feedIntent = Intent(this, user_feedback::class.java)
                         startActivity(feedIntent)
 
@@ -120,9 +117,8 @@ class MainMenu : AppCompatActivity() {
 
 
         gasbtn = findViewById(R.id.btnGas)
-
         gasbtn.setOnClickListener {
-            val gasIntent = Intent(this, userProfile::class.java)
+            val gasIntent = Intent(this, gas_home::class.java)
             startActivity(gasIntent)
         }
 

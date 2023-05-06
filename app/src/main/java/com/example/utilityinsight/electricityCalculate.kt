@@ -115,28 +115,10 @@ class electricityCalculate : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // Retrieve all account numbers from accountNumbers collection
-            db.collection("accountNumbers")
-                .get()
-                .addOnSuccessListener { querySnapshot ->
-                    val accountNumbers = querySnapshot.documents.mapNotNull { document ->
-                        document.getString("accountNumber")
-                    }
-
-                    if (accnumber in accountNumbers) {
-                        Toast.makeText(applicationContext, "Valid account number", Toast.LENGTH_SHORT).show()
-                        return@addOnSuccessListener
-                    } else {
-                        ans.visibility = View.INVISIBLE
-                        finaltot.visibility = View.INVISIBLE
-                        btnstore.visibility = View.INVISIBLE
-                        Toast.makeText(applicationContext, "Invalid account number", Toast.LENGTH_SHORT).show()
-                    }
-                }
-                .addOnFailureListener { e ->
-                    Log.e(ContentValues.TAG, "Error adding account number to accountNumbers collection", e)
-                    Toast.makeText(this, "Error adding account number", Toast.LENGTH_SHORT).show()
-                }
+            if (!isValidAccountNumber(accnumber)) {
+                Toast.makeText(applicationContext, "Account number should have 10 characters", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
 
             ans.visibility = View.VISIBLE
             btnstore.visibility = View.VISIBLE
@@ -241,5 +223,10 @@ class electricityCalculate : AppCompatActivity() {
         val myFormat = "dd-MM-yyyy"
         val sdf = SimpleDateFormat(myFormat, Locale.UK )
         etDatePicker2.setText(sdf.format(myCalendar2.time))
+    }
+
+    private fun isValidAccountNumber(accountNumber: String): Boolean {
+        val regex = "\\d{10}".toRegex()
+        return accountNumber.matches(regex)
     }
 }

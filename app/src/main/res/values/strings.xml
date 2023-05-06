@@ -191,7 +191,7 @@
     <string name="regLabel">Join The Community</string>
     <string name="nameLabel">Name:</string>
     <string name="hntName">Full Name</string>
-    <string name="hntUserName">User Name</string>
+    <string name="hntUserName">Username</string>
     <string name="hntEmail">Email</string>
     <string name="hntPassword">Password</string>
     <string name="hntRePass">Re-enter Password</string>
@@ -199,8 +199,8 @@
     <string name="txtLogin">Login</string>
     <string name="btnForgotPass">Forgot Password?</string>
     <string name="btnLogin">Login</string>
-    <string name="txtNew">Don\'t Have An Account?</string>
-    <string name="txtDashboard">Choose Service</string>
+    <string name="txtNew">Don\'t have an account?</string>
+    <string name="txtDashboard">Choose Utility</string>
     <string name="btnEditUser">Edit Details</string>
 
 
