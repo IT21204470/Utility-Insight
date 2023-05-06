@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splash_bc"
+    android:background="@color/white"
     tools:context=".ActivityFront" >
 
     <ImageView
@@ -15,5 +15,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/utility_insight_trans" />
+        app:srcCompat="@drawable/newsplash" />
 </androidx.constraintlayout.widget.ConstraintLayout>

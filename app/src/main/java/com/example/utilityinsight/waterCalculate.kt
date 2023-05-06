@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import android.view.View
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
-
 class waterCalculate : AppCompatActivity() {
+
+    val fixedprice = arrayOf("Select Fixed Charge", "0-25 = 100.00(LKR)", "26-30 = 200.00(LKR)", "31-40 = 400.00(LKR)", "41-50 = 650.00(LKR)", "51-75 = 1000.00(LKR)", "Above 75 = 1600.00(LKR)")
 
     private lateinit var waccnumber: EditText
     private lateinit var wdays: EditText
@@ -19,6 +21,7 @@ class waterCalculate : AppCompatActivity() {
     private lateinit var btnventries: Button
     private lateinit var progressbar: ProgressBar
     private lateinit var totcal: TextView
+    private lateinit var billdb: TextView
 
 
     private var db = Firebase.firestore
@@ -35,6 +38,20 @@ class waterCalculate : AppCompatActivity() {
             startActivity(intent)
         }
 
+        //implementing spinner
+        val fspinner = findViewById<Spinner>(R.id.w_fixed_charge)
+        val arrayAdapter = ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, fixedprice)
+        fspinner.adapter = arrayAdapter
+        fspinner.setSelection(0, false)
+        fspinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+                Toast.makeText(applicationContext, "Fixed Price: " + fixedprice[p2], Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onNothingSelected(p0: AdapterView<*>?) {
+                Toast.makeText(applicationContext, "Please select an item", Toast.LENGTH_SHORT).show()
+            }
+        }
 
         //assigning variables to id
         waccnumber = findViewById(R.id.w_acc_number)
@@ -45,23 +62,39 @@ class waterCalculate : AppCompatActivity() {
         btnventries = findViewById(R.id.w_home_store)
         totcal = findViewById(R.id.viewtotal)
         progressbar = findViewById(R.id.wProgressBar)
+        billdb = findViewById(R.id.textView62)
 
         btnventries.visibility = View.INVISIBLE
+        totcal.visibility = View.INVISIBLE
+        billdb.visibility = View.INVISIBLE
         progressbar.visibility = View.INVISIBLE
 
         btncal.setOnClickListener {
 
-            btnventries.visibility = View.VISIBLE
-
+            val waterspinner = fspinner.selectedItem.toString().trim()
             val waterunitText = wunits.text.toString().trim()
             val waterdaysText = wdays.text.toString().trim()
-            val wateraccountNumber = waccnumber.toString().trim()
-            val wateraccountName = waccname.toString().trim()
+            val wateraccountNumber = waccnumber.text.toString().trim()
+            val wateraccountName = waccname.text.toString().trim()
 
             // Check if any of the fields are empty
-            if (waterunitText.isEmpty() || waterdaysText.isEmpty() || wateraccountNumber.isEmpty() || wateraccountName.isEmpty()) {
+            if (waterspinner == fixedprice[0] || waterunitText.isEmpty() || waterdaysText.isEmpty() || wateraccountNumber.isEmpty() || wateraccountName.isEmpty()) {
                 Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener }
+                billdb.visibility = View.INVISIBLE
+                totcal.visibility = View.INVISIBLE
+                btnventries.visibility = View.INVISIBLE
+                return@setOnClickListener
+            }
+
+            if (!isValidAccountNumber(wateraccountNumber)) {
+                Toast.makeText(applicationContext, "Account number invalid", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            } else {
+            Toast.makeText(this, "Account number verified", Toast.LENGTH_SHORT).show()
+            }
+
+            totcal.visibility = View.VISIBLE
+            btnventries.visibility = View.VISIBLE
 
             val waterunit: Int
             try {
@@ -69,6 +102,8 @@ class waterCalculate : AppCompatActivity() {
             } catch (e: NumberFormatException) {
                 Toast.makeText(applicationContext, "Invalid input for units", Toast.LENGTH_SHORT)
                     .show()
+                btnventries.visibility = View.INVISIBLE
+                totcal.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
@@ -78,6 +113,8 @@ class waterCalculate : AppCompatActivity() {
             } catch (e: NumberFormatException) {
                 Toast.makeText(applicationContext, "Invalid input for days", Toast.LENGTH_SHORT)
                     .show()
+                btnventries.visibility = View.INVISIBLE
+                totcal.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
@@ -112,42 +149,54 @@ class waterCalculate : AppCompatActivity() {
             }
 
             totcal.text = "Bill Period: $waterdays days\nImport Charge: $wnormalcharge LKR\nFixed Charge: $wfixedcharge LKR\nTotal Bill Amount: $wtotal LKR"
+            billdb.text = "$wtotal LKR"
 
         }
 
-            btnventries.setOnClickListener{
+        btnventries.setOnClickListener{
 
-                progressbar.visibility = View.VISIBLE
+            totcal.visibility = View.INVISIBLE
+            progressbar.visibility = View.VISIBLE
 
-                val accountNumber = waccnumber.text.toString().trim()
-                val accountName = waccname.text.toString().trim()
-                val numberOfDays = wdays.text.toString().trim()
-                val numberOfUnits = wunits.text.toString().trim()
-                val totalAmount = totcal.text.toString().trim()
+            val waterspinner = fspinner.selectedItem.toString().trim()
+            val accountNumber = waccnumber.text.toString().trim()
+            val accountName = waccname.text.toString().trim()
+            val numberOfDays = wdays.text.toString().trim()
+            val numberOfUnits = wunits.text.toString().trim()
+            val totalAmount = billdb.text.toString().trim()
 
 
-                val userMap = hashMapOf(
-                    "accountname" to accountName,
-                    "accountnumber" to accountNumber,
-                    "numberofdays" to numberOfDays,
-                    "numberofunits" to numberOfUnits,
-                    "totalamount" to totalAmount
 
-                    )
+            val userMap = hashMapOf(
+                "accountname" to accountName,
+                "accountnumber" to accountNumber,
+                "numberofdays" to numberOfDays,
+                "numberofunits" to numberOfUnits,
+                "fixedCharge" to waterspinner,
+                "totalamount" to totalAmount
+            )
 
-                db.collection("wcalculate").document().set(userMap)
-                    .addOnSuccessListener {
-                        waccnumber.text.clear()
-                        waccname.text.clear()
-                        wdays.text.clear()
-                        wunits.text.clear()
-                        Toast.makeText(this, "Added successfully",Toast.LENGTH_SHORT).show()
-                        val i = Intent(this, waterEntries::class.java)
-                        startActivity(i)
-                        finish()
+            db.collection("wcalculate").document().set(userMap)
+                .addOnSuccessListener {
+                    waccnumber.text.clear()
+                    waccname.text.clear()
+                    wdays.text.clear()
+                    wunits.text.clear()
+                    Toast.makeText(this, "Added successfully",Toast.LENGTH_SHORT).show()
+                    val i = Intent(this, waterEntries::class.java)
+                    startActivity(i)
+                    finish()
 
-                    }
-            }
+                }
+                .addOnFailureListener {
+                    Toast.makeText(this, "Failed!", Toast.LENGTH_SHORT).show()
+                }
         }
-
     }
+
+    private fun isValidAccountNumber(accountNumber: String): Boolean {
+        val regex = "\\d{16}".toRegex()
+        return accountNumber.matches(regex)
+    }
+
+}

@@ -1,114 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/userbackground"
     tools:context=".MainMenu">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnElectricity"
-        android:layout_width="@dimen/btn_wid"
-        android:layout_height="@dimen/btn_height"
-        android:layout_marginTop="27dp"
-        android:background="@drawable/user_gradient_button"
-        android:text="@string/btnElectricity"
-        android:textColor="@color/bc_color"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toStartOf="@+id/btnWater"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8"
-        app:layout_constraintVertical_bias="0.0" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnWater"
-        android:layout_width="@dimen/btn_wid"
-        android:layout_height="@dimen/btn_height"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/user_gradient_button"
-        android:text="@string/btnWater"
-        android:textColor="@color/bc_color"
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnElectricity"
-        app:layout_constraintTop_toBottomOf="@+id/icnWater"
-        app:layout_constraintVertical_bias="0.0" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnElectricity"
+            android:layout_width="@dimen/btn_wid"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/user_gradient_button"
+            android:text="@string/btnElectricity"
+            android:textSize="18sp"
+            android:fontFamily="@font/solway_bold"
+            android:textColor="@color/bc_color"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/btnWater"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/icnWater"
-        android:layout_width="@dimen/pic_dim"
-        android:layout_height="@dimen/pic_dim"
-        android:layout_marginTop="20dp"
-        android:outlineProvider="none"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/water" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnWater"
+            android:layout_width="@dimen/btn_wid"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/user_gradient_button"
+            android:fontFamily="@font/solway_bold"
+            android:text="@string/btnWater"
+            android:textColor="@color/bc_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnElectricity"
+            app:layout_constraintTop_toBottomOf="@+id/icnWater"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnGas"
-        android:layout_width="@dimen/btn_wid"
-        android:layout_height="@dimen/btn_height"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/user_gradient_button"
-        android:text="@string/btnGas"
-        android:textColor="@color/bc_color"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/icnWater"
+            android:layout_width="@dimen/pic_dim"
+            android:layout_height="@dimen/pic_dim"
+            android:layout_marginTop="45dp"
+            android:outlineProvider="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:srcCompat="@drawable/tapfinal" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="@dimen/pic_dim"
-        android:layout_height="@dimen/pic_dim"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/icnWater"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/electrical_energy" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGas"
+            android:layout_width="@dimen/btn_wid"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/user_gradient_button"
+            android:fontFamily="@font/solway_bold"
+            android:text="@string/btnGas"
+            android:textColor="@color/bc_color"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="@dimen/pic_dim"
-        android:layout_height="@dimen/pic_dim"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnGas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/gas_bottle" />
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="@dimen/pic_dim"
+            android:layout_height="@dimen/pic_dim"
+            android:layout_marginTop="45dp"
+            app:layout_constraintEnd_toStartOf="@+id/icnWater"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7"
+            app:srcCompat="@drawable/electrical_energy" />
 
-    <TextView
-        android:id="@+id/textView7"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/pic_dim"
+            android:layout_height="@dimen/pic_dim"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnGas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/gas_bottle" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="60dp"
+            android:fontFamily="@font/solway_bold"
+            android:text="@string/txtDashboard"
+            android:textColor="@color/labelColor"
+            android:textSize="@dimen/txtDashboard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:fontFamily="@font/capriola"
-        android:text="@string/txtDashboard"
-        android:textColor="@color/labelColor"
-        android:textSize="@dimen/txtDashboard"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        app:menu="@menu/nav_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        />
 
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="@dimen/menu_wid"
-        android:layout_height="@dimen/menu_height"
-        android:layout_marginTop="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
-        app:layout_constraintEnd_toStartOf="@+id/textView7"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/menu" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+

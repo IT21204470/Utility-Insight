@@ -1,138 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="16dp"
+    android:background="@drawable/splash_bc">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="313dp"
-        android:layout_height="673dp"
-        android:layout_marginEnd="96dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/sidebar" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="@dimen/imageView11"
-        android:layout_height="64dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/man" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/baseline_person_24_black" />
 
     <TextView
-        android:id="@+id/greeting"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/greeting"
-        android:textColor="@color/greeting"
-        android:textSize="@dimen/greeting"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        android:id="@+id/userName"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:text="TV"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/notify_sidebar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="-192dp"
-        android:drawableLeft="@drawable/baseline_notifications_24"
-        android:drawablePadding="5dp"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/notify_sidebar"
-        android:textColor="@color/notify_sidebar"
-        android:textSize="@dimen/notify_sidebar"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="272dp" />
+        android:textSize="16dp"
+        android:text="Email"/>
 
-    <TextView
-        android:id="@+id/bill_sidebar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/baseline_add_circle_24"
-        android:drawablePadding="5dp"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/bill_sidebar"
-        android:textColor="@color/bill_sidebar"
-        android:textSize="@dimen/bill_sidebar"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toBottomOf="@+id/notify_sidebar" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"/>
 
-    <TextView
-        android:id="@+id/electricity_sidebar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/baseline_electric_bolt_24"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/electricity_sidebar"
-        android:textColor="@color/electricity_sidebar"
-        android:textSize="@dimen/electricity_sidebar"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="383dp" />
 
-    <TextView
-        android:id="@+id/rate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/baseline_star_24"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/rate"
-        android:textColor="@color/rate"
-        android:textSize="@dimen/rate"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="543dp" />
 
-    <TextView
-        android:id="@+id/water_sidebar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/baseline_water_drop_24"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/water_sidebar"
-        android:textColor="@color/water_sidebar"
-        android:textSize="@dimen/water_sidebar"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="432dp" />
 
-    <TextView
-        android:id="@+id/gas_sidebar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableLeft="@drawable/baseline_gas_meter_24"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/gas_sidebar"
-        android:textColor="@color/gas_sidebar"
-        android:textSize="@dimen/gas_sidebar"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="481dp" />
 
-    <TextView
-        android:id="@+id/logout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/logout"
-        android:textColor="@color/logout"
-        android:textSize="@dimen/logout"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="543dp" />
 
-    <Switch
-        android:id="@+id/dark_mode"
-        android:layout_width="175dp"
-        android:layout_height="48dp"
-        android:fontFamily="@font/solway_bold"
-        android:text="@string/dark_mode"
-        android:textColor="@color/dark_mode"
-        android:textSize="@dimen/dark_mode"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="153dp" />
+</LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

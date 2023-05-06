@@ -18,8 +18,7 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -46,6 +45,7 @@
         android:ems="10"
         android:fontFamily="@font/capriola"
         android:hint="@string/hntEmail"
+        android:padding="10dp"
         android:inputType="textEmailAddress"
         android:textColor="@color/labelColor"
         android:textSize="20sp"
@@ -61,16 +61,17 @@
         android:layout_height="@dimen/pic_dim"
         android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:srcCompat="@drawable/feedback__1_" />
+        app:srcCompat="@drawable/feedback1" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="@font/capriola"
         android:text="@string/lblFeedback"
         android:textColor="@color/labelColor"
@@ -85,11 +86,16 @@
         android:layout_width="@dimen/feed_txt"
         android:layout_height="@dimen/feed_txt_height"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
         android:background="@drawable/user_text_back"
         android:ems="10"
+        android:fontFamily="@font/capriola"
         android:gravity="start|top"
         android:hint="@string/hntFeedback"
         android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.71"
@@ -104,22 +110,13 @@
         android:layout_marginBottom="28dp"
         android:background="@drawable/user_gradient_button"
         android:text="@string/btnSubmit"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:fontFamily="@font/capriola"
         android:textColor="@color/bc_color"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="@dimen/menu_wid"
-        android:layout_height="@dimen/menu_height"
-        android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView6"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

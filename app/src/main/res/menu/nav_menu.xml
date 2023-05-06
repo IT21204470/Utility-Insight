@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Profile">
+        <menu>
+
+            <item android:id="@+id/nav_profile"
+                android:icon="@drawable/person"
+                android:title="Profile"/>
+
+            <item android:id="@+id/nav_logout"
+                android:icon="@color/btnSignOut"
+                android:title="Sign Out"/>
+
+            <item android:id="@+id/nav_delete"
+                android:icon="@drawable/baseline_delete_24"
+                android:title="Delete Account"/>
+
+
+
+        </menu>
+    </item>
+
+
+    <item
+        android:id ="@+id/electHome"
+        android:title="Electricity Home"
+        android:icon = "@drawable/electrical_energy"/>
+
+    <item
+        android:id="@+id/waterHome"
+        android:title="Water Home"
+        android:icon="@drawable/water"/>
+
+    <item
+        android:id="@+id/gasHome"
+        android:title="Gas Home"
+        android:icon="@drawable/gas_bottle"/>
+
+
+    <item android:title="Feedback">
+        <menu>
+            <item
+                android:id="@+id/user_feedback"
+                android:title="Provide Feedback"
+                android:icon="@drawable/feedback__1_"
+               />
+        </menu>
+    </item>
+</menu>

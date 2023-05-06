@@ -10,19 +10,17 @@
         android:id="@+id/gas_cylynder_img"
         android:layout_width="@dimen/pic_dim"
         android:layout_height="@dimen/pic_dim"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gas_tips_imageView2"
-        app:srcCompat="@drawable/person" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/man2" />
 
     <TextView
         android:id="@+id/viewName"
-        android:layout_width="209dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/capriola"
         android:text="@string/hntName"
         android:textSize="24sp"
@@ -33,15 +31,13 @@
         android:id="@+id/lblName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/capriola"
         android:text="@string/nameLabel"
         android:textColor="@color/labelColor"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/viewName"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gas_cylynder_img" />
 
@@ -49,23 +45,21 @@
         android:id="@+id/lblUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/capriola"
         android:text="@string/labelUser"
         android:textColor="@color/labelColor"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/viewUser"
-        app:layout_constraintHorizontal_bias="0.679"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblName" />
 
     <TextView
         android:id="@+id/viewUser"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="88dp"
         android:fontFamily="@font/capriola"
         android:text="@string/viewUserName"
         android:textSize="24sp"
@@ -76,73 +70,54 @@
         android:id="@+id/lblEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/capriola"
         android:text="@string/lblEmail"
         android:textColor="@color/labelColor"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnDelete"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblUserName"
-        app:layout_constraintVertical_bias="0.015" />
+        app:layout_constraintTop_toBottomOf="@+id/lblUserName" />
 
     <TextView
         android:id="@+id/viewEmail"
-        android:layout_width="wrap_content"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="29dp"
         android:fontFamily="@font/capriola"
         android:text="@string/viewEmail"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
-        app:layout_constraintStart_toEndOf="@+id/lblEmail"
         app:layout_constraintTop_toBottomOf="@+id/viewUser" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSignOut"
         android:layout_width="@dimen/btn_wid"
         android:layout_height="@dimen/btn_height"
-        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/user_gradient_button"
         android:fontFamily="@font/capriola"
         android:text="@string/btnSignOut"
         android:textColor="@color/bc_color"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnDelete"
-        app:layout_constraintTop_toBottomOf="@+id/viewEmail"
-        app:layout_constraintVertical_bias="0.93" />
-
-    <ImageView
-        android:id="@+id/gas_tips_imageView2"
-        android:layout_width="@dimen/menu_wid"
-        android:layout_height="@dimen/menu_height"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnDelete"
         android:layout_width="@dimen/btn_wid"
         android:layout_height="@dimen/btn_height"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/user_gradient_button"
         android:fontFamily="@font/capriola"
         android:text="@string/btnDeleteAcc"
         android:textColor="@color/bc_color"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnSignOut"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnSignOut"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

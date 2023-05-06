@@ -1,9 +1,11 @@
 package com.example.utilityinsight
 
 import android.app.DatePickerDialog
+import android.content.ContentValues
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.*
 import com.google.firebase.firestore.ktx.firestore
@@ -25,6 +27,7 @@ class electricityCalculate : AppCompatActivity() {
     private lateinit var ans: TextView
     private lateinit var btnstore: Button
     private lateinit var progressBar2: ProgressBar
+    private lateinit var finaltot: TextView
 
     private var db = Firebase.firestore
 
@@ -88,30 +91,46 @@ class electricityCalculate : AppCompatActivity() {
         ans = findViewById(R.id.result)
         btnstore = findViewById(R.id.store_btn)
         progressBar2 = findViewById(R.id.progressBar2)
+        finaltot = findViewById(R.id.textView6)
 
+        ans.visibility = View.INVISIBLE
+        finaltot.visibility = View.INVISIBLE
         progressBar2.visibility = View.INVISIBLE
         btnstore.visibility = View.INVISIBLE
 
         btncalculate.setOnClickListener {
 
+            val myspinner = spinner.selectedItem.toString().trim()
             val accnumber = etaccnumber.text.toString().trim()
             val unitsText = etunits.text.toString().trim()
             val lastReading = etDatePicker.text.toString().trim()
             val currentReading = etDatePicker2.text.toString().trim()
 
             // Check if any of the fields are empty
-            if (accnumber.isEmpty() || unitsText.isEmpty() || lastReading.isEmpty() || currentReading.isEmpty()) {
+            if (myspinner == tariffcat[0] || accnumber.isEmpty() || unitsText.isEmpty() || lastReading.isEmpty() || currentReading.isEmpty()) {
                 Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
+                ans.visibility = View.INVISIBLE
+                finaltot.visibility = View.INVISIBLE
                 btnstore.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
+            if (!isValidAccountNumber(accnumber)) {
+                Toast.makeText(applicationContext, "Account number should have 10 characters", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            ans.visibility = View.VISIBLE
             btnstore.visibility = View.VISIBLE
+
             val units: Int
             try {
                 units = unitsText.toInt()
             } catch (e: NumberFormatException) {
                 Toast.makeText(applicationContext, "Invalid input for units", Toast.LENGTH_SHORT).show()
+                ans.visibility = View.INVISIBLE
+                finaltot.visibility = View.INVISIBLE
+                btnstore.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
@@ -124,12 +143,14 @@ class electricityCalculate : AppCompatActivity() {
                 currentReadingDate = dateFormat.parse(currentReading)!!
             } catch (e: ParseException) {
                 Toast.makeText(applicationContext, "Invalid date format", Toast.LENGTH_SHORT).show()
+                ans.visibility = View.INVISIBLE
+                finaltot.visibility = View.INVISIBLE
+                btnstore.visibility = View.INVISIBLE
                 return@setOnClickListener
             }
 
             val diffInMillis = currentReadingDate.time - lastReadingDate.time
             val diffInDays = TimeUnit.MILLISECONDS.toDays(diffInMillis)
-
 
 
             //calculations
@@ -149,9 +170,10 @@ class electricityCalculate : AppCompatActivity() {
                 importcharge = (42 * 24) + (50 * 24) + (units - 48) * 75f
                 fixedcharge = 800f
                 totalcharge = importcharge + fixedcharge
-            }
 
+            }
             ans.text = "Bill Period: $diffInDays days\nImport Charge: $importcharge LKR\nFixed Charge: $fixedcharge LKR\nTotal Bill Amount: $totalcharge LKR"
+            finaltot.text = "$totalcharge LKR"
         }
 
 
@@ -164,22 +186,25 @@ class electricityCalculate : AppCompatActivity() {
             val units = etunits.text.toString().trim()
             val lastreading = etDatePicker.text.toString().trim()
             val currentreading = etDatePicker2.text.toString().trim()
-            val calculation = ans.text.toString().trim()
+            val calculation = finaltot.text.toString().trim()
 
             val userMap = hashMapOf(
-                "User ID" to userid,
-                "Tariff Category" to myspinner,
-                "Account Number" to accnumber,
-                "Last Reading Date" to lastreading,
-                "Current Reading Date" to currentreading,
-                "No of units" to units,
-                "Total Amount" to calculation
+                "userID" to userid,
+                "category" to myspinner,
+                "accountNumber" to accnumber,
+                "lastDate" to lastreading,
+                "currentDate" to currentreading,
+                "units" to units,
+                "totalAmount" to calculation
             )
 
             db.collection("eCalculations").document(userid).set(userMap)
                 .addOnSuccessListener {
                     etaccnumber.text.clear()
+                    etDatePicker.text.clear()
+                    etDatePicker2.text.clear()
                     etunits.text.clear()
+
                     Toast.makeText(this, "Record Successfully Added", Toast.LENGTH_SHORT).show()
                     val i = Intent(this, electricityEntries::class.java)
                     startActivity(i)
@@ -200,5 +225,8 @@ class electricityCalculate : AppCompatActivity() {
         etDatePicker2.setText(sdf.format(myCalendar2.time))
     }
 
-
+    private fun isValidAccountNumber(accountNumber: String): Boolean {
+        val regex = "\\d{10}".toRegex()
+        return accountNumber.matches(regex)
+    }
 }
