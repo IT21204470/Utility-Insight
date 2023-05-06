@@ -87,7 +87,7 @@ class electricityPayment : AppCompatActivity() {
             .addOnSuccessListener { querySnapshot ->
                 val accountNames = mutableListOf<String>()
                 for (document in querySnapshot) {
-                    val accountName = document.getString("Account Name")
+                    val accountName = document.getString("accountName")
                     if (!accountName.isNullOrEmpty()) {
                         accountNames.add(accountName)
                     }
