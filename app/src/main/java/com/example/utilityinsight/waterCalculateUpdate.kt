@@ -133,6 +133,7 @@ class waterCalculateUpdate : AppCompatActivity() {
 
 
         btnupdate.setOnClickListener {
+            totcal.visibility = View.INVISIBLE
             billdb.visibility = View.INVISIBLE
             progressbar.visibility = View.VISIBLE
 
