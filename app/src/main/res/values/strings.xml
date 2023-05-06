@@ -26,6 +26,7 @@
     <string name="units">Enter number of units</string>
     <string name="calculate_btn">Calculate</string>
     <string name="store_btn">View Entries</string>
+    <string name="uheading1">Update your entries</string>
 
 
     <!--Entries page-->
@@ -356,7 +357,6 @@
     <!--Side Bar-->
     <string name="open">Open</string>
     <string name="close">Close</string>
-    <string name="uheading1">Update your entries</string>
 
 
 </resources>
