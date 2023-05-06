@@ -11,7 +11,6 @@
     <string name="card5_name">Tips</string>
     <string name="card6_name">Notifications</string>
 
-
     <!--Calculate page-->
     <string name="heading1">Calculate your usage</string>
     <string-array name="tariffcat">
@@ -130,7 +129,6 @@
 
 
     <!--Amadee-->
-
     <!--water home-->
     <string name="w_hometopic">Water  Home</string>
     <string name="w_card1_name">Calculate Usage</string>
@@ -165,7 +163,7 @@
     <string name="uw_home_store">Update Entries</string>
 
 
-    <!--water singal usage-->
+    <!--water single usage-->
     <string name="w_card_d1">Account Name:</string>
     <string name="w_card_d2">Account Number:</string>
     <string name="w_card_d3">Number of days:</string>
@@ -221,6 +219,8 @@
     <string name="frgtPassword">Enter New Password</string>
     <string name="reEnterNew">Enter New Password</string>
     <string name="resetPW">Enter Email</string>
+    <string name="btnDeleteAcc">Delete Account</string>
+    <string name="select_btn">Select</string>
 
 
     <!--Tharushi-->
@@ -236,7 +236,7 @@
     <string name="line">line</string>
     <string name="boil">boil</string>
 
-    <!--    Calculate page-->
+    <!--Calculate page-->
     <string name="g_viewEntries_btn">View Entries</string>
     <string name="gas_accno_input">Enter Account Number</string>
     <string name="gas_calc_accnoinput">Account Number</string>
@@ -266,14 +266,12 @@
     <string name="card_g6_txt">Notifications</string>
     <string name="gasentries_heading">Usage History</string>
     <string name="gentries_backbtn">Backbutton</string>
-
-
     <string name="gupdate_acc_nonew">Account  Number</string>
     <string name="gupdate_datenew">Date</string>
     <string name="gupdate_unitsnew">Units</string>
-    <string name="gdisplay_accno">Account Number</string>
-    <string name="gdisplay_date">Date</string>
-    <string name="gdisplay_units">No of units</string>
+    <string name="gdisplay_accno">Account Number:</string>
+    <string name="gdisplay_date">Date:</string>
+    <string name="gdisplay_units">No of units:</string>
 
 
     <!--Enter dates-->
@@ -286,7 +284,6 @@
     <string name="gas_enter_meter_readings_btn">Enter Meter Readings</string>
 
     <!--Enter meter readings-->
-
     <string name="gas_readings">Readings</string>
     <string name="gas_no_of_units">Number of Units</string>
     <string name="gas_units">Enter number of units</string>
@@ -295,59 +292,6 @@
     <string name="gas_previous_meter_reading">Previous Meter Reading</string>
     <string name="gas_current_meter_reading">Current Meter Reading</string>
     <string name="gas_meter_reading_topic">Enter Meter Reading</string>
-
-
-    <!--Entries page-->
-
-    <string name="gas_entries_topic">Your Entries</string>
-    <string name="gas_col1">Entry Date</string>
-    <string name="gas_col2">Account Number</string>
-    <string name="gas_col3">Units</string>
-    <string name="gas_col4">Total Amount</string>
-
-    <string name="gas_row1EntryDate">2023/01/02</string>
-    <string name="gas_row1AccountNumber">24586112356</string>
-    <string name="gas_row1Units">110</string>
-    <string name="gas_row1TotalAmount">LKR 5500.00</string>
-
-    <string name="gas_row2EntryDate">2023/01/6</string>
-    <string name="gas_row2AccountNumber">85679086435</string>
-    <string name="gas_row2Units">80</string>
-    <string name="gas_row2TotalAmount">LKR 4000.00</string>
-
-    <string name="gas_row3EntryDate">2023/01/17</string>
-    <string name="gas_row3AccountNumber">50487287456</string>
-    <string name="gas_row3Units">50</string>
-    <string name="gas_row3TotalAmount">LKR 2500.00</string>
-
-    <string name="gas_row4EntryDate">2023/01/23</string>
-    <string name="gas_row4AccountNumber">32297196456</string>
-    <string name="gas_row4Units">10</string>
-    <string name="gas_row4TotalAmount">LKR 500.00</string>
-
-    <string name="gas_row5EntryDate">2023/02/04</string>
-    <string name="gas_row5AccountNumber">66541367398</string>
-    <string name="gas_row5Units">68</string>
-    <string name="gas_row5TotalAmount">LKR 3400.00</string>
-
-    <string name="gas_row6EntryDate">2023/02/12</string>
-    <string name="gas_row6AccountNumber">897412579073</string>
-    <string name="gas_row6Units">87</string>
-    <string name="gas_row6TotalAmount">LKR 4350.00</string>
-
-    <string name="gas_row7EntryDate">2023/02/26</string>
-    <string name="gas_row7AccountNumber">12541609876</string>
-    <string name="gas_row7Units">74</string>
-    <string name="gas_row7TotalAmount">LKR 3700.00</string>
-
-    <string name="gas_row8EntryDate">2023/03/06</string>
-    <string name="gas_row8AccountNumber">54782187645</string>
-    <string name="gas_row8Units">61</string>
-    <string name="gas_row8TotalAmount">LKR 3050.00</string>
-
-    <string name="gas_txt_history">Gas usage history</string>
-    <string name="gas_check_btn">Check Again</string>
-    <string name="gas_return_btn">Return to Home</string>
 
     <!--Tips page-->
     <string name="gas_tips_title">Tips for you</string>
@@ -359,10 +303,6 @@
     <string name="gas_txt_tip3">Cook with lids on pots and pans to reduce cooking times and energy usage.</string>
     <string name="gas_more_tips">More Tips</string>
     <string name="gas_tips_2_heading">Cook with lids on pots and pans</string>
-
-    <string name="btnDeleteAcc">Delete Account</string>
-    <string name="select_btn">Select</string>
-
 
     <!--Side Bar-->
     <string name="open">Open</string>
