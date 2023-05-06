@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
@@ -21,6 +22,7 @@ class gasCalculate : AppCompatActivity() {
     private lateinit var gcalcdays: EditText
 
     private lateinit var gcalcbtn: Button
+    private lateinit var gbackbtn2: ImageButton
     private lateinit var gcaloutouttxt: TextView
     private lateinit var gcaloutoutans: TextView
 
@@ -36,6 +38,12 @@ class gasCalculate : AppCompatActivity() {
         val gasViewEntriesbtn = findViewById<Button>(R.id.g_viewEntries_btn)
         gasViewEntriesbtn.setOnClickListener {
             val intent = Intent(this, gasEntries::class.java)
+            startActivity(intent)
+        }
+
+        gbackbtn2 = findViewById(R.id.back_btn)
+        gbackbtn2.setOnClickListener {
+            val intent = Intent(this, gasCalculate::class.java)
             startActivity(intent)
         }
 
