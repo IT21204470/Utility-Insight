@@ -6,10 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".gasEntries">
 
-    <ImageView
+
+    <ImageButton
         android:id="@+id/gentries_backbtn"
-        android:layout_width="75dp"
-        android:layout_height="65dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="#FAF9F9"
         android:contentDescription="@string/gentries_backbtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,4 +31,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/gentries_backbtn"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/historyList"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gasentries_heading" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

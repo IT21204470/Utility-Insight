@@ -156,13 +156,13 @@
     <string name="w_entry_h1">Usage History</string>
 
     <!--water update-->
-    <string name="update_water_topic">Update Your Entries</string>
-    <string name="w_update_acc_name">Enter Account Name</string>
-    <string name="w_update_acc_number">Enter Account Number</string>
-    <string name="w_update_number_of_days">Number of days</string>
-    <string name="w_update_number_of_units">Number of units</string>
-    <string name="w_update_calculate">Calculate</string>
-    <string name="w_update_entries">Update Entries</string>
+    <string name="uw_txt_Meter">Update Your Entries</string>
+    <string name="uw_acc_name">Enter Account Name</string>
+    <string name="uw_acc_number">Enter Account Number</string>
+    <string name="uw_number_of_days">Number of days</string>
+    <string name="uw_number_of_units">Number of units</string>
+    <string name="uw_home_calculate_btn">Calculate</string>
+    <string name="uw_home_store">Update Entries</string>
 
 
     <!--water singal usage-->
