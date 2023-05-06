@@ -13,7 +13,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:scaleType="fitCenter"
-        android:backgroundTint="#FAF9F9"
+        android:backgroundTint="@color/white"
         android:contentDescription="@string/gentries_backbtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
