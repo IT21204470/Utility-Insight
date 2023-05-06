@@ -5,5 +5,6 @@ data class Records(
     val accountnumber: String? = null,
     val numberofdays: String? = null,
     val numberofunits: String? = null,
-    val totalamount: String? = null
+    val totalamount: String? = null,
+    val userIDD: String? = null
 )

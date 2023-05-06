@@ -8,6 +8,7 @@ import android.view.View
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import java.util.*
 
 class waterCalculate : AppCompatActivity() {
 
@@ -154,7 +155,7 @@ class waterCalculate : AppCompatActivity() {
         }
 
         btnventries.setOnClickListener{
-
+            val  userID = UUID.randomUUID().toString()
             totcal.visibility = View.INVISIBLE
             progressbar.visibility = View.VISIBLE
 
@@ -173,10 +174,11 @@ class waterCalculate : AppCompatActivity() {
                 "numberofdays" to numberOfDays,
                 "numberofunits" to numberOfUnits,
                 "fixedCharge" to waterspinner,
-                "totalamount" to totalAmount
+                "totalamount" to totalAmount,
+                "userIDD" to userID
             )
 
-            db.collection("wcalculate").document().set(userMap)
+            db.collection("wcalculate").document(userID).set(userMap)
                 .addOnSuccessListener {
                     waccnumber.text.clear()
                     waccname.text.clear()

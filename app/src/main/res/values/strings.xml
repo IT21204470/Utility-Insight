@@ -1,12 +1,16 @@
 <resources>
 
+    <!--Hemsith-->
     <!--Electricity home-->
     <string name="app_name">Utility Insight</string>
     <string name="e_newtopic">Electricity Home</string>
     <string name="card1_name">Calculate Usage</string>
     <string name="card2_name">Pay Bills</string>
     <string name="card3_name">Add Connection</string>
-    <string name="card4_name">Tips</string>
+    <string name="card4_name">View Usages</string>
+    <string name="card5_name">Tips</string>
+    <string name="card6_name">Notifications</string>
+
 
     <!--Calculate page-->
     <string name="heading1">Calculate your usage</string>
@@ -17,14 +21,17 @@
         <item>General</item>
     </string-array>
     <string name="acc_number">Enter Account Number</string>
-    <!--<string name="last_reading">Enter last reading date</string>
-    <string name="current_reading">Enter current reading date</string>-->
+    <string name="last_reading">Enter last reading date</string>
+    <string name="current_reading">Enter current reading date</string>
     <string name="units">Enter number of units</string>
     <string name="calculate_btn">Calculate</string>
-    <!--<string name="store_btn">View Entries</string>-->
+    <string name="store_btn">View Entries</string>
+    <string name="uheading1">Update your entries</string>
+
 
     <!--Entries page-->
     <string name="entry_h1">Usage History</string>
+
 
     <!--single usage History-->
     <string name="card_d1">Account Number :</string>
@@ -38,12 +45,7 @@
 
     <!--Add connection page-->
     <string name="connection_txt">Register Your Account</string>
-    <string-array name="category">
-        <item>Choose Service</item>
-        <item>Electricity</item>
-        <item>Water</item>
-        <item>Gas</item>
-    </string-array>
+    <string-array name="category"></string-array>
     <string name="acc_name">Name for account</string>
     <string name="acc_no">Account Number</string>
     <string name="premisesID">Premises ID</string>
@@ -67,10 +69,7 @@
     <!--Payment page-->
     <string name="payment_topic">Bill Payments</string>
     <string name="txt_account">Account to be paid :</string>
-    <string-array name="accounts">
-        <item>Hemsith\'s Account</item>
-        <item>Amadee\'s Account</item>
-    </string-array>
+    <string-array name="accounts"></string-array>
     <string name="txt_amount">Bill Amount :</string>
     <string name="amount">Enter amount to be paid</string>
     <string name="txt_email">Email Address :</string>
@@ -105,28 +104,29 @@
     <string name="back">Back to Home</string>
     <string name="done">Done</string>
 
+
     <!--Failed page-->
     <string name="failed_msg">Failed!</string>
     <string name="unsuccessful_msg">Payment Unsuccessful</string>
     <string name="previous">Back to Payment</string>
-
+    <string name="closebtn">close</string>
 
     <!--Electricity Tips page-->
     <string name="tips_title">Tips for you</string>
     <string name="tip1">Unplug unused appliances</string>
-    <string name="txt_tip1">~ Collectively, all of your smaller appliances and devices add up to your electricity use. What many people don\'t know is that, devices which are plugged in continue to draw trace amounts of electricity from your outlets.</string>
+    <string name="txt_tip1">Collectively, all of your smaller appliances and devices add up to your electricity use. What many people don\'t know is that, devices which are plugged in continue to draw trace amounts of electricity from your outlets.</string>
     <string name="tip2">Switch to LEDs</string>
-    <string name="txt_tip2">~ LED light bulbs use 90 % less energy than incandescent bulbs. Switch out the most frequently used bulbs in your home with LEDs. Then, replace the rest once they burn out.</string>
+    <string name="txt_tip2">LED light bulbs use 90 % less energy than incandescent bulbs. Switch out the most frequently used bulbs in your home with LEDs. Then, replace the rest once they burn out.</string>
     <string name="tip4">Establish solar power generators</string>
-    <string name="txt_tip4">~ Embrace the power of solar power systems. Solar energy helps lower your electricity bill and meanwhile fulfill your social responsibility to mitigate climate change. Don\'t wait!</string>
+    <string name="txt_tip4">Embrace the power of solar power systems. Solar energy helps lower your electricity bill and meanwhile fulfill your social responsibility to mitigate climate change. Don\'t wait!</string>
 
 
     <!--Notifications page-->
     <string name="notify_topic">Notifications</string>
-    <string name="des_2">~ Time to check your usage!</string>
-    <string name="des_3">~ Monthly electricity usage limit is exceeded.</string>
-    <string name="des_4">~ Last water bill payment has been authorized.</string>
-    <string name="des_5">~ Your profile details have been updated.</string>
+    <string name="des_2">1. Time to check your usage!</string>
+    <string name="des_3">3. Monthly electricity usage limit is exceeded.</string>
+    <string name="des_4">4. Last water bill payment has been authorized.</string>
+    <string name="des_5">2. Your profile details have been updated.</string>
 
 
     <!--Amadee-->
@@ -136,7 +136,9 @@
     <string name="w_card1_name">Calculate Usage</string>
     <string name="w_card2_name">Pay Bills</string>
     <string name="w_card3_name">Add Connection</string>
-    <string name="w_card4_name">Tips</string>
+    <string name="w_card4_name">View Usages</string>
+    <string name="w_card5_name">Tips</string>
+    <string name="w_card6_name">Notifications</string>
 
 
     <!-- water calculator-->
@@ -145,21 +147,23 @@
     <string name="w_acc_number">Enter Account Number</string>
     <string name="w_number_of_days">Number of days</string>
     <string name="w_number_of_units">Number of units</string>
-    <string-array name="w_fixed_charge">
-        <item>Fixed Charge(Units)</item>
-        <item>0-25 = 100.00(LKR)</item>
-        <item>26-30 = 200.00(LKR)</item>
-        <item>31-40 = 400.00(LKR)</item>
-        <item>41-50 = 650.00(LKR)</item>
-        <item>51-75 = 1000.00(LKR)</item>
-        <item>Above 75 = 1600.00(LKR)</item>
-    </string-array>
+    <string-array name="w_fixed_charge"></string-array>
     <string name="w_home_calculate_btn">CALCULATE</string>
     <string name="w_home_store">VIEW ENTRIES</string>
 
 
     <!--water entries-->
     <string name="w_entry_h1">Usage History</string>
+
+    <!--water update-->
+    <string name="uw_txt_Meter">Update Your Entries</string>
+    <string name="uw_acc_name">Enter Account Name</string>
+    <string name="uw_acc_number">Enter Account Number</string>
+    <string name="uw_number_of_days">Number of days</string>
+    <string name="uw_number_of_units">Number of units</string>
+    <string name="uw_home_calculate_btn">Calculate</string>
+    <string name="uw_home_store">Update Entries</string>
+
 
     <!--water singal usage-->
     <string name="w_card_d1">Account Name:</string>
@@ -178,7 +182,6 @@
     <string name="txt_tip3dec3">Some washing machines are designed specifically to use less water. They use special techniques to clean clothes with less water.</string>
     <string name="w_txt_tip4">Fix leaky ductwork</string>
     <string name="txt_tip4dec4">Improve the efficiency of heating and cooling systems by repairing leaky heating, ventilation and air conditioning ducts.</string>
-    <string name="txt_tip">MORE TIPS</string>
 
 
     <!--Sahan-->
@@ -189,7 +192,7 @@
     <string name="regLabel">Join The Community</string>
     <string name="nameLabel">Name:</string>
     <string name="hntName">Full Name</string>
-    <string name="hntUserName">User Name</string>
+    <string name="hntUserName">Username</string>
     <string name="hntEmail">Email</string>
     <string name="hntPassword">Password</string>
     <string name="hntRePass">Re-enter Password</string>
@@ -197,8 +200,8 @@
     <string name="txtLogin">Login</string>
     <string name="btnForgotPass">Forgot Password?</string>
     <string name="btnLogin">Login</string>
-    <string name="txtNew">Don\'t Have An Account?</string>
-    <string name="txtDashboard">Choose Service</string>
+    <string name="txtNew">Don\'t have an account?</string>
+    <string name="txtDashboard">Choose Utility</string>
     <string name="btnEditUser">Edit Details</string>
 
 
@@ -219,8 +222,8 @@
     <string name="reEnterNew">Enter New Password</string>
     <string name="resetPW">Enter Email</string>
 
-    <!--Tharushi-->
 
+    <!--Tharushi-->
     <!--Tips page-->
     <string name="gas_tips_heading">Tips for you</string>
     <string name="gas_tip1_heading">Fix leaks in the gas line</string>
@@ -244,6 +247,7 @@
     <string name="gas_cal_btn">CALCULATE</string>
     <string name="gas_calc_amount_txt">Your Amount</string>
     <string name="gas_calamount_output" />
+
 
     <!--Gas Home-->
 
@@ -345,10 +349,14 @@
     <string name="gas_txt_tip3">Cook with lids on pots and pans to reduce cooking times and energy usage.</string>
     <string name="gas_more_tips">More Tips</string>
     <string name="gas_tips_2_heading">Cook with lids on pots and pans</string>
-    <string name="last_reading">Enter last reading date</string>
-    <string name="current_reading">Enter current reading date</string>
-    <string name="store_btn">View Entries</string>
+
     <string name="btnDeleteAcc">Delete Account</string>
     <string name="select_btn">Select</string>
+
+
+    <!--Side Bar-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
 
 </resources>

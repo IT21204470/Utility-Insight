@@ -4,144 +4,156 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#BCB0B0"
+    android:background="@color/white"
     tools:context=".waterCalculate">
 
 
     <Button
-        android:id="@+id/w_update_entries"
-        android:layout_width="220dp"
+        android:id="@+id/uw_home_store"
+        android:layout_width="200dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="195dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#1567F4"
-        android:drawableRight="@drawable/baseline_arrow_forward_ios_24"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
         android:fontFamily="@font/solway_bold"
         android:padding="8dp"
-        android:text="@string/w_update_entries"
+        android:text="@string/w_home_store"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/w_update_acc_name"
-        android:layout_width="270dp"
+        android:id="@+id/uw_acc_name"
+        android:layout_width="310dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="@string/w_update_acc_name"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/w_acc_name"
         android:inputType="text"
-        android:textColorHint="#858181"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/update_water_topic" />
+        app:layout_constraintTop_toBottomOf="@+id/uw_txt_Meter" />
 
     <TextView
-        android:id="@+id/update_water_topic"
+        android:id="@+id/uw_txt_Meter"
         android:layout_width="298dp"
         android:layout_height="40dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/solway_bold"
-        android:text="@string/update_water_topic"
+        android:text="@string/uw_txt_Meter"
         android:textColor="#000000"
         android:textSize="@dimen/w_txt_Meter"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/w_cal_page_back_btn"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@+id/uw_cal_page_back_btn"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/w_cal_page_back_btn"
+        android:id="@+id/uw_cal_page_back_btn"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:backgroundTint="#FAF9F9"
+        android:backgroundTint="@color/white"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/back"
+        android:contentDescription="@string/back"/>
 
     <EditText
-        android:id="@+id/w_update_acc_number"
-        android:layout_width="270dp"
+        android:id="@+id/uw_acc_number"
+        android:layout_width="310dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/w_update_acc_number"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/w_acc_number"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/w_update_acc_name" />
+        app:layout_constraintTop_toBottomOf="@+id/uw_acc_name" />
 
     <EditText
-        android:id="@+id/w_update_number_of_days"
-        android:layout_width="270dp"
+        android:id="@+id/uw_number_of_days"
+        android:layout_width="310dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/w_update_number_of_days"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/w_number_of_days"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/w_update_acc_number" />
+        app:layout_constraintTop_toBottomOf="@+id/uw_acc_number" />
 
     <EditText
-        android:id="@+id/w_update_number_of_units"
-        android:layout_width="270dp"
+        android:id="@+id/uw_number_of_units"
+        android:layout_width="310dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="@string/w_update_number_of_units"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/w_number_of_units"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/w_update_number_of_days" />
+        app:layout_constraintTop_toBottomOf="@+id/uw_number_of_days" />
 
     <Button
-        android:id="@+id/w_update_calculate_btn"
+        android:id="@+id/uw_home_calculate_btn"
         android:layout_width="170dp"
         android:layout_height="60dp"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="32dp"
         android:backgroundTint="#1567F4"
         android:fontFamily="@font/solway_bold"
         android:padding="8dp"
-        android:text="@string/w_update_calculate"
+        android:text="@string/w_home_calculate_btn"
         android:textColor="@color/white"
         android:textSize="@dimen/w_calculate_btn"
-        app:layout_constraintBottom_toTopOf="@+id/w_update_entries"
+        app:layout_constraintBottom_toTopOf="@+id/uw_home_store"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/viewtotal"
-        android:layout_width="0dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="200dp"
+        android:id="@+id/uviewtotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="120dp"
         android:fontFamily="@font/solway_bold"
         android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ProgressBar
-        android:id="@+id/wProgressBar"
+        android:id="@+id/uwProgressBar"
         style="@style/Widget.AppCompat.ProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="65dp"
+        android:layout_marginBottom="120dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/w_update_calculate_btn" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView62"
+        android:id="@+id/utextView62"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/uviewtotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/utextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uw_home_calculate_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
