@@ -21,13 +21,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/text01"
+                android:id="@+id/gdisplay_accno"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:fontFamily="@font/capriola"
                 android:gravity="center_vertical"
                 android:paddingLeft="15dp"
-                android:text="@string/gas_display_accountNo"
+                android:text="@string/gdisplay_accno"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 tools:ignore="DuplicateIds" />
@@ -52,13 +52,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/text02"
+                android:id="@+id/gdisplay_units"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:fontFamily="@font/capriola"
                 android:gravity="center_vertical"
                 android:paddingLeft="15dp"
-                android:text="@string/gas_display_datetext"
+                android:text="@string/gdisplay_date"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 tools:ignore="DuplicateIds" />
@@ -93,13 +93,13 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/text02"
+                android:id="@+id/gdisplay_units"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:fontFamily="@font/capriola"
                 android:gravity="center_vertical"
                 android:paddingLeft="15dp"
-                android:text="@string/card_d4"
+                android:text="@string/gdisplay_units"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 tools:ignore="DuplicateIds" />

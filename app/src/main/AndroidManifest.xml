@@ -12,6 +12,9 @@
         android:theme="@style/Theme.UtilityInsight"
         tools:targetApi="31">
         <activity
+            android:name=".q"
+            android:exported="false" />
+        <activity
             android:name=".ActivityFront"
             android:exported="true">
             <intent-filter>
@@ -19,9 +22,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!--Hemsith-->
+        </activity> <!-- Hemsith -->
         <activity
             android:name=".addConnection"
             android:exported="false" />
@@ -42,9 +43,7 @@
             android:exported="false" />
         <activity
             android:name=".updateCalculation"
-            android:exported="false" />
-
-        <!--Amadee-->
+            android:exported="false" /> <!-- Amadee -->
         <activity
             android:name=".waterCalculate"
             android:exported="false" />
@@ -65,12 +64,10 @@
             android:exported="false" />
         <activity
             android:name=".paymentMethod"
-            android:exported="false" />
-
-        <!--Sahan-->
+            android:exported="false" /> <!-- Sahan -->
         <activity
             android:name=".UserLogin"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".userProfile"
             android:exported="false" />
@@ -88,9 +85,7 @@
             android:exported="false" />
         <activity
             android:name=".ForgotPassword"
-            android:exported="false" />
-
-        <!--Tharushi-->
+            android:exported="false" /> <!-- Tharushi -->
         <activity
             android:name=".successfulMessage"
             android:exported="false" />
@@ -112,6 +107,7 @@
         <activity
             android:name=".displayNotifications"
             android:exported="false" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
