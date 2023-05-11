@@ -100,7 +100,7 @@ class UserRegistration : AppCompatActivity() {
 
     }
 
-    private fun updateUI(){
+     fun updateUI(){
         val intent = Intent(this, UserLogin::class.java)
         startActivity(intent)
     }
