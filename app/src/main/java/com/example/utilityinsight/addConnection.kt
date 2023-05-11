@@ -57,6 +57,8 @@ class addConnection : AppCompatActivity() {
             }
         }
 
+        val addConnectionValidation = addConnectionValidation()
+
         //assigning variables to id
         etname = findViewById(R.id.acc_name)
         etnumber = findViewById(R.id.acc_no)
@@ -75,57 +77,63 @@ class addConnection : AppCompatActivity() {
             val accountNo = etnumber.text.toString().trim()
             val preID = etpremises.text.toString().trim()
 
-            if (newspinner == servicetype[0] || userid.isEmpty() || accountName.isEmpty() || accountNo.isEmpty() || preID.isEmpty()) {
-                Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
+            if (addConnectionValidation.addConnectionValidateFields(accountName, accountNo, preID)){
+                if (newspinner == servicetype[0] || userid.isEmpty() || accountName.isEmpty() || accountNo.isEmpty() || preID.isEmpty()) {
+                    Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                }
+
+                if (!isValidAccountNumber(accountNo)) {
+                    Toast.makeText(applicationContext, "Account number should have 10 characters", Toast.LENGTH_SHORT).show()
+                    return@setOnClickListener
+                } else {
+                    Toast.makeText(this, "Account number verified", Toast.LENGTH_SHORT).show()
+                }
+
+                progressBar.visibility = View.VISIBLE
+
+                val accountNumber = accountNo.trim()
+
+                val userMap = hashMapOf(
+                    "userID" to userid,
+                    "service" to newspinner,
+                    "accountName" to accountName,
+                    "accountNumber" to accountNo,
+                    "premisesID" to preID,
+                )
+
+
+                db.collection("accounts").document(userid).set(userMap)
+                    .addOnSuccessListener {
+                        val accountNumberMap = hashMapOf(
+                            "accountNumber" to accountNumber
+                        )
+                        db.collection("accountNumbers").add(accountNumberMap)
+                            .addOnSuccessListener {
+                                etname.text.clear()
+                                etnumber.text.clear()
+                                etpremises.text.clear()
+                                progressBar.visibility = View.INVISIBLE
+                                Toast.makeText(this, "Account added successfully", Toast.LENGTH_SHORT).show()
+                                val i = Intent(this, electricityHome::class.java)
+                                i.putExtra("accountName", accountName)
+                                startActivity(i)
+                                finish()
+                            }
+                            .addOnFailureListener { e ->
+                                Log.e(TAG, "Error adding account number to accountNumbers collection", e)
+                                Toast.makeText(this, "Error adding account number", Toast.LENGTH_SHORT).show()
+                            }
+                    }
+                    .addOnFailureListener { e ->
+                        Log.e(TAG, "Error adding account number to accountNumbers collection", e)
+                        Toast.makeText(this, "Error adding account number", Toast.LENGTH_SHORT).show()
+                    }
+            }else{
+                Toast.makeText(this, "All fields are required !", Toast.LENGTH_SHORT).show()
             }
 
-            if (!isValidAccountNumber(accountNo)) {
-                Toast.makeText(applicationContext, "Account number should have 10 characters", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            } else {
-                Toast.makeText(this, "Account number verified", Toast.LENGTH_SHORT).show()
-            }
 
-            progressBar.visibility = View.VISIBLE
-
-            val accountNumber = accountNo.trim()
-
-            val userMap = hashMapOf(
-                "userID" to userid,
-                "service" to newspinner,
-                "accountName" to accountName,
-                "accountNumber" to accountNo,
-                "premisesID" to preID,
-            )
-
-
-            db.collection("accounts").document(userid).set(userMap)
-                .addOnSuccessListener {
-                    val accountNumberMap = hashMapOf(
-                        "accountNumber" to accountNumber
-                    )
-                    db.collection("accountNumbers").add(accountNumberMap)
-                        .addOnSuccessListener {
-                            etname.text.clear()
-                            etnumber.text.clear()
-                            etpremises.text.clear()
-                            progressBar.visibility = View.INVISIBLE
-                            Toast.makeText(this, "Account added successfully", Toast.LENGTH_SHORT).show()
-                            val i = Intent(this, electricityHome::class.java)
-                            i.putExtra("accountName", accountName)
-                            startActivity(i)
-                            finish()
-                        }
-                        .addOnFailureListener { e ->
-                            Log.e(TAG, "Error adding account number to accountNumbers collection", e)
-                            Toast.makeText(this, "Error adding account number", Toast.LENGTH_SHORT).show()
-                        }
-                }
-                .addOnFailureListener { e ->
-                    Log.e(TAG, "Error adding account number to accountNumbers collection", e)
-                    Toast.makeText(this, "Error adding account number", Toast.LENGTH_SHORT).show()
-                }
         }
     }
 
