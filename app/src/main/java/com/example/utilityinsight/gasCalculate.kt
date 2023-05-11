@@ -94,15 +94,17 @@ class gasCalculate : AppCompatActivity() {
             gcaloutoutans.text = "Rs:$gtotalamount"
 
             //hashmap
+            val userId = UUID.randomUUID().toString()
 
             val gasuserMap = hashMapOf(
                 "AccountNo" to gasaccountno,
                 "Date" to gascalcdate,
                 "Units" to gascalunits,
-                "Days" to gascalcdays
+                "Days" to gascalcdays,
+                "UID" to userId
             )
 
-            val userId = UUID.randomUUID().toString()
+
 
            db.collection("gascalculate").document(userId).set(gasuserMap)
                 .addOnSuccessListener {

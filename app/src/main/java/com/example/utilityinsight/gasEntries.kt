@@ -16,7 +16,6 @@ class gasEntries : AppCompatActivity() {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var gasEntryList: ArrayList<gasDetails>
-    private lateinit var backbtn:ImageButton
 
     private var db = Firebase.firestore
 
@@ -24,9 +23,9 @@ class gasEntries : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_gas_entries)
 
-        backbtn = findViewById(R.id.gentries_backbtn)
-        backbtn.setOnClickListener {
-            val intent = Intent(this, gasCalculate::class.java)
+        val gEntriesbackButton = findViewById<ImageButton>(R.id.gentries_backbtn)
+        gEntriesbackButton.setOnClickListener {
+            val intent = Intent(this, gas_home::class.java)
             startActivity(intent)
         }
 
@@ -35,7 +34,7 @@ class gasEntries : AppCompatActivity() {
 
         gasEntryList = arrayListOf()
 
-        db = FirebaseFirestore.getInstance()
+//        db = FirebaseFirestore.getInstance()
 
         db.collection("gascalculate").get().addOnSuccessListener {
             Toast.makeText(this, "Success!", Toast.LENGTH_SHORT).show()
@@ -47,7 +46,7 @@ class gasEntries : AppCompatActivity() {
                     }
 
                 }
-                recyclerView.adapter = GasAdapter(gasEntryList)
+                recyclerView.adapter = GasAdapter(gasEntryList,this,db)
             }
         }
             .addOnFailureListener {

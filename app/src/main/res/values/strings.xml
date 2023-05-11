@@ -305,6 +305,12 @@
     <!--Side Bar-->
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="gdisplayidtxt">ID</string>
+    <string name="updateidtxt">ID</string>
+    <string name="update_gas_accno">Enter account number</string>
+    <string name="update_gas_date">Enter new date</string>
+    <string name="gbackbtnup">BACK</string>
+    <string name="update_gas_btn"><![CDATA[Cal & Update]]></string>
 
 
 </resources>

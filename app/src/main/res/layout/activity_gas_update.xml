@@ -1,52 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".waterCalculate">
+
 
     <TextView
-        android:id="@+id/gupdate_acc_nonew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/gupdate_acc_nonew"
-        android:textSize="20sp" />
+        android:id="@+id/ug_txt_Meter"
+        android:layout_width="298dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/solway_bold"
+        android:text="@string/uw_txt_Meter"
+        android:textColor="#000000"
+        android:textSize="@dimen/w_txt_Meter"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@+id/ug_cal_page_back_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ug_cal_page_back_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back"
+        android:contentDescription="@string/back"/>
 
     <EditText
-        android:id="@+id/update_gas_accno"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:autofillHints="Account no"/>
-
-    <TextView
-        android:id="@+id/gupdate_datenew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/gupdate_datenew"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/update_gas_date"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/gupdate_unitsnew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/gupdate_unitsnew"
-        android:textSize="20sp" />
+        android:id="@+id/ug_acc_number"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/w_acc_number"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ug_txt_Meter" />
 
     <EditText
-        android:id="@+id/update_gas_units"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:id="@+id/ug_number_of_days"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/w_number_of_days"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ug_acc_number" />
+
+    <EditText
+        android:id="@+id/ug_number_of_units"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:fontFamily="@font/solway_bold"
+        android:hint="@string/w_number_of_units"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/ug_home_calculate_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ug_number_of_days"
+        app:layout_constraintVertical_bias="0.016" />
 
     <Button
-        android:id="@+id/update_gas_btn"
+        android:id="@+id/ug_home_calculate_btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="164dp"
+        android:backgroundTint="#1567F4"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/w_home_calculate_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/w_calculate_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ugtextView62"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Update"/>
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/ugtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ug_home_calculate_btn" />
+
+    <Button
+        android:id="@+id/ug_home_store"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#1567F4"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:fontFamily="@font/solway_bold"
+        android:padding="8dp"
+        android:text="@string/w_home_store"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ug_home_calculate_btn" />
+
+    <TextView
+        android:id="@+id/uid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ug_home_store" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

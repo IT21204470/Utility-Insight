@@ -26,6 +26,9 @@
             android:name=".addConnection"
             android:exported="false" />
         <activity
+            android:name=".gasUpdate"
+            android:exported="false" />
+        <activity
             android:name=".electricityCalculate"
             android:exported="false" />
         <activity
