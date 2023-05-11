@@ -195,7 +195,7 @@ class waterCalculate : AppCompatActivity() {
                     }
             }
             else{
-                Toast.makeText(this,"All Fields are required",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Please fill in all the fields",Toast.LENGTH_SHORT).show()
             }
 
         }
