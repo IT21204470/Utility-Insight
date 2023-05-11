@@ -54,6 +54,8 @@ class waterCalculate : AppCompatActivity() {
             }
         }
 
+        val waterCalculateValidation = waterCalculateValidation()
+
         //assigning variables to id
         waccnumber = findViewById(R.id.w_acc_number)
         waccname = findViewById(R.id.w_acc_name)
@@ -166,33 +168,36 @@ class waterCalculate : AppCompatActivity() {
             val numberOfUnits = wunits.text.toString().trim()
             val totalAmount = billdb.text.toString().trim()
 
+            if (waterCalculateValidation.waterCalculateValidationFields(accountNumber,accountName,numberOfDays,numberOfUnits)){
+                val userMap = hashMapOf(
+                    "accountname" to accountName,
+                    "accountnumber" to accountNumber,
+                    "numberofdays" to numberOfDays,
+                    "numberofunits" to numberOfUnits,
+                    "fixedCharge" to waterspinner,
+                    "totalamount" to totalAmount,
+                    "userIDD" to userID
+                )
 
+                db.collection("wcalculate").document(userID).set(userMap)
+                    .addOnSuccessListener {
+                        waccnumber.text.clear()
+                        waccname.text.clear()
+                        wdays.text.clear()
+                        wunits.text.clear()
+                        Toast.makeText(this, "Added successfully",Toast.LENGTH_SHORT).show()
+                        val i = Intent(this, waterEntries::class.java)
+                        startActivity(i)
+                        finish()
+                    }
+                    .addOnFailureListener {
+                        Toast.makeText(this, "Failed!", Toast.LENGTH_SHORT).show()
+                    }
+            }
+            else{
+                Toast.makeText(this,"All Fields are required",Toast.LENGTH_SHORT).show()
+            }
 
-            val userMap = hashMapOf(
-                "accountname" to accountName,
-                "accountnumber" to accountNumber,
-                "numberofdays" to numberOfDays,
-                "numberofunits" to numberOfUnits,
-                "fixedCharge" to waterspinner,
-                "totalamount" to totalAmount,
-                "userIDD" to userID
-            )
-
-            db.collection("wcalculate").document(userID).set(userMap)
-                .addOnSuccessListener {
-                    waccnumber.text.clear()
-                    waccname.text.clear()
-                    wdays.text.clear()
-                    wunits.text.clear()
-                    Toast.makeText(this, "Added successfully",Toast.LENGTH_SHORT).show()
-                    val i = Intent(this, waterEntries::class.java)
-                    startActivity(i)
-                    finish()
-
-                }
-                .addOnFailureListener {
-                    Toast.makeText(this, "Failed!", Toast.LENGTH_SHORT).show()
-                }
         }
     }
 
