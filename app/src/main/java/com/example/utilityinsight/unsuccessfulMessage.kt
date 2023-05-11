@@ -23,7 +23,7 @@ class unsuccessfulMessage : AppCompatActivity() {
         }
 
         closebtn.setOnClickListener {
-            val i = Intent(this, electricityHome::class.java)
+            val i = Intent(this, waterHome::class.java)
             startActivity(i)
             finish()
 

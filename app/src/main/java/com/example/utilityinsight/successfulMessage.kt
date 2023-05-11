@@ -6,15 +6,15 @@ import android.os.Bundle
 import android.widget.Button
 
 class successfulMessage : AppCompatActivity() {
-    private lateinit var donebutton: Button
+    private lateinit var backtohome: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_successful_message)
 
-        donebutton = findViewById(R.id.previous)
+        backtohome = findViewById(R.id.previous)
 
-        donebutton.setOnClickListener {
-            val i = Intent(this, electricityHome::class.java)
+        backtohome.setOnClickListener {
+            val i = Intent(this, waterHome::class.java)
             startActivity(i)
             finish()
         }
