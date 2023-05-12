@@ -62,7 +62,10 @@ class userProfile : AppCompatActivity() {
         btnDelete.setOnClickListener {
 
             val mapDelete = mapOf(
-                "Name" to FieldValue.delete()
+                "Name" to FieldValue.delete(),
+                "Email" to FieldValue.delete(),
+                "UserName" to FieldValue.delete(),
+                "Password" to FieldValue.delete()
             )
 
             db.collection("user").document(userID).update(mapDelete)

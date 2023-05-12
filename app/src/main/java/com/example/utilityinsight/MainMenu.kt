@@ -58,7 +58,8 @@ class MainMenu : AppCompatActivity() {
                     }
                     R.id.gasHome->{
                         Toast.makeText(applicationContext,"Clicked Gas",Toast.LENGTH_SHORT).show()
-
+                        val gasIntent = Intent(this, gas_home::class.java)
+                        startActivity(gasIntent)
                     }
                     R.id.nav_logout->{
                         Toast.makeText(applicationContext,"Clicked Logout",Toast.LENGTH_SHORT).show()

@@ -44,6 +44,8 @@ class UserRegistration : AppCompatActivity() {
             val sName= edtName.text.toString().trim()
             val sUser = edtUserName.text.toString().trim()
 
+
+
             auth.createUserWithEmailAndPassword(sEmail,sPassword)
                 .addOnCompleteListener(this){
                     task->
