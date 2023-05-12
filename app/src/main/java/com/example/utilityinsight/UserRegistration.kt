@@ -37,6 +37,8 @@ class UserRegistration : AppCompatActivity() {
         btnRegistration = findViewById(R.id.btnSignUp)
 
 
+        val UserRegistrationValidation = SignupValidation()
+
         btnRegistration.setOnClickListener {
 
             val sEmail = edtEmail.text.toString().trim()
@@ -44,58 +46,63 @@ class UserRegistration : AppCompatActivity() {
             val sName= edtName.text.toString().trim()
             val sUser = edtUserName.text.toString().trim()
 
+            if(UserRegistrationValidation.validateData(sName,sUser,sEmail,sPassword)){
+
+                auth.createUserWithEmailAndPassword(sEmail,sPassword)
+                    .addOnCompleteListener(this){
+                            task->
+                        if(task.isSuccessful){
+
+                            //Sign in success
+                            auth.currentUser?.sendEmailVerification()
+                                ?.addOnSuccessListener {
+                                    Toast.makeText(this, "Please Verify Email",Toast.LENGTH_SHORT).show()
+                                    updateUI()
+                                    //passing data to the firestore collection
+                                    val user = hashMapOf(
+
+                                        "Email" to sEmail,
+                                        "Name" to sName,
+                                        "UserName" to sUser,
+                                        "Password" to sPassword
 
 
-            auth.createUserWithEmailAndPassword(sEmail,sPassword)
-                .addOnCompleteListener(this){
-                    task->
-                    if(task.isSuccessful){
+                                    )
 
-                        //Sign in success
-                        auth.currentUser?.sendEmailVerification()
-                            ?.addOnSuccessListener {
-                                Toast.makeText(this, "Please Verify Email",Toast.LENGTH_SHORT).show()
-                                updateUI()
-                                //passing data to the firestore collection
-                                val user = hashMapOf(
+                                    val userID = FirebaseAuth.getInstance().currentUser!!.uid
 
-                                    "Email" to sEmail,
-                                    "Name" to sName,
-                                    "UserName" to sUser,
-                                    "Password" to sPassword
+                                    udb.collection("user").document(userID).set(user)
+                                        .addOnSuccessListener{
+                                            Toast.makeText(this,"User Registered", Toast.LENGTH_SHORT).show()
+                                            edtEmail.text.clear()
+                                            edtName.text.clear()
+                                            edtUserName.text.clear()
+                                            edtPassword.text.clear()
+                                        }
 
+                                        .addOnFailureListener{
+                                            Toast.makeText(this,"Try Again", Toast.LENGTH_SHORT).show()
+                                        }
 
-                                )
+                                }
+                                ?.addOnFailureListener {
+                                    Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
+                                }
 
-                                val userID = FirebaseAuth.getInstance().currentUser!!.uid
+                        }else{
 
-                                udb.collection("user").document(userID).set(user)
-                                    .addOnSuccessListener{
-                                        Toast.makeText(this,"User Registered", Toast.LENGTH_SHORT).show()
-                                        edtEmail.text.clear()
-                                        edtName.text.clear()
-                                        edtUserName.text.clear()
-                                        edtPassword.text.clear()
-                                    }
-
-                                    .addOnFailureListener{
-                                        Toast.makeText(this,"Try Again", Toast.LENGTH_SHORT).show()
-                                    }
-
-                            }
-                            ?.addOnFailureListener {
-                                Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
-                            }
-
-                    }else{
-
-                        //Sign in fails
-                        Toast.makeText(
-                            baseContext,"Authentication Failed", Toast.LENGTH_SHORT
-                        ).show()
-                        updateUI()
+                            //Sign in fails
+                            Toast.makeText(
+                                baseContext,"Authentication Failed", Toast.LENGTH_SHORT
+                            ).show()
+                            updateUI()
+                        }
                     }
-                }
+
+            }
+            else{
+                Toast.makeText(this, "Fill All The Fields",Toast.LENGTH_LONG).show()
+            }
 
         }
 
