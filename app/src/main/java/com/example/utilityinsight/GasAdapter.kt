@@ -21,6 +21,8 @@ class GasAdapter(
         val gdate: TextView = itemView.findViewById(R.id.gas_display_datetext)
         val uid: TextView = itemView.findViewById(R.id.gas_display_id_text)
         val gunits: TextView = itemView.findViewById(R.id.gas_display_units_txt)
+        val gdays: TextView = itemView.findViewById(R.id.gas_display_days_txt)
+
 
         val updatebtn: Button = itemView.findViewById(R.id.gas_entries_updte)
         val deletebtn: Button = itemView.findViewById(R.id.gas_entries_dlt)
@@ -41,6 +43,7 @@ class GasAdapter(
         holder.gdate.text = entryList[position].Date
         holder.gunits.text = entryList[position].Units
         holder.uid.text = entryList[position].UID
+        holder.gdays.text = entryList[position].Days
 
         holder.updatebtn.setOnClickListener {
             val intent = Intent(conntext, gasUpdate::class.java)
@@ -49,6 +52,7 @@ class GasAdapter(
             intent.putExtra("Date", entryList[position].Date)
             intent.putExtra("Units", entryList[position].Units)
             intent.putExtra("uid", entryList[position].UID)
+            intent.putExtra("Days", entryList[position].Days)
             conntext.startActivity(intent)
         }
 

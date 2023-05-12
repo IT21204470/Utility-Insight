@@ -58,7 +58,7 @@
         android:layout_marginTop="24dp"
         android:ems="10"
         android:fontFamily="@font/solway_bold"
-        android:hint="@string/w_number_of_days"
+        android:hint="Date"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ug_acc_number" />
@@ -68,31 +68,25 @@
         android:layout_width="310dp"
         android:layout_height="55dp"
         android:layout_marginStart="48dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:fontFamily="@font/solway_bold"
         android:hint="@string/w_number_of_units"
         android:inputType="date"
-        app:layout_constraintBottom_toTopOf="@+id/ug_home_calculate_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ug_number_of_days"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintTop_toBottomOf="@+id/ug_number_of_days" />
 
-    <Button
-        android:id="@+id/ug_home_calculate_btn"
-        android:layout_width="170dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="164dp"
-        android:backgroundTint="#1567F4"
+    <EditText
+        android:id="@+id/ug_number_of_units2"
+        android:layout_width="310dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="48dp"
+        android:ems="10"
         android:fontFamily="@font/solway_bold"
-        android:padding="8dp"
-        android:text="@string/w_home_calculate_btn"
-        android:textColor="@color/white"
-        android:textSize="@dimen/w_calculate_btn"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:hint="@string/uw_number_of_days"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ug_number_of_units" />
 
     <TextView
         android:id="@+id/ugtextView62"
@@ -106,9 +100,8 @@
         android:id="@+id/ugtextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ug_home_calculate_btn" />
+        tools:layout_editor_absoluteY="482dp" />
 
     <Button
         android:id="@+id/ug_home_store"
@@ -124,8 +117,8 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ug_home_calculate_btn" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/uid"
@@ -136,5 +129,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ug_home_store" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ug_txt_Meter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

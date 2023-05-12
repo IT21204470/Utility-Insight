@@ -17,10 +17,11 @@ class gasUpdate : AppCompatActivity() {
     private lateinit var gaccnumber: EditText
     private lateinit var gdays: EditText
     private lateinit var gunits: EditText
-    private lateinit var gbtnCal: Button
     private lateinit var btnSub:Button
     private lateinit var userID:TextView
 
+    private lateinit var newDate: EditText
+    private lateinit var totall: TextView
 
     private var db = Firebase.firestore
     @SuppressLint("MissingInflatedId")
@@ -39,69 +40,17 @@ class gasUpdate : AppCompatActivity() {
         gaccnumber = findViewById(R.id.ug_acc_number)
         gdays = findViewById(R.id.ug_number_of_days)
         gunits = findViewById(R.id.ug_number_of_units)
-        gbtnCal = findViewById(R.id.ug_home_calculate_btn)
         btnSub = findViewById(R.id.ug_home_store)
         userID = findViewById(R.id.uid)
-
-        userID.visibility = View.INVISIBLE
+        newDate = findViewById(R.id.ug_number_of_units2)
+        totall = findViewById(R.id.textView8)
 
 
         gaccnumber.text = intent.getStringExtra("AccountNo").toString().toEditable()
-        gdays.text = intent.getStringExtra("Days").toString().toEditable()
+        gdays.text = intent.getStringExtra("Date").toString().toEditable()
         gunits.text = intent.getStringExtra("Units").toString().toEditable()
-        userID.text = intent.getStringExtra("UID").toString().toEditable()
-
-        gbtnCal.setOnClickListener {
-
-            val gasunitText = gunits.text.toString().trim()
-            val gasdaysText = gdays.text.toString().trim()
-            val gasaccountNumber = gaccnumber.toString().trim()
-
-            if (gasunitText.isEmpty() || gasdaysText.isEmpty() || gasaccountNumber.isEmpty()) {
-                Toast.makeText(applicationContext, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-
-
-            val gasunit: Int
-            gasunit = gasunitText.toInt()
-
-
-
-            val gasdays: Int
-            gasdays = gasdaysText.toInt()
-
-            var gnormalcharge = 0
-            var gfixedcharge = 0
-            var gtotal = 0
-
-            if (gasunit < 25) {
-                gfixedcharge = 100
-                gnormalcharge = gasunit * gasdays
-                gtotal = gfixedcharge + gnormalcharge
-            } else if (gasunit < 30) {
-                gfixedcharge = 200
-                gnormalcharge = gasunit * gasdays
-                gtotal = gfixedcharge + gnormalcharge
-            } else if (gasunit < 40) {
-                gfixedcharge = 400
-                gnormalcharge = gasunit * gasdays
-                gtotal = gfixedcharge + gnormalcharge
-            } else if (gasunit < 50) {
-                gfixedcharge = 650
-                gnormalcharge = gasunit * gasdays
-                gtotal = gfixedcharge + gnormalcharge
-            } else if (gasunit < 75) {
-                gfixedcharge = 1000
-                gnormalcharge = gasunit * gasdays
-                gtotal = gfixedcharge + gnormalcharge
-            } else {
-                gfixedcharge = 1600
-                gnormalcharge = (gasunit * gasdays)
-                gtotal = gfixedcharge + gnormalcharge
-            }
-
-        }
+        userID.text = intent.getStringExtra("uid").toString().toEditable()
+        newDate.text = intent.getStringExtra("Days").toString().toEditable()
 
 
         btnSub.setOnClickListener {
@@ -109,16 +58,14 @@ class gasUpdate : AppCompatActivity() {
             val accountNumber = gaccnumber.text.toString().trim()
             val numberOfDays = gdays.text.toString().trim()
             val numberOfUnits = gunits.text.toString().trim()
-            val userId = userID.text.toString()
 
             val gasupdateMap = mapOf(
                 "AccountNo" to accountNumber,
                 "Days" to numberOfDays,
                 "Units" to numberOfUnits,
-                "UID" to userId
             )
 
-            db.collection("gascalculate").document(userId).update(gasupdateMap)
+            db.collection("gascalculate").document(userID.text.toString()).update(gasupdateMap)
 
             Toast.makeText(this,"Successfully Edited", Toast.LENGTH_SHORT).show()
 
